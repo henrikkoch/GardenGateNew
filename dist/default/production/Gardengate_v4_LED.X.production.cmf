@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.o
+$C:\Users\henrik\AppData\Local\Temp\xcAsujg.o
 init CODE 0 71 71 3 2
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 74 74 1 2
@@ -114,29 +114,29 @@ STRING 413-7FF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Gardengate_v4_LED.X.production.o
-75 cinit CODE >747:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-75 cinit CODE >750:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-75 cinit CODE >1002:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-76 cinit CODE >1003:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-77 cinit CODE >1004:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-78 cinit CODE >1008:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-79 cinit CODE >1009:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-7A cinit CODE >1013:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-7B cinit CODE >1014:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-7C cinit CODE >1015:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-7D cinit CODE >1016:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-7E cinit CODE >1017:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-7F cinit CODE >1018:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-80 cinit CODE >1022:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-81 cinit CODE >1023:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-82 cinit CODE >1024:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-83 cinit CODE >1025:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-84 cinit CODE >1026:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-85 cinit CODE >1027:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-88 cinit CODE >1033:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-88 cinit CODE >1035:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-89 cinit CODE >1036:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-8A cinit CODE >1037:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
+75 cinit CODE >747:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+75 cinit CODE >750:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+75 cinit CODE >1002:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+76 cinit CODE >1003:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+77 cinit CODE >1004:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+78 cinit CODE >1008:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+79 cinit CODE >1009:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+7A cinit CODE >1013:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+7B cinit CODE >1014:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+7C cinit CODE >1015:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+7D cinit CODE >1016:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+7E cinit CODE >1017:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+7F cinit CODE >1018:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+80 cinit CODE >1022:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+81 cinit CODE >1023:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+82 cinit CODE >1024:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+83 cinit CODE >1025:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+84 cinit CODE >1026:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+85 cinit CODE >1027:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+88 cinit CODE >1033:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+88 cinit CODE >1035:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+89 cinit CODE >1036:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+8A cinit CODE >1037:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
 4 intentry CODE >503:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
 6 intentry CODE >506:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
 10 intentry CODE >510:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
@@ -449,14 +449,14 @@ FF text7 CODE >117:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachi
 2C2 maintext CODE >285:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
 2C3 maintext CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
 2C6 maintext CODE >300:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
-3FF clrtext CODE >991:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-3FF clrtext CODE >992:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-400 clrtext CODE >993:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-400 clrtext CODE >994:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-401 clrtext CODE >995:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-402 clrtext CODE >996:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-403 clrtext CODE >997:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
-404 clrtext CODE >998:C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.s
+3FF clrtext CODE >991:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+3FF clrtext CODE >992:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+400 clrtext CODE >993:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+400 clrtext CODE >994:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+401 clrtext CODE >995:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+402 clrtext CODE >996:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+403 clrtext CODE >997:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
+404 clrtext CODE >998:C:\Users\henrik\AppData\Local\Temp\xcAsujg.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -550,11 +550,11 @@ _INTF 59 0 ABS 0 - dist/default/production\Gardengate_v4_LED.X.production.o
 _PIR1 11 0 ABS 0 - dist/default/production\Gardengate_v4_LED.X.production.o
 _PIR2 12 0 ABS 0 - dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov142_end_blk7 15A 0 CODE 0 text7 dist/default/production\Gardengate_v4_LED.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.o
+___sp 0 0 STACK 2 stack C:\Users\henrik\AppData\Local\Temp\xcAsujg.o
 _main 3E8 0 CODE 0 maintext dist/default/production\Gardengate_v4_LED.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov125_end_blk6 3A 0 CODE 0 intentry dist/default/production\Gardengate_v4_LED.X.production.o
-start E2 0 CODE 0 init C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.o
+start E2 0 CODE 0 init C:\Users\henrik\AppData\Local\Temp\xcAsujg.o
 _watch_dog_incrementing_timer 598 0 CODE 0 text1 dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov140_start_blk4 130 0 CODE 0 text7 dist/default/production\Gardengate_v4_LED.X.production.o
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\Gardengate_v4_LED.X.production.o
@@ -584,15 +584,15 @@ __pbitbssCOMMON 380 -310 COMMON 1 bitbssCOMMON dist/default/production\Gardengat
 __ccov152_end_blk26 1E0 0 CODE 0 text7 dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov168_start_blk62 2C4 0 CODE 0 text7 dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov100_end_blk22 66E 0 CODE 0 text1 dist/default/production\Gardengate_v4_LED.X.production.o
-___resetbits 20 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.o
+___resetbits 20 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAsujg.o
 __ccov59_end_blk59 566 0 CODE 0 maintext dist/default/production\Gardengate_v4_LED.X.production.o
 _WakeUpCounter 26 0 BANK0 1 bssBANK0 dist/default/production\Gardengate_v4_LED.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAsujg.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAsujg.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAsujg.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAsujg.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAsujg.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAsujg.o
 _WDTCONbits 97 0 ABS 0 - dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov34_end_blk33 468 0 CODE 0 maintext dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov110_start_blk1 7C2 0 CODE 0 text2 dist/default/production\Gardengate_v4_LED.X.production.o
@@ -676,8 +676,8 @@ __ccov156_start_blk33 1FA 0 CODE 0 text7 dist/default/production\Gardengate_v4_L
 __ccov10_end_blk9 408 0 CODE 0 maintext dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov4_start_blk3 3F4 0 CODE 0 maintext dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov15_end_blk14 416 0 CODE 0 maintext dist/default/production\Gardengate_v4_LED.X.production.o
-___stackhi 206F 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.o
-___stacklo 2028 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.o
+___stackhi 206F 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAsujg.o
+___stacklo 2028 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAsujg.o
 __ccov94_end_blk10 628 0 CODE 0 text1 dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov116_start_blk1 816 0 CODE 0 text12 dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov42_end_blk41 49A 0 CODE 0 maintext dist/default/production\Gardengate_v4_LED.X.production.o
@@ -724,7 +724,7 @@ _MDCONbits 39C 0 ABS 0 - dist/default/production\Gardengate_v4_LED.X.production.
 __ccov1_end_blk0 3EC 0 CODE 0 maintext dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov40_start_blk39 47A 0 CODE 0 maintext dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov103_start_blk0 7F0 0 CODE 0 text8 dist/default/production\Gardengate_v4_LED.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.o
+___int_sp 0 0 STACK 2 stack C:\Users\henrik\AppData\Local\Temp\xcAsujg.o
 __ccov125_start_blk6 36 0 CODE 0 intentry dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov150_start_blk22 1BE 0 CODE 0 text7 dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov71_end_blk0 738 0 CODE 0 text9 dist/default/production\Gardengate_v4_LED.X.production.o
@@ -897,7 +897,7 @@ _prelCounter 36 0 BANK0 1 bssBANK0 dist/default/production\Gardengate_v4_LED.X.p
 __ccov139_start_blk3 124 0 CODE 0 text7 dist/default/production\Gardengate_v4_LED.X.production.o
 int$flags 7E 0 ABS 0 - dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov93_end_blk9 61E 0 CODE 0 text1 dist/default/production\Gardengate_v4_LED.X.production.o
-___timeout 104 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.o
+___timeout 104 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAsujg.o
 __ccov62_start_blk62 56E 0 CODE 0 maintext dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov111_end_blk0 7D0 0 CODE 0 text3 dist/default/production\Gardengate_v4_LED.X.production.o
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
@@ -975,7 +975,7 @@ __ccov56_end_blk56 558 0 CODE 0 maintext dist/default/production\Gardengate_v4_L
 _sleep_4s_counter 2A 0 BANK0 1 bssBANK0 dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov16_start_blk15 416 0 CODE 0 maintext dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov84_start_blk16 78A 0 CODE 0 text9 dist/default/production\Gardengate_v4_LED.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\henrik\AppData\Local\Temp\xcAsujg.o
 __ccov163_start_blk48 27E 0 CODE 0 text7 dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov47_start_blk46 4E6 0 CODE 0 maintext dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov149_end_blk19 1BE 0 CODE 0 text7 dist/default/production\Gardengate_v4_LED.X.production.o
@@ -1046,7 +1046,7 @@ __ccov160_start_blk41 24C 0 CODE 0 text7 dist/default/production\Gardengate_v4_L
 __ccov44_start_blk43 4A4 0 CODE 0 maintext dist/default/production\Gardengate_v4_LED.X.production.o
 __Hcodecov_info 1240 0 ABS 6 codecov_info -
 __ccov121_start_blk0 8 0 CODE 0 intentry dist/default/production\Gardengate_v4_LED.X.production.o
-___powerdown 103 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAs1qb4.o
+___powerdown 103 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAsujg.o
 __ccov143_start_blk8 15A 0 CODE 0 text7 dist/default/production\Gardengate_v4_LED.X.production.o
 _LATAbits 10C 0 ABS 0 - dist/default/production\Gardengate_v4_LED.X.production.o
 __ccov154_start_blk28 1EA 0 CODE 0 text7 dist/default/production\Gardengate_v4_LED.X.production.o
