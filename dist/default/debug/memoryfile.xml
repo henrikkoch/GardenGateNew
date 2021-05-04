@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/debug\Gardengate_v4_LED.X.debug.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>2048</length>
+      <used>1046</used>
+      <free>1002</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>128</length>
+      <used>55</used>
+      <free>73</free>
+    </memory>
+  </executable>
+</project>
