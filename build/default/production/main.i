@@ -3759,8 +3759,8 @@ void __attribute__((picinterrupt(("")))) my_isr(void) {
         if (ihcPulseTimer > 0)
             ihcPulseTimer--;
         PIR1bits.TMR2IF = 0;
-        LATAbits.LATA5 = 1;
-        LATAbits.LATA5 = 0;
+
+
    }
 
    return;

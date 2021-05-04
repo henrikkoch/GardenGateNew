@@ -1505,12 +1505,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "535
 [; ;main.c: 535:         PIR1bits.TMR2IF = 0;
 [e = . . _PIR1bits 0 1 -> -> 0 `i `uc ]
-"536
-[; ;main.c: 536:         LATAbits.LATA5 = 1;
-[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
-"537
-[; ;main.c: 537:         LATAbits.LATA5 = 0;
-[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
 "538
 [; ;main.c: 538:    }
 }

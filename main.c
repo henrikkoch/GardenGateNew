@@ -533,8 +533,8 @@ void __interrupt() my_isr(void) {  // <editor-fold defaultstate="open" desc="int
         if (ihcPulseTimer > 0) 
             ihcPulseTimer--;
         PIR1bits.TMR2IF = 0;  // clear timer 2 interrupt flag 
-        DEBUG_OUTPUT = 1;
-        DEBUG_OUTPUT = 0;
+        //DEBUG_OUTPUT = 1;
+        //DEBUG_OUTPUT = 0;
    }  // Timer2 Interrupt </editor-fold>
     
    return;

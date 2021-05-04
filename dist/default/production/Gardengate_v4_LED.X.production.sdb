@@ -567,10 +567,10 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 [v __ccovbit15_26 _ccovbit15_26 `VEb  1 e 0 0 ]
 "534
 [v __ccovbit17_27 _ccovbit17_27 `VEb  1 e 0 0 ]
-"537
-[v __ccovbit21_28 _ccovbit21_28 `VEb  1 e 0 0 ]
+"535
+[v __ccovbit19_28 _ccovbit19_28 `VEb  1 e 0 0 ]
 "542
-[v __ccovbit24_29 _ccovbit24_29 `VEb  1 e 0 0 ]
+[v __ccovbit22_29 _ccovbit22_29 `VEb  1 e 0 0 ]
 "18 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
 [v _prelCounter prelCounter `VEi  1 e 2 0 ]
 "19
