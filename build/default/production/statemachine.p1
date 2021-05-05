@@ -830,8 +830,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;statemachine.c: 219:                 millivolts = millivolts /8;
 [e = _millivolts / _millivolts -> 8 `i ]
 "229
-[; ;statemachine.c: 229:                 if (BatteryVoltage <= 2400) {
-[e $ ! <= _BatteryVoltage -> 2400 `i 303  ]
+[; ;statemachine.c: 229:                 if (millivolts <= 2400) {
+[e $ ! <= _millivolts -> 2400 `i 303  ]
 {
 "230
 [; ;statemachine.c: 230:                     LATAbits.LATA4 = 1;
@@ -847,11 +847,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e $U 304  ]
 "234
-[; ;statemachine.c: 234:                 else
+[; ;statemachine.c: 234:                 else {
 [e :U 303 ]
+{
 "235
-[; ;statemachine.c: 235:                     LATAbits.LATA4 = !1;
+[; ;statemachine.c: 235:                     LATAbits.LATA4 = !1; }
 [e = . . _LATAbits 0 4 -> -> ! != -> 1 `i -> 0 `i `i `uc ]
+}
 [e :U 304 ]
 "236
 [; ;statemachine.c: 236:                 sleep_256s_counter = 1;

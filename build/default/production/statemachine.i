@@ -3628,13 +3628,13 @@ void checkState1(void) {
                 millivolts = (8192 / BatteryVoltage) * 1024;
                 millivolts = millivolts /8;
 # 229 "statemachine.c"
-                if (BatteryVoltage <= 2400) {
+                if (millivolts <= 2400) {
                     LATAbits.LATA4 = 1;
                     _delay((unsigned long)((5*8)*(16000000/4000.0)));
                     LATAbits.LATA4 = !1;
                 }
-                else
-                    LATAbits.LATA4 = !1;
+                else {
+                    LATAbits.LATA4 = !1; }
                 sleep_256s_counter = 1;
             }
             else {

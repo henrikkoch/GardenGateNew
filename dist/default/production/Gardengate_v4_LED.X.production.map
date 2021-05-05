@@ -5,7 +5,7 @@ Linker command line:
 --edf=C:\Program Files\Microchip\xc8\v2.32\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\Gardengate_v4_LED.X.production.sym \
   --cmf=dist/default/production\Gardengate_v4_LED.X.production.cmf -z \
-  -Q12LF1822 -oC:\Users\henrik\AppData\Local\Temp\xcAsujg.4 \
+  -Q12LF1822 -oC:\Users\henrik\AppData\Local\Temp\xcAsav0.4 \
   --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Gardengate_v4_LED.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=02028h-0206Fh -pstack=STACK \
@@ -27,7 +27,7 @@ Linker command line:
   -AEEDATA=00h-0FFh/0F000h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pcinit=CODE \
-  -pfunctab=ENTRY -k C:\Users\henrik\AppData\Local\Temp\xcAsujg.o \
+  -pfunctab=ENTRY -k C:\Users\henrik\AppData\Local\Temp\xcAsav0.o \
   dist/default/production\Gardengate_v4_LED.X.production.o 
 
 Object code version is 3.11
@@ -37,7 +37,7 @@ Machine type is 12LF1822
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\henrik\AppData\Local\Temp\xcAsujg.o
+C:\Users\henrik\AppData\Local\Temp\xcAsav0.o
                 end_init                             74       74        1        8       0
                 init                                 71       71        3        8       0
                 reset_vec                             0        0        2        0       0

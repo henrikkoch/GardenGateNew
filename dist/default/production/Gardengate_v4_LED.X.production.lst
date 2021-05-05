@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.32 build 20210201212658 
-                                                                                               Tue May 04 23:46:53 2021
+                                                                                               Wed May 05 22:44:43 2021
 
 Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1 
      1                           	processor	12LF1822
@@ -2577,8 +2577,8 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2562  01A0                     __ccov170_start_blk64:
   2563  01A0                     l2134:
   2564                           
-  2565                           ;statemachine.c: 229:                 if (BatteryVoltage <= 2400) {
-  2566  01A0  087D               	movf	_BatteryVoltage+1,w	;volatile
+  2565                           ;statemachine.c: 229:                 if (millivolts <= 2400) {
+  2566  01A0  0839               	movf	_millivolts+1,w	;volatile
   2567  01A1  3A80               	xorlw	128
   2568  01A2  00C4               	movwf	??_checkState1
   2569  01A3  3089               	movlw	137
@@ -2586,7 +2586,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2571  01A5  1D03               	skipz
   2572  01A6  29A9               	goto	u715
   2573  01A7  3061               	movlw	97
-  2574  01A8  027C               	subwf	_BatteryVoltage,w	;volatile
+  2574  01A8  0238               	subwf	_millivolts,w	;volatile
   2575  01A9                     u715:
   2576  01A9  1803               	skipnc
   2577  01AA  29AC               	goto	u711
@@ -2632,12 +2632,12 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2616  01BD                     __ccov173_end_blk67:
   2617  01BD                     __ccov174_start_blk68:
   2618  01BD                     l293:	
-  2619                           ;statemachine.c: 234:                 else
+  2619                           ;statemachine.c: 234:                 else {
   2620                           
   2621  01BD  0020               	movlb	0	; select bank0
   2622  01BE  15A1               	bsf	__ccovbit68_51/(0+8),__ccovbit68_51& (0+7)	;volatile
   2623                           
-  2624                           ;statemachine.c: 235:                     LATAbits.LATA4 = !1;
+  2624                           ;statemachine.c: 235:                     LATAbits.LATA4 = !1; }
   2625  01BF  0022               	movlb	2	; select bank2
   2626  01C0  120C               	bcf	12,4	;volatile
   2627  01C1                     __ccov174_end_blk68:
@@ -5179,7 +5179,7 @@ SFR31                0      0       0      32        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.32 build 20210201212658 
-Symbol Table                                                                                   Tue May 04 23:46:53 2021
+Symbol Table                                                                                   Wed May 05 22:44:43 2021
 
                     __ccov116_end_blk1 040D                      __ccov108_end_blk1 03F8  
                     __ccov140_end_blk4 009F                      __ccov124_end_blk5 001B  

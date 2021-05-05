@@ -226,14 +226,14 @@ void checkState1(void) {    // <editor-fold defaultstate="collapsed" desc="check
                 __delay_ms(800);           // wait to be able to see bars in the 7Seg display
 #endif  
                 
-                if (BatteryVoltage <= VOLTAGE_LOW) {  // this if voltage measured is lower than 2.4 volt
+                if (millivolts <= VOLTAGE_LOW) {   // this if voltage measured is lower than 2.4 volt
                     OUTPUT_BATTERY_LOW = PULSE_ON;  // turn on battery voltage signal
                     __delay_ms(IHC_PULSE_WIDTH*8);     // Timer2 takes 8ms therefore 5 * 8ms = ~40 ms
                     OUTPUT_BATTERY_LOW = !PULSE_ON;  // turn on battery voltage signal
                 }
-                else
-                    OUTPUT_BATTERY_LOW = !PULSE_ON; // or turn off
-                sleep_256s_counter = 1;     // preset counter to make another voltage measurement in another 337 x 256 sec.
+                else {
+                    OUTPUT_BATTERY_LOW = !PULSE_ON; } // turn pulse off
+                sleep_256s_counter = 1;   // preset counter to make another voltage measurement in another 337 x 256 sec.
             }
             else {
                 //OUTPUT_BATTERY_LOW = !PULSE_ON;     // on next wake - flag is cleared again. so flag is only set one timer every time WakeUpCounter exceeds its limit
