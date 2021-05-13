@@ -26,6 +26,7 @@
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
+    <itemPath>ihc/KOCH_210513.vis</itemPath>
   </logicalFolder>
   <sourceRootList>
     <Elem>.</Elem>
