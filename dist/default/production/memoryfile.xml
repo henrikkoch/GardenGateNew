@@ -3,15 +3,15 @@
   <executable name="dist/default/production\Gardengate_v4_LED.X.production.hex">
     <memory name="program">
       <units>words</units>
-      <length>2048</length>
-      <used>1041</used>
-      <free>1007</free>
+      <length>8192</length>
+      <used>2719</used>
+      <free>5473</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
-      <length>128</length>
-      <used>55</used>
-      <free>73</free>
+      <length>1024</length>
+      <used>119</used>
+      <free>905</free>
     </memory>
   </executable>
 </project>

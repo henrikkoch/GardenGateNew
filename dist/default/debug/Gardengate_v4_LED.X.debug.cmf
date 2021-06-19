@@ -1,0 +1,2674 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+init CODE 0 71 71 3 2
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 74 74 2 2
+config CONFIG 4 8007 8007 2 2
+$dist/default/debug\Gardengate_v4_LED.X.debug.o
+cinit CODE 0 76 76 20 2
+text1 CODE 0 F59 F59 F 2
+text2 CODE 0 FAA FAA 13 2
+text3 CODE 0 417 417 8A 2
+text4 CODE 0 FDC FDC 24 2
+text5 CODE 0 F23 F23 5 2
+text6 CODE 0 5FA 5FA 53 2
+text7 CODE 0 96 96 217 2
+text8 CODE 0 4A1 4A1 7D 2
+text9 CODE 0 F88 F88 10 2
+text10 CODE 0 F78 F78 10 2
+text11 CODE 0 F36 F36 8 2
+text12 CODE 0 F68 F68 10 2
+text13 CODE 0 F98 F98 12 2
+text14 CODE 0 79B 79B 28 2
+text15 CODE 0 51E 51E 7C 2
+text16 CODE 0 693 693 40 2
+text17 CODE 0 F3E F3E C 2
+text18 CODE 0 F2E F2E 8 2
+text19 CODE 0 6D3 6D3 38 2
+text20 CODE 0 F1E F1E 5 2
+text21 CODE 0 F10 F10 4 2
+text22 CODE 0 F19 F19 5 2
+text23 CODE 0 F0C F0C 4 2
+text24 CODE 0 59A 59A 60 2
+text25 CODE 0 F4A F4A F 2
+text26 CODE 0 64D 64D 46 2
+text27 CODE 0 FBD FBD 1F 2
+text28 CODE 0 F14 F14 5 2
+maintext CODE 0 2AD 2AD 16A 2
+cstackCOMMON COMMON 1 73 73 A 1
+cstackBANK0 BANK0 1 4C 4C 1B 1
+codecov_info - 6 0 0 26A8 1
+stringtext1 STRCODE 0 73F 73F 33 2
+stringtext2 STRCODE 0 70B 70B 34 2
+stringtext3 STRCODE 0 772 772 29 2
+stringtext4 STRCODE 0 7C3 7C3 25 2
+stringtext5 STRCODE 0 7E8 7E8 24 2
+stringtext6 STRCODE 0 1000 1000 1F 2
+stringtext7 STRCODE 0 101F 101F 1F 2
+stringtext8 STRCODE 0 103E 103E 1E 2
+stringtext9 STRCODE 0 105C 105C 1E 2
+bitbssBANK0 BANK0 1 108 21 7 1
+codecov_info_hdr - 6 0 0 10 1
+intentry CODE 0 4 4 6D 2
+bitbssCOMMON COMMON 1 380 70 3 1
+bssBANK0 BANK0 1 28 28 24 1
+bssBANK1 BANK1 1 A0 A0 20 1
+bitnvBANK0 BANK0 1 338 67 1 1
+clrtext CODE 0 F28 F28 6 2
+bssCOMMON COMMON 1 7D 7D 1 1
+stringtext10 STRCODE 0 107A 107A 1A 2
+stringtext11 STRCODE 0 1094 1094 18 2
+stringtext12 STRCODE 0 10AC 10AC 18 2
+stringtext13 STRCODE 0 10C4 10C4 18 2
+stringtext14 STRCODE 0 10DC 10DC 17 2
+stringtext15 STRCODE 0 10F3 10F3 17 2
+stringtext16 STRCODE 0 110A 110A 15 2
+stringtext17 STRCODE 0 111F 111F 14 2
+stringtext18 STRCODE 0 1133 1133 14 2
+stringtext19 STRCODE 0 1147 1147 13 2
+stringtext20 STRCODE 0 115A 115A 12 2
+stringtext21 STRCODE 0 116C 116C 12 2
+stringtext22 STRCODE 0 117E 117E 11 2
+stringtext23 STRCODE 0 118F 118F 10 2
+config CONFIG 4 8007 8007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 68-6F 1
+RAM C0-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-64F 1
+BANK0 68-6F 1
+BANK1 C0-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 3-3 2
+CONST 80C-F0B 2
+CONST 119F-1FFF 2
+ENTRY 3-3 2
+ENTRY 80C-F0B 2
+ENTRY 119F-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 2070-23EF 1
+CODE 3-3 2
+CODE 80C-F0B 2
+CODE 119F-1FFF 2
+SFR0 0-20 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-64F 1
+BIGRAM 2001-23EF 1
+EEDATA F000-F0FF 2
+STRCODE 3-3 2
+STRCODE 80C-F0B 2
+STRCODE 119F-1FFF 2
+STRING 3-3 2
+STRING 80C-F0B 2
+STRING 119F-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\Gardengate_v4_LED.X.debug.o
+76 cinit CODE >2317:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+76 cinit CODE >2320:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+76 cinit CODE >2659:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+77 cinit CODE >2660:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+78 cinit CODE >2661:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+79 cinit CODE >2665:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+7A cinit CODE >2669:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+7B cinit CODE >2670:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+7C cinit CODE >2671:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+7D cinit CODE >2672:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+7E cinit CODE >2673:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+7F cinit CODE >2674:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+82 cinit CODE >2678:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+83 cinit CODE >2679:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+84 cinit CODE >2680:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+85 cinit CODE >2681:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+86 cinit CODE >2682:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+87 cinit CODE >2683:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+8A cinit CODE >2687:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+8B cinit CODE >2688:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+8C cinit CODE >2689:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+8D cinit CODE >2690:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+8E cinit CODE >2691:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+8F cinit CODE >2692:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+92 cinit CODE >2698:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+92 cinit CODE >2700:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+93 cinit CODE >2701:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+94 cinit CODE >2702:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+4 intentry CODE >480:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+6 intentry CODE >483:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+11 intentry CODE >486:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+12 intentry CODE >487:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+14 intentry CODE >488:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+16 intentry CODE >489:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+17 intentry CODE >490:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+1A intentry CODE >491:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+1B intentry CODE >493:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+1C intentry CODE >494:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+1E intentry CODE >495:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+21 intentry CODE >496:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+22 intentry CODE >497:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+23 intentry CODE >498:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2A intentry CODE >498:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2F intentry CODE >498:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+32 intentry CODE >498:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+36 intentry CODE >499:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+37 intentry CODE >501:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+38 intentry CODE >502:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+38 intentry CODE >505:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+43 intentry CODE >506:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+48 intentry CODE >506:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4C intentry CODE >506:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+50 intentry CODE >507:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+56 intentry CODE >509:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+5C intentry CODE >509:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+60 intentry CODE >509:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+64 intentry CODE >510:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+6A intentry CODE >511:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+6D intentry CODE >517:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+F14 text28 CODE >33:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
+F14 text28 CODE >37:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
+F16 text28 CODE >38:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
+F17 text28 CODE >39:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
+FBD text27 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+FBD text27 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+FBF text27 CODE >45:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+FC3 text27 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+FC7 text27 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+FCC text27 CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+FD1 text27 CODE >49:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+FD7 text27 CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+FDB text27 CODE >53:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+64D text26 CODE >376:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+64F text26 CODE >387:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+654 text26 CODE >388:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+656 text26 CODE >389:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+659 text26 CODE >390:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+65A text26 CODE >391:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+65C text26 CODE >391:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+660 text26 CODE >393:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+660 text26 CODE >394:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+663 text26 CODE >395:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+666 text26 CODE >396:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+667 text26 CODE >397:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+67A text26 CODE >398:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+685 text26 CODE >399:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+691 text26 CODE >402:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+F4A text25 CODE >13:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
+F4A text25 CODE >18:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
+F4C text25 CODE >19:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
+F4D text25 CODE >26:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
+F50 text25 CODE >29:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
+F51 text25 CODE >30:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
+F52 text25 CODE >32:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
+F53 text25 CODE >34:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
+F54 text25 CODE >35:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
+F55 text25 CODE >36:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
+F56 text25 CODE >37:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
+59A text24 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+59A text24 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+59C text24 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5A0 text24 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5A3 text24 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5A5 text24 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5A7 text24 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5AB text24 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5AE text24 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5B0 text24 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5B4 text24 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5B6 text24 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5BC text24 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5BE text24 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5BF text24 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5C4 text24 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5C8 text24 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5CC text24 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5D1 text24 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5D3 text24 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5D7 text24 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5DB text24 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5DF text24 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5E0 text24 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5E5 text24 CODE >36:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5EB text24 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5F0 text24 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5F3 text24 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5F5 text24 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+5F9 text24 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+F0C text23 CODE >474:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+F0C text23 CODE >475:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+F0D text23 CODE >476:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+F19 text22 CODE >48:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F19 text22 CODE >49:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F1B text22 CODE >50:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F10 text21 CODE >471:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+F10 text21 CODE >472:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+F11 text21 CODE >473:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+F1E text20 CODE >45:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F1E text20 CODE >46:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F20 text20 CODE >47:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+6D3 text19 CODE >414:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+6D3 text19 CODE >420:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+6D5 text19 CODE >423:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+6DA text19 CODE >425:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+6DB text19 CODE >426:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+6DF text19 CODE >428:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+6E1 text19 CODE >429:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+6E3 text19 CODE >430:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+6E7 text19 CODE >432:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+6EA text19 CODE >434:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+6EB text19 CODE >437:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+6EB text19 CODE >439:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+6EC text19 CODE >440:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+6F0 text19 CODE >442:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+6FA text19 CODE >443:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+701 text19 CODE >445:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+703 text19 CODE >446:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+705 text19 CODE >447:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+709 text19 CODE >448:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+F2E text18 CODE >20:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F2E text18 CODE >21:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F33 text18 CODE >22:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F3E text17 CODE >39:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
+F3F text17 CODE >41:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
+F44 text17 CODE >42:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
+F47 text17 CODE >43:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
+693 text16 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+693 text16 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+69D text16 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+6A1 text16 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+6A2 text16 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+6C2 text16 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+6C6 text16 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+6CA text16 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+6D0 text16 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+6D2 text16 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+51E text15 CODE >692:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+51F text15 CODE >702:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+531 text15 CODE >703:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+537 text15 CODE >703:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+539 text15 CODE >705:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+53D text15 CODE >706:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+541 text15 CODE >1372:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+552 text15 CODE >1373:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+558 text15 CODE >1373:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+55A text15 CODE >1374:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+565 text15 CODE >1375:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+56B text15 CODE >1379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+571 text15 CODE >1379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+573 text15 CODE >1380:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+576 text15 CODE >1384:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+58F text15 CODE >1385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+596 text15 CODE >1385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+599 text15 CODE >1387:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+79B text14 CODE >1390:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+79D text14 CODE >1395:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7A1 text14 CODE >1396:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7A3 text14 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7A4 text14 CODE >1398:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7B5 text14 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7BE text14 CODE >1400:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7C2 text14 CODE >1404:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+F98 text13 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+F98 text13 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+F9D text13 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+FA9 text13 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+F68 text12 CODE >26:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F68 text12 CODE >27:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F6D text12 CODE >29:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F75 text12 CODE >31:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F36 text11 CODE >23:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F36 text11 CODE >24:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F3B text11 CODE >25:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F78 text10 CODE >39:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F78 text10 CODE >40:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F7D text10 CODE >42:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F85 text10 CODE >44:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F88 text9 CODE >32:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F88 text9 CODE >33:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F8D text9 CODE >35:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+F95 text9 CODE >38:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+4A1 text8 CODE >449:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4A1 text8 CODE >451:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4A7 text8 CODE >451:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4AB text8 CODE >451:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4AF text8 CODE >453:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4B4 text8 CODE >454:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4B9 text8 CODE >455:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4BF text8 CODE >455:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4C3 text8 CODE >455:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4C7 text8 CODE >457:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4CC text8 CODE >458:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4D1 text8 CODE >459:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4D7 text8 CODE >459:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4DB text8 CODE >459:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4DF text8 CODE >461:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4E4 text8 CODE >462:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4E9 text8 CODE >463:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4EF text8 CODE >463:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4F3 text8 CODE >463:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4F7 text8 CODE >465:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+4FC text8 CODE >466:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+501 text8 CODE >467:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+507 text8 CODE >467:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+50B text8 CODE >467:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+50F text8 CODE >468:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+514 text8 CODE >469:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+51B text8 CODE >470:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+96 text7 CODE >41:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+96 text7 CODE >42:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+97 text7 CODE >44:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+9A text7 CODE >45:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+9D text7 CODE >46:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+A2 text7 CODE >48:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+AA text7 CODE >50:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+B0 text7 CODE >51:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+B1 text7 CODE >55:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+B3 text7 CODE >56:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+B5 text7 CODE >57:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+B7 text7 CODE >58:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+B9 text7 CODE >59:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+BC text7 CODE >61:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+C1 text7 CODE >62:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+C5 text7 CODE >64:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+CD text7 CODE >66:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+CE text7 CODE >71:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+D5 text7 CODE >81:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+DA text7 CODE >81:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+DE text7 CODE >84:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+E2 text7 CODE >86:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+EA text7 CODE >88:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+EB text7 CODE >92:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+EF text7 CODE >93:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+F3 text7 CODE >94:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+F7 text7 CODE >95:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+FB text7 CODE >97:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+104 text7 CODE >102:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+109 text7 CODE >102:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+10D text7 CODE >102:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+111 text7 CODE >103:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+117 text7 CODE >104:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+118 text7 CODE >106:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+11E text7 CODE >109:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+126 text7 CODE >111:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+127 text7 CODE >114:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+12B text7 CODE >117:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+132 text7 CODE >121:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+135 text7 CODE >121:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+139 text7 CODE >124:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+13D text7 CODE >127:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+13E text7 CODE >128:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+13E text7 CODE >129:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+140 text7 CODE >131:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+149 text7 CODE >133:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+14A text7 CODE >134:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+14A text7 CODE >135:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+14C text7 CODE >137:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+155 text7 CODE >139:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+156 text7 CODE >147:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+15B text7 CODE >147:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+160 text7 CODE >147:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+163 text7 CODE >147:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+166 text7 CODE >147:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+169 text7 CODE >148:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+16F text7 CODE >149:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+173 text7 CODE >150:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+174 text7 CODE >157:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+176 text7 CODE >158:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+178 text7 CODE >159:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+17A text7 CODE >160:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+17C text7 CODE >163:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+17F text7 CODE >164:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+186 text7 CODE >168:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+18B text7 CODE >168:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+18F text7 CODE >168:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+193 text7 CODE >169:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+19A text7 CODE >171:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1A1 text7 CODE >176:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1A1 text7 CODE >178:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1A3 text7 CODE >179:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1A4 text7 CODE >180:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1A5 text7 CODE >184:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1A8 text7 CODE >185:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1AA text7 CODE >186:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1AC text7 CODE >187:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1AE text7 CODE >190:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1B1 text7 CODE >191:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1B6 text7 CODE >193:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1BE text7 CODE >196:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1BF text7 CODE >202:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1C1 text7 CODE >204:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1C9 text7 CODE >205:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1CC text7 CODE >212:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1CF text7 CODE >213:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1D2 text7 CODE >216:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1DA text7 CODE >221:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1DC text7 CODE >223:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1DF text7 CODE >226:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1E7 text7 CODE >237:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1EA text7 CODE >244:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1EC text7 CODE >246:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1F3 text7 CODE >246:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1F7 text7 CODE >246:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1FB text7 CODE >249:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+203 text7 CODE >252:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+20B text7 CODE >255:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+224 text7 CODE >256:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+234 text7 CODE >266:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+239 text7 CODE >266:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+23D text7 CODE >266:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+241 text7 CODE >267:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+243 text7 CODE >268:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+24C text7 CODE >269:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+250 text7 CODE >270:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+251 text7 CODE >271:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+253 text7 CODE >272:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+255 text7 CODE >274:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+25A text7 CODE >280:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+262 text7 CODE >282:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+263 text7 CODE >285:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+26B text7 CODE >287:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+26C text7 CODE >290:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+274 text7 CODE >292:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+275 text7 CODE >295:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+27D text7 CODE >297:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+27E text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+284 text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+289 text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+28C text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+28F text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+292 text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+295 text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+298 text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+29B text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+29E text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+2A1 text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+2A4 text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+2A7 text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+2AA text7 CODE >299:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+5FA text6 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+5FA text6 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+5FB text6 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+5FF text6 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+602 text6 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+604 text6 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+606 text6 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+60A text6 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+60D text6 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+60F text6 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+615 text6 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+617 text6 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+618 text6 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+61D text6 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+621 text6 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+625 text6 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+627 text6 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+62B text6 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+62F text6 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+633 text6 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+638 text6 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+63E text6 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+643 text6 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+646 text6 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+648 text6 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+64C text6 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+F23 text5 CODE >41:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
+F23 text5 CODE >45:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
+F25 text5 CODE >46:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
+F26 text5 CODE >47:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
+FDC text4 CODE >66:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FDE text4 CODE >74:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FE1 text4 CODE >77:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FE3 text4 CODE >78:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FE7 text4 CODE >79:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FE9 text4 CODE >82:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FED text4 CODE >83:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FF1 text4 CODE >84:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FF2 text4 CODE >86:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FF4 text4 CODE >87:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FF8 text4 CODE >88:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FFA text4 CODE >92:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FFD text4 CODE >93:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+417 text3 CODE >19:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
+417 text3 CODE >24:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
+41D text3 CODE >24:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
+421 text3 CODE >24:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
+425 text3 CODE >25:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
+42B text3 CODE >26:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
+464 text3 CODE >28:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
+495 text3 CODE >30:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
+49F text3 CODE >31:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
+FAA text2 CODE >26:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FAA text2 CODE >33:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FAC text2 CODE >34:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FAD text2 CODE >37:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FB1 text2 CODE >38:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FB2 text2 CODE >56:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FB4 text2 CODE >58:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FB6 text2 CODE >60:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FB8 text2 CODE >61:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+FBA text2 CODE >64:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
+F59 text1 CODE >405:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+F59 text1 CODE >407:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+F5C text1 CODE >408:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+F5D text1 CODE >410:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+F61 text1 CODE >411:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+F65 text1 CODE >412:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+F66 text1 CODE >413:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2AD maintext CODE >107:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2AD maintext CODE >114:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2AF maintext CODE >118:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2B1 maintext CODE >120:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2B2 maintext CODE >123:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2B5 maintext CODE >124:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2B6 maintext CODE >125:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2BA maintext CODE >129:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2BB maintext CODE >130:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2BC maintext CODE >131:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2BD maintext CODE >132:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2BE maintext CODE >133:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2BF maintext CODE >135:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2C0 maintext CODE >136:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2C1 maintext CODE >137:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2C2 maintext CODE >139:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2C3 maintext CODE >140:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2C4 maintext CODE >141:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2C5 maintext CODE >142:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2C6 maintext CODE >143:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2C7 maintext CODE >144:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2C8 maintext CODE >146:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2C9 maintext CODE >147:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2CA maintext CODE >148:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2CB maintext CODE >149:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2CC maintext CODE >159:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2CE maintext CODE >160:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2CF maintext CODE >161:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2D0 maintext CODE >162:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2D1 maintext CODE >165:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2D2 maintext CODE >166:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2D3 maintext CODE >169:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2D5 maintext CODE >170:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2D7 maintext CODE >171:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2D8 maintext CODE >174:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2DA maintext CODE >175:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2DB maintext CODE >178:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2DC maintext CODE >180:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2DE maintext CODE >181:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2DF maintext CODE >183:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2E0 maintext CODE >185:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2E5 maintext CODE >186:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2E6 maintext CODE >187:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2E7 maintext CODE >189:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2E9 maintext CODE >190:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2EB maintext CODE >191:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2EC maintext CODE >194:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2ED maintext CODE >195:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2EE maintext CODE >198:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2F0 maintext CODE >200:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2F1 maintext CODE >202:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2F3 maintext CODE >204:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2F8 maintext CODE >205:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+2FC maintext CODE >206:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+300 maintext CODE >208:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+302 maintext CODE >209:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+304 maintext CODE >211:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+306 maintext CODE >213:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+307 maintext CODE >215:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+308 maintext CODE >217:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+30A maintext CODE >218:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+30B maintext CODE >219:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+30E maintext CODE >224:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+30F maintext CODE >225:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+311 maintext CODE >226:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+314 maintext CODE >227:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+317 maintext CODE >228:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+31A maintext CODE >229:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+323 maintext CODE >230:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+324 maintext CODE >231:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+328 maintext CODE >232:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+32B maintext CODE >234:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+32E maintext CODE >237:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+338 maintext CODE >238:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+340 maintext CODE >239:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+348 maintext CODE >241:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+354 maintext CODE >242:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+355 maintext CODE >245:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+35A maintext CODE >246:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+35B maintext CODE >250:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+363 maintext CODE >251:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+37C maintext CODE >252:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+38C maintext CODE >253:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+391 maintext CODE >253:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+395 maintext CODE >253:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+399 maintext CODE >255:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+39B maintext CODE >256:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3A4 maintext CODE >257:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3A7 maintext CODE >260:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3AC maintext CODE >261:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3B0 maintext CODE >263:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3B1 maintext CODE >264:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3B2 maintext CODE >266:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3B4 maintext CODE >267:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3B6 maintext CODE >268:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3B8 maintext CODE >269:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3BA maintext CODE >270:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3BC maintext CODE >271:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3BF maintext CODE >274:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3C0 maintext CODE >275:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3C1 maintext CODE >276:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3C3 maintext CODE >277:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3C5 maintext CODE >278:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3C6 maintext CODE >279:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3C9 maintext CODE >280:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3CA maintext CODE >282:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3CB maintext CODE >283:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3CD maintext CODE >284:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3CF maintext CODE >285:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3D1 maintext CODE >286:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3D2 maintext CODE >287:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3DA maintext CODE >287:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3DF maintext CODE >287:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3E2 maintext CODE >287:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3E5 maintext CODE >289:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3E8 maintext CODE >293:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3EC maintext CODE >294:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3F0 maintext CODE >295:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3F1 maintext CODE >299:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3F4 maintext CODE >299:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3F8 maintext CODE >300:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+3FF maintext CODE >301:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+40A maintext CODE >303:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+410 maintext CODE >307:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+F28 clrtext CODE >2648:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+F28 clrtext CODE >2649:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+F29 clrtext CODE >2650:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+F29 clrtext CODE >2651:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+F2A clrtext CODE >2652:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+F2B clrtext CODE >2653:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+F2C clrtext CODE >2654:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+F2D clrtext CODE >2655:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__ccov121_end_blk0 CA8 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+___latbits 2 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+___awdiv@counter 4C 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov198_end_blk10 18A 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_Click_reset 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+putch@data 75 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov146_end_blk13 DE0 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_enable_external_interrupt 1E28 0 CODE 0 text21 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov80_end_blk69 6A8 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov309_start_blk0 1F10 0 CODE 0 text9 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_set_watchdog_timer_128ms 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_set_watchdog_timer_256ms 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hspace_0 119F 0 ABS 0 - -
+__Hspace_1 398 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10010 0 ABS 0 - -
+_checkState1 12C 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov42_start_blk31 5B0 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov122_end_blk1 CAC 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov123_start_blk2 CAC 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov73_start_blk62 646 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_SSP1STATbits 214 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov36_start_blk25 5A0 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov140_end_blk6 DC6 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov183_start_blk13 7A 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov257_end_blk99 4EA 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_PWM_set C9A 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov28_end_blk17 590 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov205_end_blk19 1E6 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov67_start_blk56 61C 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov146_start_blk13 DD8 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov123_end_blk2 CB4 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov98_start_blk88 770 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__ccov8_start_blk1 1E2E 0 CODE 0 text28 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pcodecov_info 0 0 ABS 6 codecov_info dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov55_end_blk44 5DC 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_DoorStateAfterPrel 46 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov232_end_blk61 36C 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov250_start_blk86 482 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov141_end_blk7 DCE 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_millivolts 40 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov213_start_blk32 24E 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit1_27 137 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit1_28 136 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit1_29 135 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit1_68 10E -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit1_69 10D -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit1_73 109 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit1_74 108 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit2_14 386 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit2_20 380 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit2_70 10C -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit2_71 10B -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit2_72 10A -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit3_18 382 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit3_30 134 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit4_38 12C -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit5_39 12B -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit5_67 10F -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit79_7 38D -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit6_15 385 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit6_21 13D -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit7_31 133 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit7_64 112 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit91_8 38C -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit95_9 38B -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit8_66 110 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov148_end_blk16 E06 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov124_end_blk4 CC0 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov244_start_blk80 3D8 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov82_end_blk71 6B4 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov30_end_blk19 594 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hstrings 0 0 ABS 0 strings -
+__ccov207_start_blk21 1EE 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov304_start_blk0 1E6C 0 CODE 0 text11 dist/default/debug\Gardengate_v4_LED.X.debug.o
+?_vfprintf 58 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov238_start_blk69 398 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_BRGH CF2 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_INTE 5C 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_INTF 59 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_PIR1 11 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_PIR2 12 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_PIR3 13 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_PIR4 14 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_SCKP CFC 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_SPEN CEF 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_SYNC CF4 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_TXEN CF5 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_TXIF 8C 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov142_end_blk8 DD4 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+___sp 0 0 STACK 2 stack C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+_main 55A 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_nout 28 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_prec 2C 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+btemp 7E 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov125_end_blk5 CC6 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+start E2 0 CODE 0 init C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+_watch_dog_incrementing_timer 942 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov266_start_blk5 1F6C 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov140_start_blk6 DC2 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of___awmod 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov288_start_blk2 1E7C 0 CODE 0 text17 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_main 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov150_end_blk19 E16 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov207_end_blk21 1F6 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hstringtext10 0 0 ABS 0 stringtext10 -
+__Hstringtext11 0 0 ABS 0 stringtext11 -
+__Hstringtext12 0 0 ABS 0 stringtext12 -
+__Hstringtext13 0 0 ABS 0 stringtext13 -
+__Hstringtext14 0 0 ABS 0 stringtext14 -
+__Hstringtext15 0 0 ABS 0 stringtext15 -
+__Hstringtext16 0 0 ABS 0 stringtext16 -
+__Hstringtext17 0 0 ABS 0 stringtext17 -
+__Hstringtext18 0 0 ABS 0 stringtext18 -
+__Hstringtext19 0 0 ABS 0 stringtext19 -
+__Hstringtext20 0 0 ABS 0 stringtext20 -
+__Hstringtext21 0 0 ABS 0 stringtext21 -
+__Hstringtext22 0 0 ABS 0 stringtext22 -
+__Hstringtext23 0 0 ABS 0 stringtext23 -
+__Hstringtext24 0 0 ABS 0 stringtext24 -
+__ccov143_end_blk9 DD6 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__ccov126_end_blk6 CCE 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov110_end_blk106 7FE 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov3_start_blk2 856 0 CODE 0 text3 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov57_end_blk46 5E2 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov258_end_blk101 4FC 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov234_end_blk64 382 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+?___wmul 75 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+_OPTION_REGbits 95 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov70_start_blk59 628 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov84_end_blk73 6C6 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov32_end_blk21 598 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov137_start_blk2 DB4 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov33_start_blk22 598 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov127_end_blk8 CF4 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov180_start_blk10 46 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov15_start_blk4 574 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov64_start_blk53 610 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__HbitnvBANK0 0 0 ABS 0 bitnvBANK0 -
+__ccov27_start_blk16 58C 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov95_start_blk85 764 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hpowerup 0 0 CODE 0 powerup -
+__ccov58_start_blk47 5E2 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov107_end_blk102 7D8 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pbitbssCOMMON 380 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov261_start_blk0 1F54 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov128_end_blk9 D0A 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov283_start_blk5 1EA6 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov89_start_blk78 736 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov209_end_blk25 222 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov100_end_blk90 780 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov210_start_blk26 222 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_vfpfcnvrt B34 0 CODE 0 text15 dist/default/debug\Gardengate_v4_LED.X.debug.o
+___awmod@sign 7B 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+___resetbits 20 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+__ccov199_start_blk11 18A 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov241_start_blk72 3B8 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov59_end_blk48 604 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov204_start_blk18 1D6 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov236_end_blk66 392 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_WakeUpCounter 30 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov235_start_blk65 382 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov318_start_blk1 1E36 0 CODE 0 text22 dist/default/debug\Gardengate_v4_LED.X.debug.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+__ccov86_end_blk75 718 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_WDTCONbits 97 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov34_end_blk23 59E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov229_start_blk58 342 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov211_end_blk28 23C 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__ccov132_start_blk1 1EB8 0 CODE 0 text1 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov154_start_blk4 972 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov10_start_blk1 1E4C 0 CODE 0 text5 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov176_start_blk3 22 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+_OSCCONbits 99 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov61_end_blk50 60C 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+wtemp0 7E 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__ccov102_end_blk93 796 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_PSTR1CONbits 296 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov30_start_blk19 592 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov181_end_blk11 70 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov238_end_blk69 3A4 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_enable_external_interrupt 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+___awdiv@sign 4D 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_timer2_init 1EB2 0 CODE 0 text1 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov61_start_blk50 608 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hclrtext 0 0 ABS 0 clrtext -
+__ccov109_start_blk105 7E2 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_vfpfcnvrt A3C 0 CODE 0 text15 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov313_start_blk1 1EFA 0 CODE 0 text10 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov24_start_blk13 586 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov92_start_blk82 758 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov103_start_blk94 796 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov258_start_blk101 4EA 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov88_end_blk77 736 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov36_end_blk25 5A2 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov55_start_blk44 5DA 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov213_end_blk32 256 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov86_start_blk75 6F8 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov275_start_blk8 1FF0 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov165_start_blk18 A28 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov129_end_blk10 D22 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_sleep_256s_counter 32 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__LbitnvBANK0 0 0 ABS 0 bitnvBANK0 -
+__ccov49_start_blk38 5CA 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_disable_external_interrupt 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+___wmul@multiplicand 77 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov171_start_blk1 1E1A 0 CODE 0 text23 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov112_start_blk108 814 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_set_watchdog_timer_128ms 1E6C 0 CODE 0 text18 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_BatteryVoltage 4A 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_set_watchdog_timer_256ms 1E7C 0 CODE 0 text11 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov63_end_blk52 610 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov240_end_blk71 3B8 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov193_start_blk4 144 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pcodecov_info_hdr 0 0 ABS 6 codecov_info_hdr dist/default/debug\Gardengate_v4_LED.X.debug.o
+_ADRESH 9C 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_ADRESL 9B 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov159_start_blk10 9C8 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov201_start_blk14 1AA 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_getBatteryVoltage 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov168_end_blk0 1E22 0 CODE 0 text21 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_ANSELA 18C 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_ANSELC 18E 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_disable_watchdog_timer 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov232_start_blk61 362 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov104_end_blk95 7A4 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov90_end_blk79 74E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+___awdiv@dividend 77 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_set_watchdog_timer_1s 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_set_watchdog_timer_4s 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_set_watchdog_timer_256s 1EF0 0 CODE 0 text10 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov226_start_blk53 30C 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov183_end_blk13 86 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+_CCPR1L 291 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov257_start_blk99 4D8 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov124_start_blk4 CB4 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov169_end_blk1 1E28 0 CODE 0 text21 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_FVRCONbits 117 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_int2bcd 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov168_start_blk0 1E20 0 CODE 0 text21 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_set_watchdog_timer_256s 1F10 0 CODE 0 text10 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov38_end_blk27 5A6 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of___wmul 1FB8 0 CODE 0 text27 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov215_end_blk34 272 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_MDSRCbits 39D 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov9_start_blk0 1E46 0 CODE 0 text5 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov270_start_blk1 1FC2 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov65_end_blk54 616 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov242_end_blk78 3D4 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_CM1CON0bits 111 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lmaintext 0 0 ABS 0 maintext -
+__ccov92_end_blk82 760 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_FVRCON 117 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov40_end_blk29 5AE 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov21_start_blk10 580 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+?_printf 5E 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov305_start_blk1 1E76 0 CODE 0 text11 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov100_start_blk90 778 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hcodecov_info_hdr 10 0 ABS 6 codecov_info_hdr -
+__ccov52_start_blk41 5D2 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+___awdiv@divisor 75 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov185_end_blk15 AC 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov83_start_blk72 6B4 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+spi1_send@data1 50 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+spi1_send@data2 7C 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of___awdiv BF4 0 CODE 0 text24 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of___awmod C9A 0 CODE 0 text6 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov162_start_blk14 9F8 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov267_start_blk6 1F70 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov46_start_blk35 5BC 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov141_start_blk7 DC6 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_C7SEG_CHAR_TABLE E7E 0 STRCODE 0 stringtext1 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov289_start_blk4 1E88 0 CODE 0 text17 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov77_start_blk66 65C 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov160_end_blk12 9EE 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov217_end_blk36 280 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov10_end_blk1 1E50 0 CODE 0 text5 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov187_start_blk17 C8 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov111_end_blk107 814 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov4_start_blk4 8C8 0 CODE 0 text3 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov67_end_blk56 61E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov259_end_blk104 554 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov244_end_blk80 3F6 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+___stackhi 23EF 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+___stacklo 2070 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+__ccov261_end_blk0 1F5A 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov223_start_blk48 2E8 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov11_end_blk0 564 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov254_start_blk91 4AA 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov94_end_blk84 764 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov217_start_blk36 27C 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov42_end_blk31 5B4 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov138_start_blk4 DB6 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov248_start_blk84 448 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov16_start_blk5 576 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov187_end_blk17 D4 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov262_end_blk1 1F62 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_fputc 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_disable_external_interrupt 1E18 0 CODE 0 text23 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov12_end_blk1 56A 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_putch 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov108_end_blk103 7E2 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov262_start_blk1 1F5A 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov280_end_blk2 1EA2 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov284_start_blk6 1EA8 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov162_end_blk14 A02 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov219_end_blk38 298 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov263_end_blk2 1F64 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov13_end_blk2 56C 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lstringtext10 0 0 ABS 0 stringtext10 -
+__Lstringtext11 0 0 ABS 0 stringtext11 -
+__Lstringtext12 0 0 ABS 0 stringtext12 -
+__Lstringtext13 0 0 ABS 0 stringtext13 -
+__Lstringtext14 0 0 ABS 0 stringtext14 -
+__Lstringtext15 0 0 ABS 0 stringtext15 -
+__Lstringtext16 0 0 ABS 0 stringtext16 -
+__Lstringtext17 0 0 ABS 0 stringtext17 -
+__Lstringtext18 0 0 ABS 0 stringtext18 -
+__Lstringtext19 0 0 ABS 0 stringtext19 -
+__Lstringtext20 0 0 ABS 0 stringtext20 -
+__Lstringtext21 0 0 ABS 0 stringtext21 -
+__Lstringtext22 0 0 ABS 0 stringtext22 -
+__Lstringtext23 0 0 ABS 0 stringtext23 -
+__Lstringtext24 0 0 ABS 0 stringtext24 -
+_WPUAbits 20C 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov69_end_blk58 628 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_enable_watchdog_timer 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov246_end_blk82 416 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+start_initialization EC 0 CODE 0 cinit dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov281_end_blk3 1EA4 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov80_start_blk69 690 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov264_end_blk3 1F68 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov96_end_blk86 76C 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit101_62 114 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit103_10 38A -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit106_11 389 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit106_63 113 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit108_12 388 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit111_13 387 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov14_end_blk3 574 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov43_start_blk32 5B4 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov44_end_blk33 5B8 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov221_end_blk44 2D2 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov133_start_blk2 1ECA 0 CODE 0 text1 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov74_start_blk63 648 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov155_start_blk5 98E 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov189_end_blk22 E2 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+_TRISAbits 8C 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov282_end_blk4 1EA6 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_TRISBbits 8D 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov11_start_blk0 55A 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_TRISCbits 8E 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov177_start_blk5 36 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+_Click_reset 1E28 0 CODE 0 text28 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov37_start_blk26 5A2 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov184_start_blk14 86 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov71_end_blk60 634 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov265_end_blk4 1F6C 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov68_start_blk57 61E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov147_start_blk15 DE0 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov15_end_blk4 576 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov99_start_blk89 774 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_SRCON0bits 11A 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov164_end_blk17 A28 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov220_start_blk39 298 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov283_end_blk5 1EA8 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov251_start_blk87 486 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov266_end_blk5 1F70 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov214_start_blk33 256 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_my_isr E2 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+_state_door 49 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_watch_dog_incrementing_timer 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov248_end_blk84 468 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov302_end_blk0 1E66 0 CODE 0 text18 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov16_end_blk5 578 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov245_start_blk81 3F6 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+clear_ram0 1E50 0 CODE 0 clrtext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pcstackBANK0 4C 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov208_start_blk22 1F6 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov314_start_blk2 1F0A 0 CODE 0 text10 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov284_end_blk6 1EAA 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov98_end_blk88 774 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov239_start_blk70 3A4 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov46_end_blk35 5BE 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov223_end_blk48 2F8 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov267_end_blk6 1F74 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov303_end_blk1 1E6C 0 CODE 0 text18 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov17_end_blk6 57A 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov276_start_blk9 1FF4 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_watch_dog_incrementing_timer A3C 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov73_end_blk62 648 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_printf 1F54 0 CODE 0 text13 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov250_end_blk86 486 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov285_end_blk7 1EAC 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov194_start_blk5 154 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov21_end_blk10 582 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_enable_external_interrupt 1E20 0 CODE 0 text21 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov268_end_blk7 1F7A 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov166_end_blk22 A36 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov304_end_blk0 1E76 0 CODE 0 text11 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov18_end_blk7 57C 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_spi1_init 1F7A 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_spi1_send 2000 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_MDCONbits 39C 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+fputc@fp 78 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov1_end_blk0 84A 0 CODE 0 text3 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov40_start_blk29 5AA 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov286_end_blk8 1EB2 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_spi1_init 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_spi1_send 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov71_start_blk60 62E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+___int_sp 0 0 STACK 2 stack C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+__end_of_int2bcd 942 0 CODE 0 text3 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov125_start_blk5 CC0 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov269_end_blk0 1FC2 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov150_start_blk19 E12 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov305_end_blk1 1E7C 0 CODE 0 text11 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov19_end_blk8 57E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov34_start_blk23 59C 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+main@output_polarity 394 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__ccov259_start_blk104 4FC 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov181_start_blk11 6A 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov169_start_blk1 1E22 0 CODE 0 text21 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hcinit 12C 0 CODE 0 cinit -
+__ccov65_start_blk54 614 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov277_end_blk10 2000 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov2_end_blk1 856 0 CODE 0 text3 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov48_end_blk37 5CA 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__ccov225_end_blk50 30C 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hstack 0 0 STACK 2 stack -
+__end_of_checkState1 55A 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov28_start_blk17 58E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov96_start_blk86 768 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__ccov59_start_blk48 600 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov271_start_blk2 1FCE 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov113_start_blk111 820 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hbigram 0 0 ABS 0 bigram -
+__ccov306_end_blk0 1EDA 0 CODE 0 text12 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hmaintext 0 0 ABS 0 maintext -
+__ccov75_end_blk64 656 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_getBatteryVoltage E16 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov252_end_blk88 4A2 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov23_end_blk12 586 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov200_end_blk13 1AA 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov211_start_blk28 230 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov3_end_blk2 8C8 0 CODE 0 text3 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov288_end_blk2 1E88 0 CODE 0 text17 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov242_start_blk78 3CE 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10012 0 CONFIG 4 config -
+__ccov205_start_blk19 1DE 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_C7SEG_CHAR_TABLE EE4 0 STRCODE 0 stringtext1 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov50_end_blk39 5CE 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov307_end_blk1 1EEA 0 CODE 0 text12 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov306_start_blk0 1ED0 0 CODE 0 text12 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov236_start_blk66 38A 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov4_end_blk4 92A 0 CODE 0 text3 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit EC 0 CODE 0 cinit -
+__ccov289_end_blk4 1E8E 0 CODE 0 text17 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_spi1_init 1F54 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_spi1_send 1FB8 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov268_start_blk7 1F74 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+__ccov142_start_blk8 DCE 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov308_end_blk2 1EF0 0 CODE 0 text12 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov20_start_blk9 57E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov227_end_blk54 334 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit1_5 38F -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit1_6 38E -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit2_1 393 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit4_2 392 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit7_3 391 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit9_4 390 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov5_end_blk7 93E 0 CODE 0 text3 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_PORTAbits C 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov112_end_blk108 820 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov5_start_blk7 92A 0 CODE 0 text3 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov77_end_blk66 670 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov254_end_blk91 4B4 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_INTCONbits B 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov25_end_blk14 58A 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov202_end_blk15 1C4 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit E8 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__ccov309_end_blk0 1F1A 0 CODE 0 text9 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit E2 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pstringtext1 E7E 0 STRCODE 0 stringtext1 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext2 E16 0 STRCODE 0 stringtext2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext3 EE4 0 STRCODE 0 stringtext3 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext4 F86 0 STRCODE 0 stringtext4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext5 FD0 0 STRCODE 0 stringtext5 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext6 2000 0 STRCODE 0 stringtext6 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext7 203E 0 STRCODE 0 stringtext7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext8 207C 0 STRCODE 0 stringtext8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext9 20B8 0 STRCODE 0 stringtext9 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov6_end_blk9 942 0 CODE 0 text3 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_SSP1CON1 215 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext10 20F4 0 STRCODE 0 stringtext10 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext11 2128 0 STRCODE 0 stringtext11 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext12 2158 0 STRCODE 0 stringtext12 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext13 2188 0 STRCODE 0 stringtext13 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext14 21B8 0 STRCODE 0 stringtext14 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext15 21E6 0 STRCODE 0 stringtext15 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext16 2214 0 STRCODE 0 stringtext16 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext17 223E 0 STRCODE 0 stringtext17 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext18 2266 0 STRCODE 0 stringtext18 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext19 228E 0 STRCODE 0 stringtext19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext20 22B4 0 STRCODE 0 stringtext20 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext21 22D8 0 STRCODE 0 stringtext21 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext22 22FC 0 STRCODE 0 stringtext22 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext23 231E 0 STRCODE 0 stringtext23 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pstringtext24 0 0 STRCODE 0 stringtext24 dist/default/debug\Gardengate_v4_LED.X.debug.o
+___wmul 1F7A 0 CODE 0 text27 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov31_start_blk20 594 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov106_start_blk100 7CA 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__ccov52_end_blk41 5D6 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_prelCounter 3E 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov139_start_blk5 DBE 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+int$flags 7E 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_PWM_set 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+___timeout 104 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+__ccov62_start_blk51 60C 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__ccov17_start_blk6 578 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov25_start_blk14 588 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov93_start_blk83 760 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov145_end_blk11 DD8 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov104_start_blk95 79A 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_PR2 1B 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__S0 119F 0 ABS 0 - -
+__S1 C0 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__pbitbssBANK0 108 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov56_start_blk45 5DC 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov7_end_blk0 1E2E 0 CODE 0 text28 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov109_end_blk105 7F0 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov263_start_blk2 1F62 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov87_start_blk76 718 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov285_start_blk7 1EAA 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov166_start_blk22 A32 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov229_end_blk58 34A 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov129_start_blk10 D0A 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov202_start_blk15 1BC 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov8_end_blk1 1E32 0 CODE 0 text28 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov79_end_blk68 690 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov256_end_blk97 4D8 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov27_end_blk16 58E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov233_start_blk62 36C 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov204_end_blk18 1DE 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_sleep_1s_counter 36 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov227_start_blk54 326 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov54_end_blk43 5DA 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_NewStateChangeDetected 396 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov231_end_blk60 362 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov9_end_blk0 1E4C 0 CODE 0 text5 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov134_start_blk3 1ECC 0 CODE 0 text1 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov131_end_blk0 1EB8 0 CODE 0 text1 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov156_start_blk6 998 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov199_end_blk11 19C 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov12_start_blk1 564 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit10_16 384 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit10_22 13C -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit10_65 111 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit11_32 132 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit11_40 12A -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit13_33 131 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit14_17 383 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit14_23 13B -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit15_34 130 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit16_41 129 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit17_35 12F -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit18_24 13A -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit19_19 381 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit19_36 12E -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit22_25 139 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit22_37 12D -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit22_42 128 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit24_26 138 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit26_43 127 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit28_44 126 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit30_45 125 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov178_start_blk6 38 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit37_46 124 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit39_47 123 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov147_end_blk15 E02 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit46_48 122 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit50_49 121 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit54_50 120 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit56_51 11F -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit62_52 11E -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit66_53 11D -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit67_54 11C -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit80_55 11B -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit88_56 11A -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit89_57 119 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit91_58 118 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit95_59 117 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit97_60 116 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccovbit99_61 115 -E7 BANK0 1 bitbssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov81_end_blk70 6AA 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov132_end_blk1 1ECA 0 CODE 0 text1 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov280_start_blk2 1EA0 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lcodecov_info_hdr 0 0 ABS 6 codecov_info_hdr -
+PWM_set@duty_cycle 4E 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov29_end_blk18 592 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov206_end_blk20 1EE 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov133_end_blk2 1ECC 0 CODE 0 text1 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov22_start_blk11 582 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov90_start_blk79 748 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_state_machine 48 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov315_start_blk0 1E3C 0 CODE 0 text20 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov101_start_blk91 780 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lintentry 8 0 CODE 0 intentry -
+__ccov53_start_blk42 5D6 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov56_end_blk45 5E0 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_sleep_4s_counter 34 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov233_end_blk62 37E 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov84_start_blk73 6B6 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+__ccov151_end_blk0 95E 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov163_start_blk16 A02 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov47_start_blk36 5BE 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov151_start_blk0 942 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov149_end_blk17 E12 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_timer2_init 1ED0 0 CODE 0 text1 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov134_end_blk3 1ED0 0 CODE 0 text1 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov83_end_blk72 6B6 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov78_start_blk67 670 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov195_start_blk7 162 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov31_end_blk20 596 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+main@write2display_copy 66 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_disable_watchdog_timer 1E32 0 CODE 0 text22 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov188_start_blk19 D4 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov230_start_blk59 34A 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of___wmul 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov152_end_blk1 968 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__ccov135_end_blk0 DAA 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+__Lstringtext2 0 0 ABS 0 stringtext2 -
+__Lstringtext3 0 0 ABS 0 stringtext3 -
+__Lstringtext4 0 0 ABS 0 stringtext4 -
+__Lstringtext5 0 0 ABS 0 stringtext5 -
+__Lstringtext6 0 0 ABS 0 stringtext6 -
+__Lstringtext7 0 0 ABS 0 stringtext7 -
+__Lstringtext8 0 0 ABS 0 stringtext8 -
+__Lstringtext9 0 0 ABS 0 stringtext9 -
+__ccov224_start_blk49 2F8 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+vfpfcnvrt@fmt 51 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov170_end_blk0 1E1A 0 CODE 0 text23 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov255_start_blk95 4B4 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov208_end_blk22 208 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov126_start_blk6 CC6 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov218_start_blk37 280 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov153_end_blk2 972 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+___awmod@counter 7A 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+_RCSTAbits 19D 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_PIE1bits 91 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov310_start_blk1 1F1A 0 CODE 0 text9 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov249_start_blk85 468 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov136_end_blk1 DB4 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov58_end_blk47 600 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov235_end_blk65 38A 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__LbitbssBANK0 0 0 ABS 0 bitbssBANK0 -
+__ccov171_end_blk1 1E20 0 CODE 0 text23 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_getBatteryVoltage DA6 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_my_isr 8 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov272_start_blk4 1FDA 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext10 1EF0 0 CODE 0 text10 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext11 1E6C 0 CODE 0 text11 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext12 1ED0 0 CODE 0 text12 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext13 1F30 0 CODE 0 text13 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext14 F36 0 CODE 0 text14 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext15 A3C 0 CODE 0 text15 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext16 D26 0 CODE 0 text16 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext17 1E7C 0 CODE 0 text17 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext18 1E5C 0 CODE 0 text18 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext19 DA6 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext20 1E3C 0 CODE 0 text20 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext21 1E20 0 CODE 0 text21 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext22 1E32 0 CODE 0 text22 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext23 1E18 0 CODE 0 text23 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext24 B34 0 CODE 0 text24 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext25 1E94 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext26 C9A 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext27 1F7A 0 CODE 0 text27 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext28 1E28 0 CODE 0 text28 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov154_end_blk4 98E 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov85_end_blk74 6F8 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov33_end_blk22 59C 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov210_end_blk26 230 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov190_start_blk0 12C 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+___awdiv B34 0 CODE 0 text24 dist/default/debug\Gardengate_v4_LED.X.debug.o
+___awmod BF4 0 CODE 0 text6 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov137_end_blk2 DB6 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 55A 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lbigram 0 0 ABS 0 bigram -
+__ccov60_end_blk49 608 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_Click_latch_data 1E46 0 CODE 0 text5 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov155_end_blk5 998 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov307_start_blk1 1EDA 0 CODE 0 text12 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov50_start_blk39 5CC 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov190_end_blk0 12E 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov81_start_blk70 6A8 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov138_end_blk4 DBE 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+_printf 1F30 0 CODE 0 text13 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov160_start_blk12 9D2 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov101_end_blk91 794 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov44_start_blk33 5B6 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hcodecov_info 26A8 0 ABS 6 codecov_info -
+__ccov121_start_blk0 C9A 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov269_start_blk0 1FB8 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+___powerdown 103 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+__ccov143_start_blk9 DD4 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+___wmul@multiplier 75 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov75_start_blk64 650 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_LATAbits 10C 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_LATCbits 10E 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov156_end_blk6 9A2 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_PWMtoggle 397 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov180_end_blk10 6A 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov237_end_blk67 398 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov38_start_blk27 5A4 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov185_start_blk15 A0 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov191_end_blk2 13A 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov139_end_blk5 DC2 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov69_start_blk58 622 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov148_start_blk16 E02 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov174_end_blk0 14 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov113_end_blk111 82A 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov6_start_blk9 93E 0 CODE 0 text3 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov87_end_blk76 732 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov221_start_blk44 2AC 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov35_end_blk24 5A0 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov212_end_blk30 24E 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov157_end_blk8 9BE 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov252_start_blk88 498 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov192_end_blk3 144 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_PWM_set D26 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov215_start_blk34 264 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov62_end_blk51 60E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov175_end_blk1 22 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov246_start_blk82 406 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov302_start_blk0 1E5C 0 CODE 0 text18 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov18_start_blk7 57A 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov209_start_blk25 208 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov277_start_blk10 1FFA 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_vfprintf 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov158_end_blk9 9C8 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov103_end_blk94 79A 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov193_end_blk4 154 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov264_start_blk3 1F64 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_checkState1 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov176_end_blk3 36 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov286_start_blk8 1EAC 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov182_end_blk12 7A 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov239_end_blk70 3B6 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov130_end_blk14 D26 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_ADCON0bits 9D 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_ADCON1bits 9E 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_CM2CON0bits 113 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov194_end_blk5 162 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov89_end_blk78 748 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_set_watchdog_timer_256s 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov1_start_blk0 82E 0 CODE 0 text3 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov37_end_blk26 5A4 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov214_end_blk33 264 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov177_end_blk5 38 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+?_vfpfcnvrt 51 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 7D 0 COMMON 1 bssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov41_start_blk30 5AE 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__HbitbssCOMMON 0 0 ABS 0 bitbssCOMMON -
+__ccov107_start_blk102 7D0 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_PWM1CONbits 294 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov64_end_blk53 614 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov241_end_blk72 3CE 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov195_end_blk7 172 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov72_start_blk61 634 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__ccov135_start_blk0 DA6 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_MDCARHbits 39F 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_my_isr 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_MDCARLbits 39E 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov157_start_blk8 9A2 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov35_start_blk24 59E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_PIR1bits 11 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov178_end_blk6 3C 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov13_start_blk2 56A 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lend_init E8 0 CODE 0 end_init -
+__ccov182_start_blk12 70 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov179_start_blk7 3C 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov105_end_blk98 7CA 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov66_start_blk55 616 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov91_end_blk81 758 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__ccov145_start_blk11 DD6 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov29_start_blk18 590 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov97_start_blk87 76C 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+printf@ap 60 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov110_start_blk106 7F0 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov196_end_blk8 178 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov184_end_blk14 A0 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov281_start_blk3 1EA2 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+end_of_initialization 124 0 CODE 0 cinit dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov179_end_blk7 46 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_Click_reset 1E32 0 CODE 0 text28 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov212_start_blk30 23C 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hintentry E2 0 CODE 0 intentry -
+__end_of_set_watchdog_timer_1s 1EF0 0 CODE 0 text12 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_set_watchdog_timer_4s 1F30 0 CODE 0 text9 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_printf 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov243_start_blk79 3D4 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+fputc@c 76 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov39_end_blk28 5AA 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov216_end_blk35 27C 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov197_end_blk9 182 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov206_start_blk20 1E6 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 4E 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+?___awdiv 75 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+?___awmod 75 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov316_start_blk1 1E40 0 CODE 0 text20 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_ihcPulseTimer 3C 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov237_start_blk67 392 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+vfprintf@fmt 58 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov66_end_blk55 61C 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov243_end_blk79 3D8 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__ccov278_start_blk0 1E94 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov152_start_blk1 95E 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+main@pwm_direction 338 -2D1 BANK0 1 bitnvBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov159_end_blk10 9D2 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__ccov174_start_blk0 8 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov93_end_blk83 762 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+___awmod@dividend 77 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov196_start_blk8 172 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_INLVLAbits 38C 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov41_end_blk30 5B0 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_int2bcd 82E 0 CODE 0 text3 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_UART_init 1EB2 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov186_end_blk16 C8 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+_sleep_256ms_counter 38 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_set_watchdog_timer_128ms 1E5C 0 CODE 0 text18 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_set_watchdog_timer_256ms 1E6C 0 CODE 0 text11 dist/default/debug\Gardengate_v4_LED.X.debug.o
+vfpfcnvrt@ap 52 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+vfpfcnvrt@fp 79 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_UART_init 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext1 1EB2 0 CODE 0 text1 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext2 1F54 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext3 82E 0 CODE 0 text3 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext4 1FB8 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext5 1E46 0 CODE 0 text5 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext6 BF4 0 CODE 0 text6 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext7 12C 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext8 942 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ptext9 1F10 0 CODE 0 text9 dist/default/debug\Gardengate_v4_LED.X.debug.o
+vfprintf@ap 5A 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+vfprintf@fp 5B 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov270_end_blk1 1FCE 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov161_end_blk13 9F8 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+vfprintf@cfmt 5C 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov218_end_blk37 294 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov20_end_blk9 580 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov127_start_blk8 CCE 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov32_start_blk21 596 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_set_watchdog_timer_1s 1ED0 0 CODE 0 text12 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_set_watchdog_timer_4s 1F10 0 CODE 0 text9 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov63_start_blk52 60E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov311_start_blk2 1F2A 0 CODE 0 text9 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov68_end_blk57 622 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov26_start_blk15 58A 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov94_start_blk84 762 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov245_end_blk81 406 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov105_start_blk98 7A4 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_vfprintf F36 0 CODE 0 text14 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov271_end_blk2 1FDA 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov57_start_blk46 5E0 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lpowerup 0 0 CODE 0 powerup -
+_APFCON0bits 11D 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__ccov273_start_blk6 1FE2 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_Click_latch_data 1E50 0 CODE 0 text5 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov88_start_blk77 732 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov95_end_blk85 768 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov167_start_blk24 A36 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov43_end_blk32 5B6 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov220_end_blk39 2AC 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov191_start_blk2 12E 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov198_start_blk10 182 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov240_start_blk71 3B6 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov188_end_blk19 DA 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov272_end_blk4 1FE2 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov203_start_blk16 1C4 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov70_end_blk59 62E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov234_start_blk64 37E 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__ccov308_start_blk2 1EEA 0 CODE 0 text12 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+__Hstringtext2 0 0 ABS 0 stringtext2 -
+__Hstringtext3 0 0 ABS 0 stringtext3 -
+__Hstringtext4 0 0 ABS 0 stringtext4 -
+__Hstringtext5 0 0 ABS 0 stringtext5 -
+__Hstringtext6 0 0 ABS 0 stringtext6 -
+__Hstringtext7 0 0 ABS 0 stringtext7 -
+__Hstringtext8 0 0 ABS 0 stringtext8 -
+__Hstringtext9 0 0 ABS 0 stringtext9 -
+__ccov290_end_blk5 1E94 0 CODE 0 text17 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_UART_init 1E94 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov163_end_blk16 A1E 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_Click_latch_data 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_vfprintf F86 0 CODE 0 text14 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov228_start_blk56 334 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov273_end_blk6 1FE4 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov122_start_blk1 CA8 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov247_end_blk83 448 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__size_of_timer2_init 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__HbitbssBANK0 0 0 ABS 0 bitbssBANK0 -
+__end_of__initialization 124 0 CODE 0 cinit dist/default/debug\Gardengate_v4_LED.X.debug.o
+___awmod@divisor 75 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__ccov274_end_blk7 1FF0 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov7_start_blk0 1E28 0 CODE 0 text28 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov97_end_blk87 770 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+int2bcd@number 51 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov310_end_blk1 1F2A 0 CODE 0 text9 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov290_start_blk5 1E8E 0 CODE 0 text17 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov45_end_blk34 5BC 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov222_end_blk46 2E8 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_enable_watchdog_timer 1E46 0 CODE 0 text20 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov72_end_blk61 646 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov60_start_blk49 604 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov275_end_blk8 1FF4 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_SSP1CON1bits 215 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov260_end_blk106 55A 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov311_end_blk2 1F30 0 CODE 0 text9 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov303_start_blk1 1E66 0 CODE 0 text18 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov23_start_blk12 584 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov19_start_blk8 57C 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov91_start_blk81 74E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov102_start_blk93 794 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov165_end_blk18 A32 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov54_start_blk43 5D8 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+getBatteryVoltage@adc_val 7A 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+int2bcd@comma 53 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov85_start_blk74 6C6 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov265_start_blk4 1F68 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov164_start_blk17 A1E 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov276_end_blk9 1FFA 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov48_start_blk37 5C0 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Lcodecov_info 0 0 ABS 6 codecov_info -
+__ccov249_end_blk85 482 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+PWM_set@scaled_duty_cycle 4C 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov312_end_blk0 1EFA 0 CODE 0 text10 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_disable_watchdog_timer 1E3C 0 CODE 0 text22 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov79_start_blk68 680 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pcstackCOMMON 73 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov200_start_blk13 19C 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_TXSTAbits 19E 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov189_start_blk22 DA 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov231_start_blk60 35C 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov99_end_blk89 778 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov2_start_blk1 84A 0 CODE 0 text3 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov47_end_blk36 5C0 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov224_end_blk49 2FE 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_SSP1BUF 211 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov313_end_blk1 1F0A 0 CODE 0 text10 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov225_start_blk50 2FE 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hend_init EC 0 CODE 0 end_init -
+__ccov74_end_blk63 650 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov256_start_blk97 4C6 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov251_end_blk87 498 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_enable_watchdog_timer 1E3C 0 CODE 0 text20 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov22_end_blk11 584 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov136_start_blk1 DAA 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov219_start_blk38 294 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov158_start_blk9 9BE 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_main 82E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov278_end_blk0 1E9A 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov14_start_blk3 56C 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov167_end_blk24 A3C 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov314_end_blk2 1F10 0 CODE 0 text10 dist/default/debug\Gardengate_v4_LED.X.debug.o
+printf@fmt 5E 0 BANK0 1 cstackBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_BRG16 CFB 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_disable_external_interrupt 1E20 0 CODE 0 text23 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov106_end_blk100 7D0 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_IOCAF 393 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_IOCBF 396 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_fputc DA6 0 CODE 0 text16 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov282_start_blk4 1EA4 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_SPBRG 19B 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_TXREG 19A 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__end_of_putch 1E94 0 CODE 0 text17 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov279_end_blk1 1EA0 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__ccov315_end_blk0 1E40 0 CODE 0 text20 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_flags 2E 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_fputc D26 0 CODE 0 text16 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_putch 1E7C 0 CODE 0 text17 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_width 2A 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov49_end_blk38 5CC 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov226_end_blk53 326 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_sleep_128ms_counter 3A 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pintentry 8 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov317_start_blk0 1E32 0 CODE 0 text22 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov51_start_blk40 5CE 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov108_start_blk103 7D8 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov130_start_blk14 D22 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pbitnvBANK0 338 -2D1 BANK0 1 bitnvBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov316_end_blk1 1E46 0 CODE 0 text20 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov82_start_blk71 6AA 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov76_end_blk65 65C 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov253_end_blk89 4AA 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov161_start_blk13 9EE 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov24_end_blk13 588 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov201_end_blk14 1BC 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov45_start_blk34 5B8 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__LbitbssCOMMON 0 0 ABS 0 bitbssCOMMON -
+__ccov131_start_blk0 1EB2 0 CODE 0 text1 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov279_start_blk1 1E9A 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov153_start_blk2 968 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov76_start_blk65 656 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov175_start_blk1 14 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov197_start_blk9 178 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov39_start_blk28 5A6 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov51_end_blk40 5D2 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__initialization EC 0 CODE 0 cinit dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov111_start_blk107 7FE 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov317_end_blk0 1E36 0 CODE 0 text22 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov186_start_blk16 AC 0 CODE 0 intentry dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pbssBANK0 28 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/debug\Gardengate_v4_LED.X.debug.o
+?_getBatteryVoltage 75 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+_DoorStateBeforePrel 47 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov149_start_blk17 E06 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov260_start_blk106 554 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_NewDoorPolarity 395 -310 COMMON 1 bitbssCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+_T2CONbits 1C 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov222_start_blk46 2D2 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov253_start_blk89 4A2 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+___wmul@product 79 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov318_end_blk1 1E3C 0 CODE 0 text22 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov228_end_blk56 342 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov216_start_blk35 272 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov128_start_blk9 CF4 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov247_start_blk83 416 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov312_start_blk0 1EF0 0 CODE 0 text10 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov78_end_blk67 680 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+_CCP1CONbits 293 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov255_end_blk95 4C6 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+_ANSELAbits 18C 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+_ANSELBbits 18D 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov26_end_blk15 58C 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov203_end_blk16 1D6 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov274_start_blk7 1FE4 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov170_start_blk0 1E18 0 CODE 0 text23 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov53_end_blk42 5D8 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov230_end_blk59 35C 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+__ccov192_start_blk3 13A 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 F59 1EB2 F 2
+text2 0 FAA 1F54 13 2
+text4 0 FDC 1FB8 24 2
+text5 0 F23 1E46 5 2
+text9 0 F88 1F10 10 2
+text10 0 F78 1EF0 10 2
+text11 0 F36 1E6C 8 2
+text12 0 F68 1ED0 10 2
+text13 0 F98 1F30 12 2
+text14 0 79B F36 28 2
+text17 0 F3E 1E7C C 2
+text18 0 F2E 1E5C 8 2
+text20 0 F1E 1E3C 5 2
+text21 0 F10 1E20 4 2
+text22 0 F19 1E32 5 2
+text23 0 F0C 1E18 4 2
+text25 0 F4A 1E94 F 2
+text27 0 FBD 1F7A 1F 2
+text28 0 F14 1E28 5 2
+stringtext2 0 70B E16 90 2
+stringtext4 0 7C3 F86 49 2
+stringtext6 0 1000 2000 19F 2
+bitbssBANK0 1 108 21 47 1
+intentry 0 4 8 707 2
+bitbssCOMMON 1 380 70 E 1
+reset_vec 0 0 0 3 2
+bssBANK1 1 A0 A0 20 1
+clrtext 0 F28 1E50 6 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
+$codecov_info 9896
+00 00 00 00 72 00 00 00 01 00 00 00 03 00 00 00 
+00 00 00 00 FF FF FF FF 03 00 00 00 2B 04 00 00 
+64 04 00 00 25 04 00 00 2B 04 00 00 17 04 00 00 
+25 04 00 00 00 00 00 00 72 00 00 00 01 00 00 00 
+02 00 00 00 00 00 00 00 FF FF FF FF 03 00 00 00 
+64 04 00 00 95 04 00 00 25 04 00 00 2B 04 00 00 
+17 04 00 00 25 04 00 00 00 00 00 00 72 00 00 00 
+01 00 00 00 01 00 00 00 00 00 00 00 FF FF FF FF 
+02 00 00 00 95 04 00 00 9F 04 00 00 17 04 00 00 
+25 04 00 00 00 00 00 00 72 00 00 00 01 00 00 00 
+00 00 00 00 00 00 00 00 FF FF FF FF 02 00 00 00 
+9F 04 00 00 A1 04 00 00 17 04 00 00 25 04 00 00 
+00 00 00 00 71 00 00 00 01 00 00 00 07 00 00 00 
+00 00 00 00 FF FF FF FF 02 00 00 00 17 0F 00 00 
+19 0F 00 00 14 0F 00 00 17 0F 00 00 00 00 00 00 
+71 00 00 00 01 00 00 00 06 00 00 00 00 00 00 00 
+FF FF FF FF 02 00 00 00 26 0F 00 00 28 0F 00 00 
+23 0F 00 00 26 0F 00 00 00 00 00 00 71 00 00 00 
+01 00 00 00 05 00 00 00 00 00 00 00 FF FF FF FF 
+50 00 00 00 A4 03 00 00 A7 03 00 00 9B 03 00 00 
+A4 03 00 00 99 03 00 00 9B 03 00 00 8C 03 00 00 
+99 03 00 00 7C 03 00 00 8C 03 00 00 63 03 00 00 
+7C 03 00 00 5B 03 00 00 63 03 00 00 5A 03 00 00 
+5B 03 00 00 55 03 00 00 5A 03 00 00 54 03 00 00 
+55 03 00 00 48 03 00 00 54 03 00 00 40 03 00 00 
+48 03 00 00 38 03 00 00 40 03 00 00 2E 03 00 00 
+38 03 00 00 2B 03 00 00 2E 03 00 00 28 03 00 00 
+2B 03 00 00 24 03 00 00 28 03 00 00 23 03 00 00 
+24 03 00 00 1A 03 00 00 23 03 00 00 17 03 00 00 
+1A 03 00 00 14 03 00 00 17 03 00 00 11 03 00 00 
+14 03 00 00 0F 03 00 00 11 03 00 00 0E 03 00 00 
+0F 03 00 00 0B 03 00 00 0E 03 00 00 0A 03 00 00 
+0B 03 00 00 08 03 00 00 0A 03 00 00 07 03 00 00 
+08 03 00 00 06 03 00 00 07 03 00 00 04 03 00 00 
+06 03 00 00 02 03 00 00 04 03 00 00 00 03 00 00 
+02 03 00 00 F1 02 00 00 00 03 00 00 F0 02 00 00 
+F1 02 00 00 EE 02 00 00 F0 02 00 00 ED 02 00 00 
+EE 02 00 00 EC 02 00 00 ED 02 00 00 EB 02 00 00 
+EC 02 00 00 E9 02 00 00 EB 02 00 00 E7 02 00 00 
+E9 02 00 00 E6 02 00 00 E7 02 00 00 E5 02 00 00 
+E6 02 00 00 E0 02 00 00 E5 02 00 00 DF 02 00 00 
+E0 02 00 00 DE 02 00 00 DF 02 00 00 DC 02 00 00 
+DE 02 00 00 DB 02 00 00 DC 02 00 00 DA 02 00 00 
+DB 02 00 00 D8 02 00 00 DA 02 00 00 D7 02 00 00 
+D8 02 00 00 D5 02 00 00 D7 02 00 00 D3 02 00 00 
+D5 02 00 00 D2 02 00 00 D3 02 00 00 D1 02 00 00 
+D2 02 00 00 D0 02 00 00 D1 02 00 00 CF 02 00 00 
+D0 02 00 00 CE 02 00 00 CF 02 00 00 CC 02 00 00 
+CE 02 00 00 CB 02 00 00 CC 02 00 00 CA 02 00 00 
+CB 02 00 00 C9 02 00 00 CA 02 00 00 C8 02 00 00 
+C9 02 00 00 C7 02 00 00 C8 02 00 00 C6 02 00 00 
+C7 02 00 00 C5 02 00 00 C6 02 00 00 C4 02 00 00 
+C5 02 00 00 C3 02 00 00 C4 02 00 00 C2 02 00 00 
+C3 02 00 00 C1 02 00 00 C2 02 00 00 C0 02 00 00 
+C1 02 00 00 BF 02 00 00 C0 02 00 00 BE 02 00 00 
+BF 02 00 00 BD 02 00 00 BE 02 00 00 BC 02 00 00 
+BD 02 00 00 BB 02 00 00 BC 02 00 00 BA 02 00 00 
+BB 02 00 00 B6 02 00 00 BA 02 00 00 B5 02 00 00 
+B6 02 00 00 B2 02 00 00 B5 02 00 00 AD 02 00 00 
+B2 02 00 00 00 00 00 00 71 00 00 00 01 00 00 00 
+04 00 00 00 00 00 00 00 FF FF FF FF 59 00 00 00 
+C0 03 00 00 CA 03 00 00 D2 03 00 00 E5 03 00 00 
+BC 03 00 00 C0 03 00 00 BA 03 00 00 BC 03 00 00 
+B8 03 00 00 BA 03 00 00 B6 03 00 00 B8 03 00 00 
+B4 03 00 00 B6 03 00 00 B2 03 00 00 B4 03 00 00 
+B1 03 00 00 B2 03 00 00 B0 03 00 00 B1 03 00 00 
+AC 03 00 00 B0 03 00 00 A7 03 00 00 AC 03 00 00 
+8C 03 00 00 99 03 00 00 7C 03 00 00 8C 03 00 00 
+63 03 00 00 7C 03 00 00 5B 03 00 00 63 03 00 00 
+5A 03 00 00 5B 03 00 00 55 03 00 00 5A 03 00 00 
+54 03 00 00 55 03 00 00 48 03 00 00 54 03 00 00 
+40 03 00 00 48 03 00 00 38 03 00 00 40 03 00 00 
+2E 03 00 00 38 03 00 00 2B 03 00 00 2E 03 00 00 
+28 03 00 00 2B 03 00 00 24 03 00 00 28 03 00 00 
+23 03 00 00 24 03 00 00 1A 03 00 00 23 03 00 00 
+17 03 00 00 1A 03 00 00 14 03 00 00 17 03 00 00 
+11 03 00 00 14 03 00 00 0F 03 00 00 11 03 00 00 
+0E 03 00 00 0F 03 00 00 0B 03 00 00 0E 03 00 00 
+0A 03 00 00 0B 03 00 00 08 03 00 00 0A 03 00 00 
+07 03 00 00 08 03 00 00 06 03 00 00 07 03 00 00 
+04 03 00 00 06 03 00 00 02 03 00 00 04 03 00 00 
+00 03 00 00 02 03 00 00 F1 02 00 00 00 03 00 00 
+F0 02 00 00 F1 02 00 00 EE 02 00 00 F0 02 00 00 
+ED 02 00 00 EE 02 00 00 EC 02 00 00 ED 02 00 00 
+EB 02 00 00 EC 02 00 00 E9 02 00 00 EB 02 00 00 
+E7 02 00 00 E9 02 00 00 E6 02 00 00 E7 02 00 00 
+E5 02 00 00 E6 02 00 00 E0 02 00 00 E5 02 00 00 
+DF 02 00 00 E0 02 00 00 DE 02 00 00 DF 02 00 00 
+DC 02 00 00 DE 02 00 00 DB 02 00 00 DC 02 00 00 
+DA 02 00 00 DB 02 00 00 D8 02 00 00 DA 02 00 00 
+D7 02 00 00 D8 02 00 00 D5 02 00 00 D7 02 00 00 
+D3 02 00 00 D5 02 00 00 D2 02 00 00 D3 02 00 00 
+D1 02 00 00 D2 02 00 00 D0 02 00 00 D1 02 00 00 
+CF 02 00 00 D0 02 00 00 CE 02 00 00 CF 02 00 00 
+CC 02 00 00 CE 02 00 00 CB 02 00 00 CC 02 00 00 
+CA 02 00 00 CB 02 00 00 C9 02 00 00 CA 02 00 00 
+C8 02 00 00 C9 02 00 00 C7 02 00 00 C8 02 00 00 
+C6 02 00 00 C7 02 00 00 C5 02 00 00 C6 02 00 00 
+C4 02 00 00 C5 02 00 00 C3 02 00 00 C4 02 00 00 
+C2 02 00 00 C3 02 00 00 C1 02 00 00 C2 02 00 00 
+C0 02 00 00 C1 02 00 00 BF 02 00 00 C0 02 00 00 
+BE 02 00 00 BF 02 00 00 BD 02 00 00 BE 02 00 00 
+BC 02 00 00 BD 02 00 00 BB 02 00 00 BC 02 00 00 
+BA 02 00 00 BB 02 00 00 B6 02 00 00 BA 02 00 00 
+B5 02 00 00 B6 02 00 00 B2 02 00 00 B5 02 00 00 
+AD 02 00 00 B2 02 00 00 00 00 00 00 71 00 00 00 
+01 00 00 00 03 00 00 00 00 00 00 00 FF FF FF FF 
+5B 00 00 00 CD 03 00 00 D2 03 00 00 CB 03 00 00 
+CD 03 00 00 CA 03 00 00 CB 03 00 00 D2 03 00 00 
+E5 03 00 00 BC 03 00 00 C0 03 00 00 BA 03 00 00 
+BC 03 00 00 B8 03 00 00 BA 03 00 00 B6 03 00 00 
+B8 03 00 00 B4 03 00 00 B6 03 00 00 B2 03 00 00 
+B4 03 00 00 B1 03 00 00 B2 03 00 00 B0 03 00 00 
+B1 03 00 00 AC 03 00 00 B0 03 00 00 A7 03 00 00 
+AC 03 00 00 8C 03 00 00 99 03 00 00 7C 03 00 00 
+8C 03 00 00 63 03 00 00 7C 03 00 00 5B 03 00 00 
+63 03 00 00 5A 03 00 00 5B 03 00 00 55 03 00 00 
+5A 03 00 00 54 03 00 00 55 03 00 00 48 03 00 00 
+54 03 00 00 40 03 00 00 48 03 00 00 38 03 00 00 
+40 03 00 00 2E 03 00 00 38 03 00 00 2B 03 00 00 
+2E 03 00 00 28 03 00 00 2B 03 00 00 24 03 00 00 
+28 03 00 00 23 03 00 00 24 03 00 00 1A 03 00 00 
+23 03 00 00 17 03 00 00 1A 03 00 00 14 03 00 00 
+17 03 00 00 11 03 00 00 14 03 00 00 0F 03 00 00 
+11 03 00 00 0E 03 00 00 0F 03 00 00 0B 03 00 00 
+0E 03 00 00 0A 03 00 00 0B 03 00 00 08 03 00 00 
+0A 03 00 00 07 03 00 00 08 03 00 00 06 03 00 00 
+07 03 00 00 04 03 00 00 06 03 00 00 02 03 00 00 
+04 03 00 00 00 03 00 00 02 03 00 00 F1 02 00 00 
+00 03 00 00 F0 02 00 00 F1 02 00 00 EE 02 00 00 
+F0 02 00 00 ED 02 00 00 EE 02 00 00 EC 02 00 00 
+ED 02 00 00 EB 02 00 00 EC 02 00 00 E9 02 00 00 
+EB 02 00 00 E7 02 00 00 E9 02 00 00 E6 02 00 00 
+E7 02 00 00 E5 02 00 00 E6 02 00 00 E0 02 00 00 
+E5 02 00 00 DF 02 00 00 E0 02 00 00 DE 02 00 00 
+DF 02 00 00 DC 02 00 00 DE 02 00 00 DB 02 00 00 
+DC 02 00 00 DA 02 00 00 DB 02 00 00 D8 02 00 00 
+DA 02 00 00 D7 02 00 00 D8 02 00 00 D5 02 00 00 
+D7 02 00 00 D3 02 00 00 D5 02 00 00 D2 02 00 00 
+D3 02 00 00 D1 02 00 00 D2 02 00 00 D0 02 00 00 
+D1 02 00 00 CF 02 00 00 D0 02 00 00 CE 02 00 00 
+CF 02 00 00 CC 02 00 00 CE 02 00 00 CB 02 00 00 
+CC 02 00 00 CA 02 00 00 CB 02 00 00 C9 02 00 00 
+CA 02 00 00 C8 02 00 00 C9 02 00 00 C7 02 00 00 
+C8 02 00 00 C6 02 00 00 C7 02 00 00 C5 02 00 00 
+C6 02 00 00 C4 02 00 00 C5 02 00 00 C3 02 00 00 
+C4 02 00 00 C2 02 00 00 C3 02 00 00 C1 02 00 00 
+C2 02 00 00 C0 02 00 00 C1 02 00 00 BF 02 00 00 
+C0 02 00 00 BE 02 00 00 BF 02 00 00 BD 02 00 00 
+BE 02 00 00 BC 02 00 00 BD 02 00 00 BB 02 00 00 
+BC 02 00 00 BA 02 00 00 BB 02 00 00 B6 02 00 00 
+BA 02 00 00 B5 02 00 00 B6 02 00 00 B2 02 00 00 
+B5 02 00 00 AD 02 00 00 B2 02 00 00 00 00 00 00 
+71 00 00 00 01 00 00 00 02 00 00 00 00 00 00 00 
+FF FF FF FF 5B 00 00 00 EC 03 00 00 F1 03 00 00 
+E8 03 00 00 EC 03 00 00 E5 03 00 00 E8 03 00 00 
+D2 03 00 00 E5 03 00 00 BC 03 00 00 C0 03 00 00 
+BA 03 00 00 BC 03 00 00 B8 03 00 00 BA 03 00 00 
+B6 03 00 00 B8 03 00 00 B4 03 00 00 B6 03 00 00 
+B2 03 00 00 B4 03 00 00 B1 03 00 00 B2 03 00 00 
+B0 03 00 00 B1 03 00 00 AC 03 00 00 B0 03 00 00 
+A7 03 00 00 AC 03 00 00 8C 03 00 00 99 03 00 00 
+7C 03 00 00 8C 03 00 00 63 03 00 00 7C 03 00 00 
+5B 03 00 00 63 03 00 00 5A 03 00 00 5B 03 00 00 
+55 03 00 00 5A 03 00 00 54 03 00 00 55 03 00 00 
+48 03 00 00 54 03 00 00 40 03 00 00 48 03 00 00 
+38 03 00 00 40 03 00 00 2E 03 00 00 38 03 00 00 
+2B 03 00 00 2E 03 00 00 28 03 00 00 2B 03 00 00 
+24 03 00 00 28 03 00 00 23 03 00 00 24 03 00 00 
+1A 03 00 00 23 03 00 00 17 03 00 00 1A 03 00 00 
+14 03 00 00 17 03 00 00 11 03 00 00 14 03 00 00 
+0F 03 00 00 11 03 00 00 0E 03 00 00 0F 03 00 00 
+0B 03 00 00 0E 03 00 00 0A 03 00 00 0B 03 00 00 
+08 03 00 00 0A 03 00 00 07 03 00 00 08 03 00 00 
+06 03 00 00 07 03 00 00 04 03 00 00 06 03 00 00 
+02 03 00 00 04 03 00 00 00 03 00 00 02 03 00 00 
+F1 02 00 00 00 03 00 00 F0 02 00 00 F1 02 00 00 
+EE 02 00 00 F0 02 00 00 ED 02 00 00 EE 02 00 00 
+EC 02 00 00 ED 02 00 00 EB 02 00 00 EC 02 00 00 
+E9 02 00 00 EB 02 00 00 E7 02 00 00 E9 02 00 00 
+E6 02 00 00 E7 02 00 00 E5 02 00 00 E6 02 00 00 
+E0 02 00 00 E5 02 00 00 DF 02 00 00 E0 02 00 00 
+DE 02 00 00 DF 02 00 00 DC 02 00 00 DE 02 00 00 
+DB 02 00 00 DC 02 00 00 DA 02 00 00 DB 02 00 00 
+D8 02 00 00 DA 02 00 00 D7 02 00 00 D8 02 00 00 
+D5 02 00 00 D7 02 00 00 D3 02 00 00 D5 02 00 00 
+D2 02 00 00 D3 02 00 00 D1 02 00 00 D2 02 00 00 
+D0 02 00 00 D1 02 00 00 CF 02 00 00 D0 02 00 00 
+CE 02 00 00 CF 02 00 00 CC 02 00 00 CE 02 00 00 
+CB 02 00 00 CC 02 00 00 CA 02 00 00 CB 02 00 00 
+C9 02 00 00 CA 02 00 00 C8 02 00 00 C9 02 00 00 
+C7 02 00 00 C8 02 00 00 C6 02 00 00 C7 02 00 00 
+C5 02 00 00 C6 02 00 00 C4 02 00 00 C5 02 00 00 
+C3 02 00 00 C4 02 00 00 C2 02 00 00 C3 02 00 00 
+C1 02 00 00 C2 02 00 00 C0 02 00 00 C1 02 00 00 
+BF 02 00 00 C0 02 00 00 BE 02 00 00 BF 02 00 00 
+BD 02 00 00 BE 02 00 00 BC 02 00 00 BD 02 00 00 
+BB 02 00 00 BC 02 00 00 BA 02 00 00 BB 02 00 00 
+B6 02 00 00 BA 02 00 00 B5 02 00 00 B6 02 00 00 
+B2 02 00 00 B5 02 00 00 AD 02 00 00 B2 02 00 00 
+00 00 00 00 71 00 00 00 01 00 00 00 01 00 00 00 
+00 00 00 00 FF FF FF FF 5C 00 00 00 F8 03 00 00 
+FF 03 00 00 F1 03 00 00 F8 03 00 00 E8 03 00 00 
+EC 03 00 00 E5 03 00 00 E8 03 00 00 D2 03 00 00 
+E5 03 00 00 BC 03 00 00 C0 03 00 00 BA 03 00 00 
+BC 03 00 00 B8 03 00 00 BA 03 00 00 B6 03 00 00 
+B8 03 00 00 B4 03 00 00 B6 03 00 00 B2 03 00 00 
+B4 03 00 00 B1 03 00 00 B2 03 00 00 B0 03 00 00 
+B1 03 00 00 AC 03 00 00 B0 03 00 00 A7 03 00 00 
+AC 03 00 00 8C 03 00 00 99 03 00 00 7C 03 00 00 
+8C 03 00 00 63 03 00 00 7C 03 00 00 5B 03 00 00 
+63 03 00 00 5A 03 00 00 5B 03 00 00 55 03 00 00 
+5A 03 00 00 54 03 00 00 55 03 00 00 48 03 00 00 
+54 03 00 00 40 03 00 00 48 03 00 00 38 03 00 00 
+40 03 00 00 2E 03 00 00 38 03 00 00 2B 03 00 00 
+2E 03 00 00 28 03 00 00 2B 03 00 00 24 03 00 00 
+28 03 00 00 23 03 00 00 24 03 00 00 1A 03 00 00 
+23 03 00 00 17 03 00 00 1A 03 00 00 14 03 00 00 
+17 03 00 00 11 03 00 00 14 03 00 00 0F 03 00 00 
+11 03 00 00 0E 03 00 00 0F 03 00 00 0B 03 00 00 
+0E 03 00 00 0A 03 00 00 0B 03 00 00 08 03 00 00 
+0A 03 00 00 07 03 00 00 08 03 00 00 06 03 00 00 
+07 03 00 00 04 03 00 00 06 03 00 00 02 03 00 00 
+04 03 00 00 00 03 00 00 02 03 00 00 F1 02 00 00 
+00 03 00 00 F0 02 00 00 F1 02 00 00 EE 02 00 00 
+F0 02 00 00 ED 02 00 00 EE 02 00 00 EC 02 00 00 
+ED 02 00 00 EB 02 00 00 EC 02 00 00 E9 02 00 00 
+EB 02 00 00 E7 02 00 00 E9 02 00 00 E6 02 00 00 
+E7 02 00 00 E5 02 00 00 E6 02 00 00 E0 02 00 00 
+E5 02 00 00 DF 02 00 00 E0 02 00 00 DE 02 00 00 
+DF 02 00 00 DC 02 00 00 DE 02 00 00 DB 02 00 00 
+DC 02 00 00 DA 02 00 00 DB 02 00 00 D8 02 00 00 
+DA 02 00 00 D7 02 00 00 D8 02 00 00 D5 02 00 00 
+D7 02 00 00 D3 02 00 00 D5 02 00 00 D2 02 00 00 
+D3 02 00 00 D1 02 00 00 D2 02 00 00 D0 02 00 00 
+D1 02 00 00 CF 02 00 00 D0 02 00 00 CE 02 00 00 
+CF 02 00 00 CC 02 00 00 CE 02 00 00 CB 02 00 00 
+CC 02 00 00 CA 02 00 00 CB 02 00 00 C9 02 00 00 
+CA 02 00 00 C8 02 00 00 C9 02 00 00 C7 02 00 00 
+C8 02 00 00 C6 02 00 00 C7 02 00 00 C5 02 00 00 
+C6 02 00 00 C4 02 00 00 C5 02 00 00 C3 02 00 00 
+C4 02 00 00 C2 02 00 00 C3 02 00 00 C1 02 00 00 
+C2 02 00 00 C0 02 00 00 C1 02 00 00 BF 02 00 00 
+C0 02 00 00 BE 02 00 00 BF 02 00 00 BD 02 00 00 
+BE 02 00 00 BC 02 00 00 BD 02 00 00 BB 02 00 00 
+BC 02 00 00 BA 02 00 00 BB 02 00 00 B6 02 00 00 
+BA 02 00 00 B5 02 00 00 B6 02 00 00 B2 02 00 00 
+B5 02 00 00 AD 02 00 00 B2 02 00 00 00 00 00 00 
+71 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 
+FF FF FF FF 5E 00 00 00 0A 04 00 00 10 04 00 00 
+FF 03 00 00 0A 04 00 00 F8 03 00 00 FF 03 00 00 
+F1 03 00 00 F8 03 00 00 E8 03 00 00 EC 03 00 00 
+E5 03 00 00 E8 03 00 00 D2 03 00 00 E5 03 00 00 
+BC 03 00 00 C0 03 00 00 BA 03 00 00 BC 03 00 00 
+B8 03 00 00 BA 03 00 00 B6 03 00 00 B8 03 00 00 
+B4 03 00 00 B6 03 00 00 B2 03 00 00 B4 03 00 00 
+B1 03 00 00 B2 03 00 00 B0 03 00 00 B1 03 00 00 
+AC 03 00 00 B0 03 00 00 A7 03 00 00 AC 03 00 00 
+8C 03 00 00 99 03 00 00 7C 03 00 00 8C 03 00 00 
+63 03 00 00 7C 03 00 00 5B 03 00 00 63 03 00 00 
+5A 03 00 00 5B 03 00 00 55 03 00 00 5A 03 00 00 
+54 03 00 00 55 03 00 00 48 03 00 00 54 03 00 00 
+40 03 00 00 48 03 00 00 38 03 00 00 40 03 00 00 
+2E 03 00 00 38 03 00 00 2B 03 00 00 2E 03 00 00 
+28 03 00 00 2B 03 00 00 24 03 00 00 28 03 00 00 
+23 03 00 00 24 03 00 00 1A 03 00 00 23 03 00 00 
+17 03 00 00 1A 03 00 00 14 03 00 00 17 03 00 00 
+11 03 00 00 14 03 00 00 0F 03 00 00 11 03 00 00 
+0E 03 00 00 0F 03 00 00 0B 03 00 00 0E 03 00 00 
+0A 03 00 00 0B 03 00 00 08 03 00 00 0A 03 00 00 
+07 03 00 00 08 03 00 00 06 03 00 00 07 03 00 00 
+04 03 00 00 06 03 00 00 02 03 00 00 04 03 00 00 
+00 03 00 00 02 03 00 00 F1 02 00 00 00 03 00 00 
+F0 02 00 00 F1 02 00 00 EE 02 00 00 F0 02 00 00 
+ED 02 00 00 EE 02 00 00 EC 02 00 00 ED 02 00 00 
+EB 02 00 00 EC 02 00 00 E9 02 00 00 EB 02 00 00 
+E7 02 00 00 E9 02 00 00 E6 02 00 00 E7 02 00 00 
+E5 02 00 00 E6 02 00 00 E0 02 00 00 E5 02 00 00 
+DF 02 00 00 E0 02 00 00 DE 02 00 00 DF 02 00 00 
+DC 02 00 00 DE 02 00 00 DB 02 00 00 DC 02 00 00 
+DA 02 00 00 DB 02 00 00 D8 02 00 00 DA 02 00 00 
+D7 02 00 00 D8 02 00 00 D5 02 00 00 D7 02 00 00 
+D3 02 00 00 D5 02 00 00 D2 02 00 00 D3 02 00 00 
+D1 02 00 00 D2 02 00 00 D0 02 00 00 D1 02 00 00 
+CF 02 00 00 D0 02 00 00 CE 02 00 00 CF 02 00 00 
+CC 02 00 00 CE 02 00 00 CB 02 00 00 CC 02 00 00 
+CA 02 00 00 CB 02 00 00 C9 02 00 00 CA 02 00 00 
+C8 02 00 00 C9 02 00 00 C7 02 00 00 C8 02 00 00 
+C6 02 00 00 C7 02 00 00 C5 02 00 00 C6 02 00 00 
+C4 02 00 00 C5 02 00 00 C3 02 00 00 C4 02 00 00 
+C2 02 00 00 C3 02 00 00 C1 02 00 00 C2 02 00 00 
+C0 02 00 00 C1 02 00 00 BF 02 00 00 C0 02 00 00 
+BE 02 00 00 BF 02 00 00 BD 02 00 00 BE 02 00 00 
+BC 02 00 00 BD 02 00 00 BB 02 00 00 BC 02 00 00 
+BA 02 00 00 BB 02 00 00 B6 02 00 00 BA 02 00 00 
+B5 02 00 00 B6 02 00 00 B2 02 00 00 B5 02 00 00 
+AD 02 00 00 B2 02 00 00 00 00 00 00 70 00 00 00 
+01 00 00 00 07 00 00 00 00 00 00 00 FF FF FF FF 
+5C 00 00 00 10 04 00 00 15 04 00 00 F1 03 00 00 
+F8 03 00 00 E8 03 00 00 EC 03 00 00 E5 03 00 00 
+E8 03 00 00 D2 03 00 00 E5 03 00 00 BC 03 00 00 
+C0 03 00 00 BA 03 00 00 BC 03 00 00 B8 03 00 00 
+BA 03 00 00 B6 03 00 00 B8 03 00 00 B4 03 00 00 
+B6 03 00 00 B2 03 00 00 B4 03 00 00 B1 03 00 00 
+B2 03 00 00 B0 03 00 00 B1 03 00 00 AC 03 00 00 
+B0 03 00 00 A7 03 00 00 AC 03 00 00 8C 03 00 00 
+99 03 00 00 7C 03 00 00 8C 03 00 00 63 03 00 00 
+7C 03 00 00 5B 03 00 00 63 03 00 00 5A 03 00 00 
+5B 03 00 00 55 03 00 00 5A 03 00 00 54 03 00 00 
+55 03 00 00 48 03 00 00 54 03 00 00 40 03 00 00 
+48 03 00 00 38 03 00 00 40 03 00 00 2E 03 00 00 
+38 03 00 00 2B 03 00 00 2E 03 00 00 28 03 00 00 
+2B 03 00 00 24 03 00 00 28 03 00 00 23 03 00 00 
+24 03 00 00 1A 03 00 00 23 03 00 00 17 03 00 00 
+1A 03 00 00 14 03 00 00 17 03 00 00 11 03 00 00 
+14 03 00 00 0F 03 00 00 11 03 00 00 0E 03 00 00 
+0F 03 00 00 0B 03 00 00 0E 03 00 00 0A 03 00 00 
+0B 03 00 00 08 03 00 00 0A 03 00 00 07 03 00 00 
+08 03 00 00 06 03 00 00 07 03 00 00 04 03 00 00 
+06 03 00 00 02 03 00 00 04 03 00 00 00 03 00 00 
+02 03 00 00 F1 02 00 00 00 03 00 00 F0 02 00 00 
+F1 02 00 00 EE 02 00 00 F0 02 00 00 ED 02 00 00 
+EE 02 00 00 EC 02 00 00 ED 02 00 00 EB 02 00 00 
+EC 02 00 00 E9 02 00 00 EB 02 00 00 E7 02 00 00 
+E9 02 00 00 E6 02 00 00 E7 02 00 00 E5 02 00 00 
+E6 02 00 00 E0 02 00 00 E5 02 00 00 DF 02 00 00 
+E0 02 00 00 DE 02 00 00 DF 02 00 00 DC 02 00 00 
+DE 02 00 00 DB 02 00 00 DC 02 00 00 DA 02 00 00 
+DB 02 00 00 D8 02 00 00 DA 02 00 00 D7 02 00 00 
+D8 02 00 00 D5 02 00 00 D7 02 00 00 D3 02 00 00 
+D5 02 00 00 D2 02 00 00 D3 02 00 00 D1 02 00 00 
+D2 02 00 00 D0 02 00 00 D1 02 00 00 CF 02 00 00 
+D0 02 00 00 CE 02 00 00 CF 02 00 00 CC 02 00 00 
+CE 02 00 00 CB 02 00 00 CC 02 00 00 CA 02 00 00 
+CB 02 00 00 C9 02 00 00 CA 02 00 00 C8 02 00 00 
+C9 02 00 00 C7 02 00 00 C8 02 00 00 C6 02 00 00 
+C7 02 00 00 C5 02 00 00 C6 02 00 00 C4 02 00 00 
+C5 02 00 00 C3 02 00 00 C4 02 00 00 C2 02 00 00 
+C3 02 00 00 C1 02 00 00 C2 02 00 00 C0 02 00 00 
+C1 02 00 00 BF 02 00 00 C0 02 00 00 BE 02 00 00 
+BF 02 00 00 BD 02 00 00 BE 02 00 00 BC 02 00 00 
+BD 02 00 00 BB 02 00 00 BC 02 00 00 BA 02 00 00 
+BB 02 00 00 B6 02 00 00 BA 02 00 00 B5 02 00 00 
+B6 02 00 00 B2 02 00 00 B5 02 00 00 AD 02 00 00 
+B2 02 00 00 00 00 00 00 70 00 00 00 01 00 00 00 
+06 00 00 00 00 00 00 00 FF FF FF FF 03 00 00 00 
+56 06 00 00 5A 06 00 00 54 06 00 00 56 06 00 00 
+4D 06 00 00 54 06 00 00 00 00 00 00 70 00 00 00 
+01 00 00 00 05 00 00 00 00 00 00 00 FF FF FF FF 
+04 00 00 00 63 06 00 00 67 06 00 00 60 06 00 00 
+63 06 00 00 5A 06 00 00 60 06 00 00 4D 06 00 00 
+54 06 00 00 00 00 00 00 70 00 00 00 01 00 00 00 
+04 00 00 00 00 00 00 00 FF FF FF FF 05 00 00 00 
+85 06 00 00 91 06 00 00 7A 06 00 00 85 06 00 00 
+67 06 00 00 7A 06 00 00 5A 06 00 00 60 06 00 00 
+4D 06 00 00 54 06 00 00 00 00 00 00 70 00 00 00 
+01 00 00 00 03 00 00 00 00 00 00 00 FF FF FF FF 
+02 00 00 00 91 06 00 00 93 06 00 00 4D 06 00 00 
+54 06 00 00 00 00 00 00 70 00 00 00 01 00 00 00 
+02 00 00 00 00 00 00 00 FF FF FF FF 04 00 00 00 
+66 0F 00 00 68 0F 00 00 65 0F 00 00 66 0F 00 00 
+5C 0F 00 00 65 0F 00 00 59 0F 00 00 5C 0F 00 00 
+00 00 00 00 70 00 00 00 01 00 00 00 01 00 00 00 
+00 00 00 00 FF FF FF FF 0F 00 00 00 09 07 00 00 
+0B 07 00 00 03 07 00 00 09 07 00 00 01 07 00 00 
+03 07 00 00 F0 06 00 00 01 07 00 00 EC 06 00 00 
+F0 06 00 00 EB 06 00 00 EC 06 00 00 EA 06 00 00 
+EB 06 00 00 E7 06 00 00 EA 06 00 00 E3 06 00 00 
+E7 06 00 00 E1 06 00 00 E3 06 00 00 DF 06 00 00 
+E1 06 00 00 DB 06 00 00 DF 06 00 00 DA 06 00 00 
+DB 06 00 00 D5 06 00 00 DA 06 00 00 D3 06 00 00 
+D5 06 00 00 00 00 00 00 70 00 00 00 01 00 00 00 
+00 00 00 00 00 00 00 00 FF FF FF FF 03 00 00 00 
+B4 04 00 00 B9 04 00 00 AF 04 00 00 B4 04 00 00 
+A1 04 00 00 AF 04 00 00 00 00 00 00 27 00 00 00 
+01 00 00 00 05 00 00 00 00 00 00 00 FF FF FF FF 
+04 00 00 00 CC 04 00 00 D1 04 00 00 C7 04 00 00 
+CC 04 00 00 B9 04 00 00 C7 04 00 00 A1 04 00 00 
+AF 04 00 00 00 00 00 00 27 00 00 00 01 00 00 00 
+04 00 00 00 00 00 00 00 FF FF FF FF 05 00 00 00 
+E4 04 00 00 E9 04 00 00 DF 04 00 00 E4 04 00 00 
+D1 04 00 00 DF 04 00 00 B9 04 00 00 C7 04 00 00 
+A1 04 00 00 AF 04 00 00 00 00 00 00 27 00 00 00 
+01 00 00 00 03 00 00 00 00 00 00 00 FF FF FF FF 
+06 00 00 00 FC 04 00 00 01 05 00 00 F7 04 00 00 
+FC 04 00 00 E9 04 00 00 F7 04 00 00 D1 04 00 00 
+DF 04 00 00 B9 04 00 00 C7 04 00 00 A1 04 00 00 
+AF 04 00 00 00 00 00 00 27 00 00 00 01 00 00 00 
+02 00 00 00 00 00 00 00 FF FF FF FF 07 00 00 00 
+14 05 00 00 19 05 00 00 0F 05 00 00 14 05 00 00 
+01 05 00 00 0F 05 00 00 E9 04 00 00 F7 04 00 00 
+D1 04 00 00 DF 04 00 00 B9 04 00 00 C7 04 00 00 
+A1 04 00 00 AF 04 00 00 00 00 00 00 27 00 00 00 
+01 00 00 00 01 00 00 00 00 00 00 00 FF FF FF FF 
+06 00 00 00 19 05 00 00 1B 05 00 00 01 05 00 00 
+0F 05 00 00 E9 04 00 00 F7 04 00 00 D1 04 00 00 
+DF 04 00 00 B9 04 00 00 C7 04 00 00 A1 04 00 00 
+AF 04 00 00 00 00 00 00 27 00 00 00 01 00 00 00 
+00 00 00 00 00 00 00 00 FF FF FF FF 02 00 00 00 
+1B 05 00 00 1E 05 00 00 A1 04 00 00 AF 04 00 00 
+00 00 00 00 26 00 00 00 01 00 00 00 07 00 00 00 
+00 00 00 00 FF FF FF FF 02 00 00 00 11 0F 00 00 
+14 0F 00 00 10 0F 00 00 11 0F 00 00 00 00 00 00 
+26 00 00 00 01 00 00 00 06 00 00 00 00 00 00 00 
+FF FF FF FF 02 00 00 00 0D 0F 00 00 10 0F 00 00 
+0C 0F 00 00 0D 0F 00 00 00 00 00 00 26 00 00 00 
+01 00 00 00 05 00 00 00 00 00 00 00 FF FF FF FF 
+02 00 00 00 0A 00 00 00 11 00 00 00 04 00 00 00 
+0A 00 00 00 00 00 00 00 26 00 00 00 01 00 00 00 
+04 00 00 00 00 00 00 00 FF FF FF FF 04 00 00 00 
+11 00 00 00 1B 00 00 00 23 00 00 00 35 00 00 00 
+0A 00 00 00 11 00 00 00 04 00 00 00 0A 00 00 00 
+00 00 00 00 26 00 00 00 01 00 00 00 03 00 00 00 
+00 00 00 00 FF FF FF FF 06 00 00 00 1E 00 00 00 
+23 00 00 00 1C 00 00 00 1E 00 00 00 1B 00 00 00 
+1C 00 00 00 23 00 00 00 35 00 00 00 0A 00 00 00 
+11 00 00 00 04 00 00 00 0A 00 00 00 00 00 00 00 
+26 00 00 00 01 00 00 00 02 00 00 00 00 00 00 00 
+FF FF FF FF 04 00 00 00 35 00 00 00 38 00 00 00 
+23 00 00 00 35 00 00 00 0A 00 00 00 11 00 00 00 
+04 00 00 00 0A 00 00 00 00 00 00 00 26 00 00 00 
+01 00 00 00 01 00 00 00 00 00 00 00 FF FF FF FF 
+03 00 00 00 3D 00 00 00 43 00 00 00 38 00 00 00 
+3D 00 00 00 04 00 00 00 0A 00 00 00 00 00 00 00 
+26 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 
+FF FF FF FF 05 00 00 00 50 00 00 00 56 00 00 00 
+43 00 00 00 50 00 00 00 3D 00 00 00 43 00 00 00 
+38 00 00 00 3D 00 00 00 04 00 00 00 0A 00 00 00 
+00 00 00 00 25 00 00 00 01 00 00 00 07 00 00 00 
+00 00 00 00 FF FF FF FF 06 00 00 00 64 00 00 00 
+6A 00 00 00 56 00 00 00 64 00 00 00 43 00 00 00 
+50 00 00 00 3D 00 00 00 43 00 00 00 38 00 00 00 
+3D 00 00 00 04 00 00 00 0A 00 00 00 00 00 00 00 
+25 00 00 00 01 00 00 00 06 00 00 00 00 00 00 00 
+FF FF FF FF 06 00 00 00 6A 00 00 00 6D 00 00 00 
+56 00 00 00 64 00 00 00 43 00 00 00 50 00 00 00 
+3D 00 00 00 43 00 00 00 38 00 00 00 3D 00 00 00 
+04 00 00 00 0A 00 00 00 00 00 00 00 25 00 00 00 
+01 00 00 00 05 00 00 00 00 00 00 00 FF FF FF FF 
+03 00 00 00 6D 00 00 00 71 00 00 00 38 00 00 00 
+3D 00 00 00 04 00 00 00 0A 00 00 00 00 00 00 00 
+25 00 00 00 01 00 00 00 04 00 00 00 00 00 00 00 
+FF FF FF FF 05 00 00 00 A2 00 00 00 AA 00 00 00 
+9D 00 00 00 A2 00 00 00 97 00 00 00 9D 00 00 00 
+7E 02 00 00 AA 02 00 00 96 00 00 00 97 00 00 00 
+00 00 00 00 25 00 00 00 01 00 00 00 03 00 00 00 
+00 00 00 00 FF FF FF FF 03 00 00 00 AA 00 00 00 
+B1 00 00 00 7E 02 00 00 AA 02 00 00 96 00 00 00 
+97 00 00 00 00 00 00 00 25 00 00 00 01 00 00 00 
+02 00 00 00 00 00 00 00 FF FF FF FF 07 00 00 00 
+C5 00 00 00 CE 00 00 00 C1 00 00 00 C5 00 00 00 
+BC 00 00 00 C1 00 00 00 B9 00 00 00 BC 00 00 00 
+B1 00 00 00 B9 00 00 00 7E 02 00 00 AA 02 00 00 
+96 00 00 00 97 00 00 00 00 00 00 00 25 00 00 00 
+01 00 00 00 01 00 00 00 00 00 00 00 FF FF FF FF 
+06 00 00 00 E2 00 00 00 EB 00 00 00 DE 00 00 00 
+E2 00 00 00 D5 00 00 00 DE 00 00 00 CE 00 00 00 
+D5 00 00 00 7E 02 00 00 AA 02 00 00 96 00 00 00 
+97 00 00 00 00 00 00 00 25 00 00 00 01 00 00 00 
+00 00 00 00 00 00 00 00 FF FF FF FF 09 00 00 00 
+FB 00 00 00 04 01 00 00 F7 00 00 00 FB 00 00 00 
+F3 00 00 00 F7 00 00 00 EF 00 00 00 F3 00 00 00 
+EB 00 00 00 EF 00 00 00 D5 00 00 00 DE 00 00 00 
+CE 00 00 00 D5 00 00 00 7E 02 00 00 AA 02 00 00 
+96 00 00 00 97 00 00 00 00 00 00 00 24 00 00 00 
+01 00 00 00 07 00 00 00 00 00 00 00 FF FF FF FF 
+04 00 00 00 11 01 00 00 18 01 00 00 04 01 00 00 
+11 01 00 00 7E 02 00 00 AA 02 00 00 96 00 00 00 
+97 00 00 00 00 00 00 00 24 00 00 00 01 00 00 00 
+06 00 00 00 00 00 00 00 FF FF FF FF 04 00 00 00 
+18 01 00 00 1E 01 00 00 04 01 00 00 11 01 00 00 
+7E 02 00 00 AA 02 00 00 96 00 00 00 97 00 00 00 
+00 00 00 00 24 00 00 00 01 00 00 00 05 00 00 00 
+00 00 00 00 FF FF FF FF 04 00 00 00 1E 01 00 00 
+27 01 00 00 04 01 00 00 11 01 00 00 7E 02 00 00 
+AA 02 00 00 96 00 00 00 97 00 00 00 00 00 00 00 
+24 00 00 00 01 00 00 00 04 00 00 00 00 00 00 00 
+FF FF FF FF 09 00 00 00 40 01 00 00 4A 01 00 00 
+3E 01 00 00 40 01 00 00 56 01 00 00 69 01 00 00 
+39 01 00 00 3E 01 00 00 32 01 00 00 39 01 00 00 
+2B 01 00 00 32 01 00 00 27 01 00 00 2B 01 00 00 
+7E 02 00 00 AA 02 00 00 96 00 00 00 97 00 00 00 
+00 00 00 00 24 00 00 00 01 00 00 00 03 00 00 00 
+00 00 00 00 FF FF FF FF 09 00 00 00 4C 01 00 00 
+56 01 00 00 4A 01 00 00 4C 01 00 00 56 01 00 00 
+69 01 00 00 39 01 00 00 3E 01 00 00 32 01 00 00 
+39 01 00 00 2B 01 00 00 32 01 00 00 27 01 00 00 
+2B 01 00 00 7E 02 00 00 AA 02 00 00 96 00 00 00 
+97 00 00 00 00 00 00 00 24 00 00 00 01 00 00 00 
+02 00 00 00 00 00 00 00 FF FF FF FF 08 00 00 00 
+69 01 00 00 74 01 00 00 56 01 00 00 69 01 00 00 
+39 01 00 00 3E 01 00 00 32 01 00 00 39 01 00 00 
+2B 01 00 00 32 01 00 00 27 01 00 00 2B 01 00 00 
+7E 02 00 00 AA 02 00 00 96 00 00 00 97 00 00 00 
+00 00 00 00 24 00 00 00 01 00 00 00 01 00 00 00 
+00 00 00 00 FF FF FF FF 08 00 00 00 7F 01 00 00 
+86 01 00 00 7C 01 00 00 7F 01 00 00 74 01 00 00 
+7C 01 00 00 32 01 00 00 39 01 00 00 2B 01 00 00 
+32 01 00 00 27 01 00 00 2B 01 00 00 7E 02 00 00 
+AA 02 00 00 96 00 00 00 97 00 00 00 00 00 00 00 
+24 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 
+FF FF FF FF 04 00 00 00 93 01 00 00 9A 01 00 00 
+86 01 00 00 93 01 00 00 7E 02 00 00 AA 02 00 00 
+96 00 00 00 97 00 00 00 00 00 00 00 23 00 00 00 
+01 00 00 00 07 00 00 00 00 00 00 00 FF FF FF FF 
+04 00 00 00 9A 01 00 00 A1 01 00 00 86 01 00 00 
+93 01 00 00 7E 02 00 00 AA 02 00 00 96 00 00 00 
+97 00 00 00 00 00 00 00 23 00 00 00 01 00 00 00 
+06 00 00 00 00 00 00 00 FF FF FF FF 07 00 00 00 
+B6 01 00 00 BF 01 00 00 B1 01 00 00 B6 01 00 00 
+AE 01 00 00 B1 01 00 00 A5 01 00 00 AE 01 00 00 
+A1 01 00 00 A5 01 00 00 7E 02 00 00 AA 02 00 00 
+96 00 00 00 97 00 00 00 00 00 00 00 23 00 00 00 
+01 00 00 00 05 00 00 00 00 00 00 00 FF FF FF FF 
+05 00 00 00 C5 01 00 00 C9 01 00 00 C1 01 00 00 
+C5 01 00 00 BF 01 00 00 C1 01 00 00 7E 02 00 00 
+AA 02 00 00 96 00 00 00 97 00 00 00 00 00 00 00 
+23 00 00 00 01 00 00 00 04 00 00 00 00 00 00 00 
+FF FF FF FF 05 00 00 00 C9 01 00 00 CC 01 00 00 
+C1 01 00 00 C5 01 00 00 BF 01 00 00 C1 01 00 00 
+7E 02 00 00 AA 02 00 00 96 00 00 00 97 00 00 00 
+00 00 00 00 23 00 00 00 01 00 00 00 03 00 00 00 
+00 00 00 00 FF FF FF FF 0B 00 00 00 EC 01 00 00 
+FB 01 00 00 EA 01 00 00 EC 01 00 00 E7 01 00 00 
+EA 01 00 00 DC 01 00 00 E7 01 00 00 DB 01 00 00 
+DC 01 00 00 D2 01 00 00 DB 01 00 00 CC 01 00 00 
+D2 01 00 00 C1 01 00 00 C5 01 00 00 BF 01 00 00 
+C1 01 00 00 7E 02 00 00 AA 02 00 00 96 00 00 00 
+97 00 00 00 00 00 00 00 23 00 00 00 01 00 00 00 
+02 00 00 00 00 00 00 00 FF FF FF FF 13 00 00 00 
+4C 02 00 00 51 02 00 00 43 02 00 00 4C 02 00 00 
+41 02 00 00 43 02 00 00 34 02 00 00 41 02 00 00 
+24 02 00 00 34 02 00 00 0B 02 00 00 24 02 00 00 
+03 02 00 00 0B 02 00 00 FB 01 00 00 03 02 00 00 
+EC 01 00 00 FB 01 00 00 EA 01 00 00 EC 01 00 00 
+E7 01 00 00 EA 01 00 00 DC 01 00 00 E7 01 00 00 
+DB 01 00 00 DC 01 00 00 D2 01 00 00 DB 01 00 00 
+CC 01 00 00 D2 01 00 00 C1 01 00 00 C5 01 00 00 
+BF 01 00 00 C1 01 00 00 7E 02 00 00 AA 02 00 00 
+96 00 00 00 97 00 00 00 00 00 00 00 23 00 00 00 
+01 00 00 00 01 00 00 00 00 00 00 00 FF FF FF FF 
+11 00 00 00 51 02 00 00 55 02 00 00 34 02 00 00 
+41 02 00 00 24 02 00 00 34 02 00 00 0B 02 00 00 
+24 02 00 00 03 02 00 00 0B 02 00 00 FB 01 00 00 
+03 02 00 00 EC 01 00 00 FB 01 00 00 EA 01 00 00 
+EC 01 00 00 E7 01 00 00 EA 01 00 00 DC 01 00 00 
+E7 01 00 00 DB 01 00 00 DC 01 00 00 D2 01 00 00 
+DB 01 00 00 CC 01 00 00 D2 01 00 00 C1 01 00 00 
+C5 01 00 00 BF 01 00 00 C1 01 00 00 7E 02 00 00 
+AA 02 00 00 96 00 00 00 97 00 00 00 00 00 00 00 
+23 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 
+FF FF FF FF 11 00 00 00 55 02 00 00 5A 02 00 00 
+34 02 00 00 41 02 00 00 24 02 00 00 34 02 00 00 
+0B 02 00 00 24 02 00 00 03 02 00 00 0B 02 00 00 
+FB 01 00 00 03 02 00 00 EC 01 00 00 FB 01 00 00 
+EA 01 00 00 EC 01 00 00 E7 01 00 00 EA 01 00 00 
+DC 01 00 00 E7 01 00 00 DB 01 00 00 DC 01 00 00 
+D2 01 00 00 DB 01 00 00 CC 01 00 00 D2 01 00 00 
+C1 01 00 00 C5 01 00 00 BF 01 00 00 C1 01 00 00 
+7E 02 00 00 AA 02 00 00 96 00 00 00 97 00 00 00 
+00 00 00 00 22 00 00 00 01 00 00 00 07 00 00 00 
+00 00 00 00 FF FF FF FF 03 00 00 00 5A 02 00 00 
+63 02 00 00 7E 02 00 00 AA 02 00 00 96 00 00 00 
+97 00 00 00 00 00 00 00 22 00 00 00 01 00 00 00 
+06 00 00 00 00 00 00 00 FF FF FF FF 03 00 00 00 
+63 02 00 00 6C 02 00 00 7E 02 00 00 AA 02 00 00 
+96 00 00 00 97 00 00 00 00 00 00 00 22 00 00 00 
+01 00 00 00 05 00 00 00 00 00 00 00 FF FF FF FF 
+03 00 00 00 6C 02 00 00 75 02 00 00 7E 02 00 00 
+AA 02 00 00 96 00 00 00 97 00 00 00 00 00 00 00 
+22 00 00 00 01 00 00 00 04 00 00 00 00 00 00 00 
+FF FF FF FF 03 00 00 00 75 02 00 00 7E 02 00 00 
+7E 02 00 00 AA 02 00 00 96 00 00 00 97 00 00 00 
+00 00 00 00 22 00 00 00 01 00 00 00 03 00 00 00 
+00 00 00 00 FF FF FF FF 03 00 00 00 AA 02 00 00 
+AD 02 00 00 7E 02 00 00 AA 02 00 00 96 00 00 00 
+97 00 00 00 00 00 00 00 22 00 00 00 01 00 00 00 
+02 00 00 00 00 00 00 00 FF FF FF FF 08 00 00 00 
+BA 0F 00 00 BD 0F 00 00 B8 0F 00 00 BA 0F 00 00 
+B6 0F 00 00 B8 0F 00 00 B4 0F 00 00 B6 0F 00 00 
+B2 0F 00 00 B4 0F 00 00 B1 0F 00 00 B2 0F 00 00 
+AD 0F 00 00 B1 0F 00 00 AA 0F 00 00 AD 0F 00 00 
+00 00 00 00 22 00 00 00 01 00 00 00 01 00 00 00 
+00 00 00 00 FF FF FF FF 09 00 00 00 FD 0F 00 00 
+00 10 00 00 FA 0F 00 00 FD 0F 00 00 F8 0F 00 00 
+FA 0F 00 00 F2 0F 00 00 F8 0F 00 00 F1 0F 00 00 
+F2 0F 00 00 ED 0F 00 00 F1 0F 00 00 E7 0F 00 00 
+ED 0F 00 00 E1 0F 00 00 E7 0F 00 00 DC 0F 00 00 
+E1 0F 00 00 00 00 00 00 22 00 00 00 01 00 00 00 
+00 00 00 00 00 00 00 00 FF FF FF FF 09 00 00 00 
+56 0F 00 00 59 0F 00 00 55 0F 00 00 56 0F 00 00 
+54 0F 00 00 55 0F 00 00 53 0F 00 00 54 0F 00 00 
+52 0F 00 00 53 0F 00 00 51 0F 00 00 52 0F 00 00 
+50 0F 00 00 51 0F 00 00 4D 0F 00 00 50 0F 00 00 
+4A 0F 00 00 4D 0F 00 00 00 00 00 00 21 00 00 00 
+01 00 00 00 07 00 00 00 00 00 00 00 FF FF FF FF 
+03 00 00 00 47 0F 00 00 4A 0F 00 00 44 0F 00 00 
+47 0F 00 00 3E 0F 00 00 44 0F 00 00 00 00 00 00 
+21 00 00 00 01 00 00 00 06 00 00 00 00 00 00 00 
+FF FF FF FF 02 00 00 00 33 0F 00 00 36 0F 00 00 
+2E 0F 00 00 33 0F 00 00 00 00 00 00 21 00 00 00 
+01 00 00 00 05 00 00 00 00 00 00 00 FF FF FF FF 
+02 00 00 00 3B 0F 00 00 3E 0F 00 00 36 0F 00 00 
+3B 0F 00 00 00 00 00 00 21 00 00 00 01 00 00 00 
+04 00 00 00 00 00 00 00 FF FF FF FF 03 00 00 00 
+75 0F 00 00 78 0F 00 00 6D 0F 00 00 75 0F 00 00 
+68 0F 00 00 6D 0F 00 00 00 00 00 00 21 00 00 00 
+01 00 00 00 03 00 00 00 00 00 00 00 FF FF FF FF 
+03 00 00 00 95 0F 00 00 98 0F 00 00 8D 0F 00 00 
+95 0F 00 00 88 0F 00 00 8D 0F 00 00 00 00 00 00 
+21 00 00 00 01 00 00 00 02 00 00 00 00 00 00 00 
+FF FF FF FF 03 00 00 00 85 0F 00 00 88 0F 00 00 
+7D 0F 00 00 85 0F 00 00 78 0F 00 00 7D 0F 00 00 
+00 00 00 00 21 00 00 00 01 00 00 00 01 00 00 00 
+00 00 00 00 FF FF FF FF 02 00 00 00 20 0F 00 00 
+23 0F 00 00 1E 0F 00 00 20 0F 00 00 00 00 00 00 
+21 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 
+FF FF FF FF 02 00 00 00 1B 0F 00 00 1E 0F 00 00 
+19 0F 00 00 1B 0F 00 00 
+$codecov_info_hdr 16
+10 01 00 00 00 01 08 01 00 00 00 00 00 00 00 00 

@@ -8,6 +8,8 @@
       <itemPath>spi.h</itemPath>
       <itemPath>statemachine.h</itemPath>
       <itemPath>GardenGate_v4_config.h</itemPath>
+      <itemPath>usart.h</itemPath>
+      <itemPath>watchdog.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -20,6 +22,8 @@
       <itemPath>main.c</itemPath>
       <itemPath>statemachine.c</itemPath>
       <itemPath>spi.c</itemPath>
+      <itemPath>usart.c</itemPath>
+      <itemPath>watchdog.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -36,10 +40,10 @@
     <conf name="default" type="2">
       <toolsSet>
         <developmentServer>localhost</developmentServer>
-        <targetDevice>PIC12LF1822</targetDevice>
+        <targetDevice>PIC16LF1829</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>ICD4Tool</platformTool>
+        <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC8</languageToolchain>
         <languageToolchainVersion>2.32</languageToolchainVersion>
         <platform>3</platform>
@@ -181,8 +185,6 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-7ff"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/Users/henrik/MPLABXProjects/Gardengate_v4_LED.X/debug/default/Gardengate_v4_LED_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.ledbrightness" value="5"/>
@@ -298,6 +300,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-1fff"/>
         <property key="memories.rww" value="true"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/Users/henrik/MPLABXProjects/Gardengate_v4_LED.X/debug/default/Gardengate_v4_LED_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>

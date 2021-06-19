@@ -1,0 +1,173 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"399 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\bits/alltypes.h
+[s S1 ]
+[n S1 _IO_FILE ]
+"101 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
+[v _fputs `(i ~T0 @X0 0 ef2`*Cuc`*S1 ]
+"92
+[v _fputc `(i ~T0 @X0 0 ef2`i`*S1 ]
+"54 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h
+[v _strlen `(ui ~T0 @X0 0 ef1`*Cuc ]
+"55 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _flags `i ~T0 @X0 1 s ]
+[v _prec `i ~T0 @X0 1 s ]
+[v _width `i ~T0 @X0 1 s ]
+"66
+[v _dbuf `uc ~T0 @X0 -> 32 `i s ]
+"69
+[v _nout `i ~T0 @X0 1 s ]
+"72
+[v _pad `(i ~T0 @X0 1 sf3`*S1`*uc`i ]
+"73
+{
+[e :U _pad ]
+"72
+[v _fp `*S1 ~T0 @X0 1 r1 ]
+[v _buf `*uc ~T0 @X0 1 r2 ]
+[v _p `i ~T0 @X0 1 r3 ]
+"73
+[f ]
+"74
+[v _i `i ~T0 @X0 1 a ]
+[v _w `i ~T0 @X0 1 a ]
+"77
+[e $ ! != & _flags << -> 1 `i -> 0 `i -> 0 `i 10  ]
+{
+"78
+[e ( _fputs (2 , -> _buf `*Cuc _fp ]
+"79
+}
+[e :U 10 ]
+"82
+[e = _w ? < _p -> 0 `i : -> 0 `i _p ]
+"83
+[e = _i -> 0 `i ]
+"84
+[e $U 11  ]
+[e :U 12 ]
+{
+"85
+[e ( _fputc (2 , -> -> 32 `ui `i _fp ]
+"86
+[e =+ _i -> 1 `i ]
+"87
+}
+[e :U 11 ]
+"84
+[e $ < _i _w 12  ]
+[e :U 13 ]
+"90
+[e $ ! ! != & _flags << -> 1 `i -> 0 `i -> 0 `i 14  ]
+{
+"91
+[e ( _fputs (2 , -> _buf `*Cuc _fp ]
+"92
+}
+[e :U 14 ]
+"94
+[e ) -> + ( _strlen (1 -> _buf `*Cuc -> _w `ui `i ]
+[e $UE 9  ]
+"95
+[e :UE 9 ]
+}
+"692
+[v _vfpfcnvrt `(i ~T0 @X0 1 sf3`*S1`**uc`**v ]
+"693
+{
+[e :U _vfpfcnvrt ]
+"692
+[v _fp `*S1 ~T0 @X0 1 r1 ]
+[v _fmt `**uc ~T0 @X0 1 r2 ]
+[v _ap `**v ~T0 @X0 1 r3 ]
+"693
+[f ]
+"694
+[v _c `uc ~T0 @X0 1 a ]
+[v _cp `*uc ~T0 @X0 1 a ]
+[v _ct `uc ~T0 @X0 -> 3 `i a ]
+"695
+[v _done `i ~T0 @X0 1 a ]
+[v _i `i ~T0 @X0 1 a ]
+"696
+[v _ll `o ~T0 @X0 1 a ]
+"697
+[v _llu `uo ~T0 @X0 1 a ]
+"698
+[v _f `d ~T0 @X0 1 a ]
+"699
+[v _vp `*v ~T0 @X0 1 a ]
+"702
+[e $ ! == -> *U + *U _fmt * -> -> 0 `i `x -> -> # *U *U _fmt `i `x `ui -> 37 `ui 16  ]
+{
+"703
+[e =+ *U _fmt * -> -> 1 `i `x -> -> # *U *U _fmt `i `x ]
+"705
+[e = _flags = _width -> 0 `i ]
+"706
+[e = _prec -U -> 1 `i ]
+"1372
+[e $ ! == -> *U + *U _fmt * -> -> 0 `i `x -> -> # *U *U _fmt `i `x `ui -> 37 `ui 17  ]
+{
+"1373
+[e =+ *U _fmt * -> -> 1 `i `x -> -> # *U *U _fmt `i `x ]
+"1374
+[e ( _fputc (2 , -> -> 37 `ui `i _fp ]
+"1375
+[e ) -> 1 `i ]
+[e $UE 15  ]
+"1376
+}
+[e :U 17 ]
+"1379
+[e =+ *U _fmt * -> -> 1 `i `x -> -> # *U *U _fmt `i `x ]
+"1380
+[e ) -> 0 `i ]
+[e $UE 15  ]
+"1381
+}
+[e :U 16 ]
+"1384
+[e ( _fputc (2 , -> *U + *U _fmt * -> -> 0 `i `x -> -> # *U *U _fmt `i `x `i _fp ]
+"1385
+[e =+ *U _fmt * -> -> 1 `i `x -> -> # *U *U _fmt `i `x ]
+"1386
+[e ) -> 1 `i ]
+[e $UE 15  ]
+"1387
+[e :UE 15 ]
+}
+"1390
+[v _vfprintf `(i ~T0 @X0 1 ef3`*S1`*Cuc`**v ]
+"1391
+{
+[e :U _vfprintf ]
+"1390
+[v _fp `*S1 ~T0 @X0 1 r1 ]
+[v _fmt `*Cuc ~T0 @X0 1 r2 ]
+[v _ap `**v ~T0 @X0 1 r3 ]
+"1391
+[f ]
+"1393
+[v _cfmt `*uc ~T0 @X0 1 a ]
+"1395
+[e = _cfmt -> _fmt `*uc ]
+"1396
+[e = _nout -> 0 `i ]
+"1397
+[e $U 19  ]
+[e :U 20 ]
+{
+"1398
+[e =+ _nout ( _vfpfcnvrt (3 , , _fp &U _cfmt _ap ]
+"1399
+}
+[e :U 19 ]
+"1397
+[e $ != -> *U _cfmt `i -> 0 `i 20  ]
+[e :U 21 ]
+"1400
+[e ) _nout ]
+[e $UE 18  ]
+"1404
+[e :UE 18 ]
+}

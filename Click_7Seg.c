@@ -30,9 +30,6 @@ void int2bcd(int number, char comma) {
         spi1_send(0xF4, 0x64);  // "Er" for Overload error 
 }
 
-
-
-
 void Click_reset(void) {
     
     //  Resets the Click module slot on the PCB
@@ -49,8 +46,7 @@ void Click_latch_data(void) {
     LATCbits.LATC6 = 0;     // CS / (latch)
 }
 
-const unsigned char C7SEG_CHAR_TABLE[ 51 ]=
-{
+const unsigned char C7SEG_CHAR_TABLE[ 51 ]= {
     // lookup table to convert numbers into 7-segment display
     
     0x80, // '-'
@@ -103,8 +99,7 @@ const unsigned char C7SEG_CHAR_TABLE[ 51 ]=
     0x00, // '/'
     0x00, // ']'
     0x00, // '^'
-    0x10, // '_'
-}
+    0x10  // '_' 
+};
 
 #endif
-

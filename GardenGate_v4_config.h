@@ -35,10 +35,12 @@
 
 #if defined(_16LF1829) // 20-pin PDIP
     #define DOOR_INPUT              PORTAbits.RA2   // PIN11 RA2 interrupt input
-    #define OUTPUT_DOOR_OPEN        LATBbits.LATB5  // PIN12 RB5   PIN 12
+    #define OUTPUT_DOOR_OPEN        LATCbits.LATC0  // PIN16 RC0   PIN 16
     #define OUTPUT_DOOR_CLOSED      LATCbits.LATC2  // PIN14 RC2   PIN 14
     #define OUTPUT_BATTERY_LOW      LATCbits.LATC1  // PIN15 RC1
     #define LED4                    LATCbits.LATC5  // Rightmost LED on curiocity board
+    // UART RX pin 12  (UART receive)  needs external wiring on curioucity board from VCOM TX pin to pin 10
+    // UART TX pin 10  (UART transmit) needs external wiring on curioucity board from VCOM RX pin to pin 12
 #elif defined(_12LF1822)  // 8-pin PDIP
     #define DEBUG_OUTPUT            LATAbits.LATA5  // (pin2)
     #define OUTPUT_BATTERY_LOW      LATAbits.LATA4  // (pin3)
@@ -59,7 +61,7 @@
 
 #define _XTAL_FREQ 16000000          // 16 MHz
 
-extern volatile int sleep_64ms_counter;
+//extern volatile int sleep_64ms_counter;
 extern volatile int sleep_128ms_counter;
 extern volatile int sleep_256ms_counter;
 extern volatile int sleep_1s_counter;
@@ -75,7 +77,7 @@ extern void PWM_init(void);
 extern void PWM_set(unsigned char duty_cycle);
 #endif
 
-extern void set_watchdog_timer_64ms(void);
+//extern void set_watchdog_timer_64ms(void);
 extern void set_watchdog_timer_128ms(void);
 extern void set_watchdog_timer_256ms(void);
 extern void set_watchdog_timer_1s(void); 

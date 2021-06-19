@@ -6,27 +6,22 @@
  */
 
 #if defined(_16LF1829) 
-
-
-#include <xc.h>
-
-
-
-
+    #include <xc.h>
 
 //#include <pic16lf1823.h>
-#include <pic16lf1829.h>
-//#include "spi.h"
-#include "Click_7Seg.h"         // using Click_latch_data function
+
+    #include <pic16lf1829.h>
+    //#include "spi.h"
+    #include "Click_7Seg.h"         // using Click_latch_data function
 
 /* Pin connections from PIC to 74HC595
  * RCLK (RC1)   -> RCLK     (Pin 12)
  * SDO1 (RC2)   -> SER      (Pin 14)
  * SCLK1 (RC3)  -> SRCLK    (Pin 11)
 */
+    #define RCLK LATCbits.LATC1
 
 #define _XTAL_FREQ 16000000
-//#define RCLK LATCbits.LATC1
 
 void spi1_init(void){
     
@@ -65,7 +60,7 @@ void spi1_init(void){
     PWM1CONbits.P1RSEN = 1;
     SSP1CON1bits.SSPEN = 1; // SSP1EN: Synchronous Serial Port Enable bit
        
-    RCLK = 0;
+    //RCLK = 0;
 }
 
 void spi1_send (char data1, char data2){
