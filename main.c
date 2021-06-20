@@ -9,9 +9,9 @@
  *              DOOR_CLOSED  RC4->  : 6           15: <> RC1  OUTPUT BATTERY LOW 
  *                     {nSS] RC3->  : 7           14: <> RC2  OUTPUT DOOR CLOSED
  *                           RC6 <> : 8 CS    SDI 13: <> RB4
- *                           RC7 <> : 9 SDO       12: <> RB5  UART RX
+ *                           RC7 <> : 9 SDO       12: <> RB5  UART RX (TO VCOM, RX @Curiosity Board)
  *                  UART TX  RB7 <> : 10      CLK 11: <> RB6  
- *                                  +---------------+
+ *(TO VCOM, TX @Curiosity Board     +---------------+
  *                                        DIP-20
  *
  *
