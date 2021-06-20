@@ -1,28 +1,29 @@
 # HKOCH my gitignore file 210620
+
+# Microchip MPLABX / XC8 related files
+# See: http://microchip.wikidot.com/mplabx:directory-structure
+
+*.cmf
 *.d
-*.pre
-*.p1
-*.lst
-*.sym
-*.obj
-*.o
-*.sdb
-*.obj.dmp
-html/
-nbproject/private/
-nbproject/Package-*.bash
-build/
-nbbuild/
-dist/
-nbdist/
-nbactions.xml
-nb-configuration.xml
 funclist
-nbproject/Makefile-*
-disassembly/
+*.hxl
+*.lst
+*.mk
 *.map
-/dist
-/build
-/nbproject/Makefile-*
-/nbproject/Package-*
+*.mum
+*.p1
+*.pre
+*.rlf
+*.sdb
+*.sym
+
+# Note - these ignore the 'private' directory which is machine
+# specific information, meaning any USB debug tools won't be
+# version controlled.
+#
+# See: http://electronics.stackexchange.com/questions/131588/which-files-to-version-control-in-mplabx-nbproject-directory
+**/nbproject/**
+!**/nbproject/configurations.xml
+!**/nbproject/project.properties
+!**/nbproject/project.xml
 /nbproject/private

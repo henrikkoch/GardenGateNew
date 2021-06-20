@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+$C:\Users\henrik\AppData\Local\Temp\xcAsob4.o
 init CODE 0 71 71 3 2
 reset_vec CODE 0 0 0 3 2
 end_init CODE 0 74 74 2 2
@@ -180,34 +180,34 @@ STRING 119F-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/debug\Gardengate_v4_LED.X.debug.o
-76 cinit CODE >2317:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-76 cinit CODE >2320:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-76 cinit CODE >2659:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-77 cinit CODE >2660:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-78 cinit CODE >2661:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-79 cinit CODE >2665:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-7A cinit CODE >2669:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-7B cinit CODE >2670:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-7C cinit CODE >2671:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-7D cinit CODE >2672:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-7E cinit CODE >2673:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-7F cinit CODE >2674:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-82 cinit CODE >2678:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-83 cinit CODE >2679:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-84 cinit CODE >2680:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-85 cinit CODE >2681:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-86 cinit CODE >2682:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-87 cinit CODE >2683:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-8A cinit CODE >2687:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-8B cinit CODE >2688:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-8C cinit CODE >2689:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-8D cinit CODE >2690:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-8E cinit CODE >2691:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-8F cinit CODE >2692:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-92 cinit CODE >2698:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-92 cinit CODE >2700:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-93 cinit CODE >2701:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-94 cinit CODE >2702:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+76 cinit CODE >2317:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+76 cinit CODE >2320:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+76 cinit CODE >2659:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+77 cinit CODE >2660:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+78 cinit CODE >2661:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+79 cinit CODE >2665:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+7A cinit CODE >2669:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+7B cinit CODE >2670:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+7C cinit CODE >2671:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+7D cinit CODE >2672:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+7E cinit CODE >2673:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+7F cinit CODE >2674:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+82 cinit CODE >2678:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+83 cinit CODE >2679:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+84 cinit CODE >2680:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+85 cinit CODE >2681:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+86 cinit CODE >2682:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+87 cinit CODE >2683:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+8A cinit CODE >2687:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+8B cinit CODE >2688:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+8C cinit CODE >2689:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+8D cinit CODE >2690:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+8E cinit CODE >2691:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+8F cinit CODE >2692:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+92 cinit CODE >2698:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+92 cinit CODE >2700:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+93 cinit CODE >2701:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+94 cinit CODE >2702:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
 4 intentry CODE >480:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
 6 intentry CODE >483:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
 11 intentry CODE >486:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
@@ -516,49 +516,49 @@ FB text7 CODE >97:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachin
 1CF text7 CODE >213:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
 1D2 text7 CODE >216:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
 1DA text7 CODE >221:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-1DC text7 CODE >223:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-1DF text7 CODE >226:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-1E7 text7 CODE >237:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-1EA text7 CODE >244:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-1EC text7 CODE >246:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-1F3 text7 CODE >246:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-1F7 text7 CODE >246:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-1FB text7 CODE >249:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-203 text7 CODE >252:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-20B text7 CODE >255:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-224 text7 CODE >256:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-234 text7 CODE >266:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-239 text7 CODE >266:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-23D text7 CODE >266:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-241 text7 CODE >267:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-243 text7 CODE >268:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-24C text7 CODE >269:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-250 text7 CODE >270:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-251 text7 CODE >271:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-253 text7 CODE >272:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-255 text7 CODE >274:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-25A text7 CODE >280:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-262 text7 CODE >282:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-263 text7 CODE >285:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-26B text7 CODE >287:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-26C text7 CODE >290:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-274 text7 CODE >292:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-275 text7 CODE >295:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-27D text7 CODE >297:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-27E text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-284 text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-289 text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-28C text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-28F text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-292 text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-295 text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-298 text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-29B text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-29E text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-2A1 text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-2A4 text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-2A7 text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-2AA text7 CODE >299:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1DC text7 CODE >224:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1DF text7 CODE >227:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1E7 text7 CODE >238:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1EA text7 CODE >245:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1EC text7 CODE >247:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1F3 text7 CODE >247:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1F7 text7 CODE >247:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+1FB text7 CODE >250:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+203 text7 CODE >253:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+20B text7 CODE >256:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+224 text7 CODE >257:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+234 text7 CODE >267:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+239 text7 CODE >267:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+23D text7 CODE >267:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+241 text7 CODE >268:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+243 text7 CODE >269:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+24C text7 CODE >270:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+250 text7 CODE >271:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+251 text7 CODE >272:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+253 text7 CODE >273:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+255 text7 CODE >275:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+25A text7 CODE >281:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+262 text7 CODE >283:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+263 text7 CODE >286:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+26B text7 CODE >288:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+26C text7 CODE >291:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+274 text7 CODE >293:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+275 text7 CODE >296:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+27D text7 CODE >298:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+27E text7 CODE >299:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+284 text7 CODE >299:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+289 text7 CODE >299:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+28C text7 CODE >299:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+28F text7 CODE >299:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+292 text7 CODE >299:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+295 text7 CODE >299:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+298 text7 CODE >299:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+29B text7 CODE >299:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+29E text7 CODE >299:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+2A1 text7 CODE >299:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+2A4 text7 CODE >299:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+2A7 text7 CODE >299:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
+2AA text7 CODE >300:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
 5FA text6 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
 5FA text6 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
 5FB text6 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
@@ -752,14 +752,14 @@ F66 text1 CODE >413:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
 3FF maintext CODE >301:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
 40A maintext CODE >303:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
 410 maintext CODE >307:C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
-F28 clrtext CODE >2648:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-F28 clrtext CODE >2649:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-F29 clrtext CODE >2650:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-F29 clrtext CODE >2651:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-F2A clrtext CODE >2652:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-F2B clrtext CODE >2653:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-F2C clrtext CODE >2654:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
-F2D clrtext CODE >2655:C:\Users\henrik\AppData\Local\Temp\xcAs1218.s
+F28 clrtext CODE >2648:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+F28 clrtext CODE >2649:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+F29 clrtext CODE >2650:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+F29 clrtext CODE >2651:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+F2A clrtext CODE >2652:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+F2B clrtext CODE >2653:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+F2C clrtext CODE >2654:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
+F2D clrtext CODE >2655:C:\Users\henrik\AppData\Local\Temp\xcAsob4.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -864,13 +864,13 @@ _SYNC CF4 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
 _TXEN CF5 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
 _TXIF 8C 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov142_end_blk8 DD4 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
-___sp 0 0 STACK 2 stack C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+___sp 0 0 STACK 2 stack C:\Users\henrik\AppData\Local\Temp\xcAsob4.o
 _main 55A 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
 _nout 28 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
 _prec 2C 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
 btemp 7E 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov125_end_blk5 CC6 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
-start E2 0 CODE 0 init C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+start E2 0 CODE 0 init C:\Users\henrik\AppData\Local\Temp\xcAsob4.o
 _watch_dog_incrementing_timer 942 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov266_start_blk5 1F6C 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov140_start_blk6 DC2 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
@@ -930,7 +930,7 @@ __ccov100_end_blk90 780 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X
 __ccov210_start_blk26 222 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
 __end_of_vfpfcnvrt B34 0 CODE 0 text15 dist/default/debug\Gardengate_v4_LED.X.debug.o
 ___awmod@sign 7B 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
-___resetbits 20 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+___resetbits 20 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAsob4.o
 __ccov199_start_blk11 18A 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov241_start_blk72 3B8 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov59_end_blk48 604 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
@@ -940,12 +940,12 @@ _WakeUpCounter 30 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debu
 __size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov235_start_blk65 382 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov318_start_blk1 1E36 0 CODE 0 text22 dist/default/debug\Gardengate_v4_LED.X.debug.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAsob4.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAsob4.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAsob4.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAsob4.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAsob4.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\henrik\AppData\Local\Temp\xcAsob4.o
 __ccov86_end_blk75 718 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
 _WDTCONbits 97 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov34_end_blk23 59E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
@@ -1067,8 +1067,8 @@ __ccov4_start_blk4 8C8 0 CODE 0 text3 dist/default/debug\Gardengate_v4_LED.X.deb
 __ccov67_end_blk56 61E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov259_end_blk104 554 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov244_end_blk80 3F6 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
-___stackhi 23EF 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
-___stacklo 2070 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+___stackhi 23EF 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAsob4.o
+___stacklo 2070 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAsob4.o
 __ccov261_end_blk0 1F5A 0 CODE 0 text2 dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov223_start_blk48 2E8 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov11_end_blk0 564 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
@@ -1195,7 +1195,7 @@ __ccov286_end_blk8 1EB2 0 CODE 0 text25 dist/default/debug\Gardengate_v4_LED.X.d
 __size_of_spi1_init 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
 __size_of_spi1_send 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov71_start_blk60 62E 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
-___int_sp 0 0 STACK 2 stack C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+___int_sp 0 0 STACK 2 stack C:\Users\henrik\AppData\Local\Temp\xcAsob4.o
 __end_of_int2bcd 942 0 CODE 0 text3 dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov125_start_blk5 CC0 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov269_end_blk0 1FC2 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
@@ -1416,7 +1416,7 @@ _prelCounter 3E 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.
 __ccov139_start_blk5 DBE 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
 int$flags 7E 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
 __size_of_PWM_set 0 0 ABS 0 - dist/default/debug\Gardengate_v4_LED.X.debug.o
-___timeout 104 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+___timeout 104 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAsob4.o
 __ccov62_start_blk51 60C 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __ccov17_start_blk6 578 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
@@ -1515,7 +1515,7 @@ __ccov56_end_blk45 5E0 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.
 _sleep_4s_counter 34 0 BANK0 1 bssBANK0 dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov233_end_blk62 37E 0 CODE 0 text7 dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov84_start_blk73 6B6 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\henrik\AppData\Local\Temp\xcAsob4.o
 __ccov151_end_blk0 95E 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov163_start_blk16 A02 0 CODE 0 text8 dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov47_start_blk36 5BE 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o
@@ -1634,7 +1634,7 @@ __ccov44_start_blk33 5B6 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.
 __Hcodecov_info 26A8 0 ABS 6 codecov_info -
 __ccov121_start_blk0 C9A 0 CODE 0 text26 dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov269_start_blk0 1FB8 0 CODE 0 text4 dist/default/debug\Gardengate_v4_LED.X.debug.o
-___powerdown 103 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+___powerdown 103 0 ABS 0 - C:\Users\henrik\AppData\Local\Temp\xcAsob4.o
 __ccov143_start_blk9 DD4 0 CODE 0 text19 dist/default/debug\Gardengate_v4_LED.X.debug.o
 ___wmul@multiplier 75 0 COMMON 1 cstackCOMMON dist/default/debug\Gardengate_v4_LED.X.debug.o
 __ccov75_start_blk64 650 0 CODE 0 maintext dist/default/debug\Gardengate_v4_LED.X.debug.o

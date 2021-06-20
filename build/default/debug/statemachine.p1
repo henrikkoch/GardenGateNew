@@ -990,129 +990,129 @@ Version 4.0 HI-TECH Software Intermediate Code
 "221
 [; ;statemachine.c: 221:             __nop();
 [e ( ___nop ..  ]
-"223
-[; ;statemachine.c: 223:             disable_watchdog_timer();
+"224
+[; ;statemachine.c: 224:             disable_watchdog_timer();
 [e ( _disable_watchdog_timer ..  ]
-"226
-[; ;statemachine.c: 226:                 printf("...now awake due to watchdog timer\r\n");
+"227
+[; ;statemachine.c: 227:                 printf("...now awake due to watchdog timer\r\n");
 [e ( _printf :s 12C ]
-"230
-[; ;statemachine.c: 230:             if ((__timeout == 0) && (__powerdown == 1)) {
+"231
+[; ;statemachine.c: 231:             if ((__timeout == 0) && (__powerdown == 1)) {
 [e $ ! && == -> ___timeout `i -> 0 `i == -> ___powerdown `i -> 1 `i 407  ]
 {
-"232
-[; ;statemachine.c: 232:             }
+"233
+[; ;statemachine.c: 233:             }
 }
 [e $U 408  ]
-"233
-[; ;statemachine.c: 233:             else {
+"234
+[; ;statemachine.c: 234:             else {
 [e :U 407 ]
 {
-"236
-[; ;statemachine.c: 236:             }
+"237
+[; ;statemachine.c: 237:             }
 }
 [e :U 408 ]
-"237
-[; ;statemachine.c: 237:             watch_dog_incrementing_timer();
+"238
+[; ;statemachine.c: 238:             watch_dog_incrementing_timer();
 [e ( _watch_dog_incrementing_timer ..  ]
-"244
-[; ;statemachine.c: 244:             PSTR1CONbits.STR1A = 1;
+"245
+[; ;statemachine.c: 245:             PSTR1CONbits.STR1A = 1;
 [e = . . _PSTR1CONbits 0 0 -> -> 1 `i `uc ]
-"246
-[; ;statemachine.c: 246:             if (sleep_256s_counter >= 337) {
+"247
+[; ;statemachine.c: 247:             if (sleep_256s_counter >= 337) {
 [e $ ! >= _sleep_256s_counter -> 337 `i 409  ]
 {
-"249
-[; ;statemachine.c: 249:                     printf("measure battery\r\n");
+"250
+[; ;statemachine.c: 250:                     printf("measure battery\r\n");
 [e ( _printf :s 13C ]
-"252
-[; ;statemachine.c: 252:                 BatteryVoltage = getBatteryVoltage();
+"253
+[; ;statemachine.c: 253:                 BatteryVoltage = getBatteryVoltage();
 [e = _BatteryVoltage ( _getBatteryVoltage ..  ]
-"255
-[; ;statemachine.c: 255:                 millivolts = (8192 / BatteryVoltage) * 1024;
-[e = _millivolts * / -> 8192 `i _BatteryVoltage -> 1024 `i ]
 "256
-[; ;statemachine.c: 256:                 millivolts = millivolts /8;
+[; ;statemachine.c: 256:                 millivolts = (8192 / BatteryVoltage) * 1024;
+[e = _millivolts * / -> 8192 `i _BatteryVoltage -> 1024 `i ]
+"257
+[; ;statemachine.c: 257:                 millivolts = millivolts /8;
 [e = _millivolts / _millivolts -> 8 `i ]
-"266
-[; ;statemachine.c: 266:                 if (millivolts <= 2400) {
+"267
+[; ;statemachine.c: 267:                 if (millivolts <= 2400) {
 [e $ ! <= _millivolts -> 2400 `i 410  ]
 {
-"267
-[; ;statemachine.c: 267:                     LATCbits.LATC1 = 1;
-[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
 "268
-[; ;statemachine.c: 268:                     _delay((unsigned long)((5*8)*(16000000/4000.0)));
-[e ( __delay (1 -> * -> * -> 5 `i -> 8 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+[; ;statemachine.c: 268:                     LATCbits.LATC1 = 1;
+[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
 "269
-[; ;statemachine.c: 269:                     LATCbits.LATC1 = !1;
-[e = . . _LATCbits 0 1 -> -> ! != -> 1 `i -> 0 `i `i `uc ]
+[; ;statemachine.c: 269:                     _delay((unsigned long)((5*8)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> * -> 5 `i -> 8 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "270
-[; ;statemachine.c: 270:                 }
+[; ;statemachine.c: 270:                     LATCbits.LATC1 = !1;
+[e = . . _LATCbits 0 1 -> -> ! != -> 1 `i -> 0 `i `i `uc ]
+"271
+[; ;statemachine.c: 271:                 }
 }
 [e $U 411  ]
-"271
-[; ;statemachine.c: 271:                 else {
+"272
+[; ;statemachine.c: 272:                 else {
 [e :U 410 ]
 {
-"272
-[; ;statemachine.c: 272:                     LATCbits.LATC1 = !1;
-[e = . . _LATCbits 0 1 -> -> ! != -> 1 `i -> 0 `i `i `uc ]
 "273
-[; ;statemachine.c: 273:                 }
+[; ;statemachine.c: 273:                     LATCbits.LATC1 = !1;
+[e = . . _LATCbits 0 1 -> -> ! != -> 1 `i -> 0 `i `i `uc ]
+"274
+[; ;statemachine.c: 274:                 }
 }
 [e :U 411 ]
-"274
-[; ;statemachine.c: 274:                 sleep_256s_counter = 0;
-[e = _sleep_256s_counter -> 0 `i ]
 "275
-[; ;statemachine.c: 275:             }
+[; ;statemachine.c: 275:                 sleep_256s_counter = 0;
+[e = _sleep_256s_counter -> 0 `i ]
+"276
+[; ;statemachine.c: 276:             }
 }
 [e :U 409 ]
-"276
-[; ;statemachine.c: 276:             state_machine = STATE_CHECK_DOOR;
-[e = _state_machine . `E2594 2 ]
 "277
-[; ;statemachine.c: 277:             break;
-[e $U 381  ]
+[; ;statemachine.c: 277:             state_machine = STATE_CHECK_DOOR;
+[e = _state_machine . `E2594 2 ]
 "278
-[; ;statemachine.c: 278:         case STATE_DOOR_CHANGED:
+[; ;statemachine.c: 278:             break;
+[e $U 381  ]
+"279
+[; ;statemachine.c: 279:         case STATE_DOOR_CHANGED:
 [e :U 412 ]
-"280
-[; ;statemachine.c: 280:                 printf("STATE_DOOR_CHANGED\r\n");
+"281
+[; ;statemachine.c: 281:                 printf("STATE_DOOR_CHANGED\r\n");
 [e ( _printf :s 14C ]
-"282
-[; ;statemachine.c: 282:             break;
-[e $U 381  ]
 "283
-[; ;statemachine.c: 283:         case STATE_MEASURE_BATTERY:
+[; ;statemachine.c: 283:             break;
+[e $U 381  ]
+"284
+[; ;statemachine.c: 284:         case STATE_MEASURE_BATTERY:
 [e :U 413 ]
-"285
-[; ;statemachine.c: 285:                 printf("STATE_MEASURE_BATTERY\r\n");
+"286
+[; ;statemachine.c: 286:                 printf("STATE_MEASURE_BATTERY\r\n");
 [e ( _printf :s 15C ]
-"287
-[; ;statemachine.c: 287:             break;
-[e $U 381  ]
 "288
-[; ;statemachine.c: 288:         case STATE_SLEEPING:
+[; ;statemachine.c: 288:             break;
+[e $U 381  ]
+"289
+[; ;statemachine.c: 289:         case STATE_SLEEPING:
 [e :U 414 ]
-"290
-[; ;statemachine.c: 290:                 printf("STATE_SLEEPING\r\n");
+"291
+[; ;statemachine.c: 291:                 printf("STATE_SLEEPING\r\n");
 [e ( _printf :s 16C ]
-"292
-[; ;statemachine.c: 292:             break;
-[e $U 381  ]
 "293
-[; ;statemachine.c: 293:         default:
-[e :U 415 ]
-"295
-[; ;statemachine.c: 295:                 printf("STATE_default\r\n");
-[e ( _printf :s 17C ]
-"297
-[; ;statemachine.c: 297:             break;
+[; ;statemachine.c: 293:             break;
 [e $U 381  ]
+"294
+[; ;statemachine.c: 294:         default:
+[e :U 415 ]
+"296
+[; ;statemachine.c: 296:                 printf("STATE_default\r\n");
+[e ( _printf :s 17C ]
 "298
-[; ;statemachine.c: 298:     }
+[; ;statemachine.c: 298:             break;
+[e $U 381  ]
+"299
+[; ;statemachine.c: 299:     }
 }
 [e $U 381  ]
 [e :U 382 ]
@@ -1129,8 +1129,8 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> . `E2594 10 `ui 414
  415 ]
 [e :U 381 ]
-"299
-[; ;statemachine.c: 299: }
+"300
+[; ;statemachine.c: 300: }
 [e :UE 380 ]
 }
 [p f _printf 8388608 ]

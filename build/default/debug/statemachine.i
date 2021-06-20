@@ -4969,6 +4969,7 @@ void checkState1(void) {
             __asm("sleep");
             __nop();
 
+
             disable_watchdog_timer();
 
 
@@ -5003,7 +5004,7 @@ void checkState1(void) {
 
                 millivolts = (8192 / BatteryVoltage) * 1024;
                 millivolts = millivolts /8;
-# 266 "statemachine.c"
+# 267 "statemachine.c"
                 if (millivolts <= 2400) {
                     LATCbits.LATC1 = 1;
                     _delay((unsigned long)((5*8)*(16000000/4000.0)));

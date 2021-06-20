@@ -5,7 +5,7 @@ Linker command line:
 --edf=C:\Program Files\Microchip\xc8\v2.32\pic\dat\en_msgs.txt -cn \
   -h+dist/default/debug\Gardengate_v4_LED.X.debug.sym \
   --cmf=dist/default/debug\Gardengate_v4_LED.X.debug.cmf -z -Q16LF1829 \
-  -oC:\Users\henrik\AppData\Local\Temp\xcAs1218.4 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\henrik\AppData\Local\Temp\xcAsob4.4 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/debug/Gardengate_v4_LED.X.debug.map -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ASTACK=02070h-023EFh -pstack=STACK -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
@@ -32,7 +32,7 @@ Linker command line:
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
   -DENTRY=2 -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE \
   -pcinit=CODE -pfunctab=ENTRY -k \
-  C:\Users\henrik\AppData\Local\Temp\xcAs1218.o \
+  C:\Users\henrik\AppData\Local\Temp\xcAsob4.o \
   dist/default/debug\Gardengate_v4_LED.X.debug.o 
 
 Object code version is 3.11
@@ -42,7 +42,7 @@ Machine type is 16LF1829
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\henrik\AppData\Local\Temp\xcAs1218.o
+C:\Users\henrik\AppData\Local\Temp\xcAsob4.o
                 end_init                             74       74        2        8       0
                 init                                 71       71        3        8       0
                 reset_vec                             0        0        3        0       0

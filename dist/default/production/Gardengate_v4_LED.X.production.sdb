@@ -1,16 +1,16 @@
 [p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
 [d version 1.1 ]
 [d edition pro ]
-[d chip 16LF1829 ]
+[d chip 12LF1822 ]
 [d frameptr 6 ]
-"251 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
-[e E2926 STATE_DOOR_STATES `uc
+"245 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+[e E1937 STATE_DOOR_STATES `uc
 STATE_DOOR_CLOSED 0
 STATE_DOOR_OPEN 1
 STATE_DOOR_UNKNOWN 2
 ]
-"252
-[e E2930 STATE_MACHINE1_STATES `uc
+"246
+[e E1941 STATE_MACHINE1_STATES `uc
 STATE_JUST_AWAKED 0
 STATE_NEW_DOOR_STATE 1
 STATE_CHECK_DOOR 2
@@ -26,13 +26,13 @@ STATE_INITIALIZE 11
 STATE_SELFTEST 12
 ]
 "36 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
-[e E2590 STATE_DOOR_STATES `uc
+[e E1937 STATE_DOOR_STATES `uc
 STATE_DOOR_CLOSED 0
 STATE_DOOR_OPEN 1
 STATE_DOOR_UNKNOWN 2
 ]
 "37
-[e E2594 STATE_MACHINE1_STATES `uc
+[e E1941 STATE_MACHINE1_STATES `uc
 STATE_JUST_AWAKED 0
 STATE_NEW_DOOR_STATE 1
 STATE_CHECK_DOOR 2
@@ -48,7 +48,7 @@ STATE_INITIALIZE 11
 STATE_SELFTEST 12
 ]
 "38
-[e E2608 STATE_OUTPUT_PULSE_STATES `uc
+[e E1955 STATE_OUTPUT_PULSE_STATES `uc
 STATE_OUTPUT_PULSE_DOOR_OPEN 0
 STATE_OUTPUT_PULSE_DOOR_CLOSED 1
 STATE_OUTPUT_PULSE_BATTERY_LOW 2
@@ -56,70 +56,38 @@ STATE_OUTPUT_PULSE_ERRROR 3
 STATE_OUTPUT_TEST 4
 ]
 "39
-[e E2614 STATE_SELFTEST_STATES `uc
+[e E1961 STATE_SELFTEST_STATES `uc
 STATE_SELFTEST_OUTPUT_PULSE_DOOR_OPEN 0
 STATE_SELFTEST_OUTPUT_PULSE_DOOR_CLOSED 1
 STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 ]
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
-[v ___awmod __awmod `(i  1 e 2 0 ]
-"692 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
-"1390
-[v _vfprintf vfprintf `(i  1 e 2 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
-[v _fputc fputc `(i  1 e 2 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
-[v _fputs fputs `(i  1 e 2 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
-[v _printf printf `(i  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
-[v _strlen strlen `(ui  1 e 2 0 ]
-"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
-[v ___wmul __wmul `(ui  1 e 2 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
 "6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\pic\__eeprom.c
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"19 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
-[v _int2bcd int2bcd `(v  1 e 1 0 ]
-"33
-[v _Click_reset Click_reset `(v  1 e 1 0 ]
-"41
-[v _Click_latch_data Click_latch_data `(v  1 e 1 0 ]
-"110 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+"107 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"380
-[v _PWM_set PWM_set `(v  1 e 1 0 ]
-"409
+"405
 [v _timer2_init timer2_init `(v  1 e 1 0 ]
-"418
+"414
 [v _getBatteryVoltage getBatteryVoltage `(i  1 e 2 0 ]
-"453
+"449
 [v _watch_dog_incrementing_timer watch_dog_incrementing_timer `(v  1 e 1 0 ]
-"475
+"471
 [v _enable_external_interrupt enable_external_interrupt `(v  1 e 1 0 ]
-"478
+"474
 [v _disable_external_interrupt disable_external_interrupt `(v  1 e 1 0 ]
-"484
+"480
 [v _my_isr my_isr `II(v  1 e 1 0 ]
-"26 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
-[v _spi1_init spi1_init `(v  1 e 1 0 ]
-"66
-[v _spi1_send spi1_send `(v  1 e 1 0 ]
 "41 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
 [v _checkState1 checkState1 `(v  1 e 1 0 ]
-"13 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
-[v _UART_init UART_init `(v  1 e 1 0 ]
-"39
-[v _putch putch `(v  1 e 1 0 ]
-"46
+"46 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
 [v _UART_write UART_write `(v  1 e 1 0 ]
 "20 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
 [v _set_watchdog_timer_128ms set_watchdog_timer_128ms `(v  1 e 1 0 ]
@@ -139,7 +107,7 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 [v ___powerdown __powerdown `Pb  1 e 0 0 ]
 "139
 [v ___timeout __timeout `Pb  1 e 0 0 ]
-[s S286 . 1 `uc 1 IOCIF 1 0 :1:0 
+[s S144 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 IOCIE 1 0 :1:3 
@@ -148,27 +116,83 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-"374 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16lf1829.h
-[s S295 . 1 `uc 1 . 1 0 :2:0 
+"374 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic12lf1822.h
+[s S153 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 T0IE 1 0 :1:5 
 ]
-[u S300 . 1 `S286 1 . 1 0 `S295 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES300  1 e 1 @11 ]
-[s S620 . 1 `uc 1 RA0 1 0 :1:0 
+[u S158 . 1 `S144 1 . 1 0 `S153 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES158  1 e 1 @11 ]
+[s S431 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
 `uc 1 RA4 1 0 :1:4 
 `uc 1 RA5 1 0 :1:5 
 ]
-"444
-[u S627 . 1 `S620 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES627  1 e 1 @12 ]
-"580
+"509
+[s S438 . 1 `uc 1 AN0 1 0 :1:0 
+`uc 1 AN1 1 0 :1:1 
+`uc 1 AN2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 AN3 1 0 :1:4 
+]
+[s S444 . 1 `uc 1 CPS0 1 0 :1:0 
+`uc 1 CPS1 1 0 :1:1 
+`uc 1 CPS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CPS3 1 0 :1:4 
+]
+[s S450 . 1 `uc 1 C1INP 1 0 :1:0 
+`uc 1 C1IN0N 1 0 :1:1 
+`uc 1 C1OUT 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 C1IN1N 1 0 :1:4 
+]
+[s S456 . 1 `uc 1 DACOUT 1 0 :1:0 
+`uc 1 SRI 1 0 :1:1 
+`uc 1 SRQ 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 SRNQ 1 0 :1:5 
+]
+[s S462 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SCK 1 0 :1:1 
+`uc 1 T0CKI 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1OSO 1 0 :1:4 
+`uc 1 T1CKI 1 0 :1:5 
+]
+[s S469 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SCL 1 0 :1:1 
+`uc 1 SDA 1 0 :1:2 
+`uc 1 nMCLR 1 0 :1:3 
+`uc 1 CLKR 1 0 :1:4 
+`uc 1 T1OSI 1 0 :1:5 
+]
+[s S476 . 1 `uc 1 MDOUT 1 0 :1:0 
+`uc 1 MDMIN 1 0 :1:1 
+`uc 1 MDCIN1 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 MDCIN2 1 0 :1:4 
+]
+[s S482 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 SDI 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 OSC2 1 0 :1:4 
+`uc 1 OSC1 1 0 :1:5 
+]
+[s S488 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 FLT0 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CLKOUT 1 0 :1:4 
+`uc 1 CLKIN 1 0 :1:5 
+]
+[u S494 . 1 `S431 1 . 1 0 `S438 1 . 1 0 `S444 1 . 1 0 `S450 1 . 1 0 `S456 1 . 1 0 `S462 1 . 1 0 `S469 1 . 1 0 `S476 1 . 1 0 `S482 1 . 1 0 `S488 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES494  1 e 1 @12 ]
+"719
 [v _PIR1 PIR1 `VEuc  1 e 1 @17 ]
-[s S873 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[s S768 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSP1IF 1 0 :1:3 
@@ -177,18 +201,12 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 `uc 1 ADIF 1 0 :1:6 
 `uc 1 TMR1GIF 1 0 :1:7 
 ]
-"597
-[u S882 . 1 `S873 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES882  1 e 1 @17 ]
-"642
+"736
+[u S777 . 1 `S768 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES777  1 e 1 @17 ]
+"781
 [v _PIR2 PIR2 `VEuc  1 e 1 @18 ]
-"693
-[v _PIR3 PIR3 `VEuc  1 e 1 @19 ]
-"733
-[v _PIR4 PIR4 `VEuc  1 e 1 @20 ]
-"988
-[v _PR2 PR2 `VEuc  1 e 1 @27 ]
-[s S732 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+[s S622 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 T2OUTPS0 1 0 :1:3 
@@ -196,45 +214,24 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 `uc 1 T2OUTPS2 1 0 :1:5 
 `uc 1 T2OUTPS3 1 0 :1:6 
 ]
-"1029
-[s S740 . 1 `uc 1 T2CKPS 1 0 :2:0 
+"1098
+[s S630 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 . 1 0 :1:2 
 `uc 1 T2OUTPS 1 0 :4:3 
 ]
-[u S744 . 1 `S732 1 . 1 0 `S740 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES744  1 e 1 @28 ]
-[s S140 . 1 `uc 1 TRISA0 1 0 :1:0 
+[u S634 . 1 `S622 1 . 1 0 `S630 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES634  1 e 1 @28 ]
+[s S53 . 1 `uc 1 TRISA0 1 0 :1:0 
 `uc 1 TRISA1 1 0 :1:1 
 `uc 1 TRISA2 1 0 :1:2 
 `uc 1 TRISA3 1 0 :1:3 
 `uc 1 TRISA4 1 0 :1:4 
 `uc 1 TRISA5 1 0 :1:5 
 ]
-"1200
-[u S147 . 1 `S140 1 . 1 0 ]
-[v _TRISAbits TRISAbits `VES147  1 e 1 @140 ]
-[s S157 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 TRISB4 1 0 :1:4 
-`uc 1 TRISB5 1 0 :1:5 
-`uc 1 TRISB6 1 0 :1:6 
-`uc 1 TRISB7 1 0 :1:7 
-]
-"1249
-[u S163 . 1 `S157 1 . 1 0 ]
-[v _TRISBbits TRISBbits `VES163  1 e 1 @141 ]
-[s S119 . 1 `uc 1 TRISC0 1 0 :1:0 
-`uc 1 TRISC1 1 0 :1:1 
-`uc 1 TRISC2 1 0 :1:2 
-`uc 1 TRISC3 1 0 :1:3 
-`uc 1 TRISC4 1 0 :1:4 
-`uc 1 TRISC5 1 0 :1:5 
-`uc 1 TRISC6 1 0 :1:6 
-`uc 1 TRISC7 1 0 :1:7 
-]
-"1291
-[u S128 . 1 `S119 1 . 1 0 ]
-[v _TRISCbits TRISCbits `VES128  1 e 1 @142 ]
-[s S318 . 1 `uc 1 TMR1IE 1 0 :1:0 
+"1257
+[u S60 . 1 `S53 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES60  1 e 1 @140 ]
+[s S176 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
 `uc 1 SSP1IE 1 0 :1:3 
@@ -243,10 +240,10 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 `uc 1 ADIE 1 0 :1:6 
 `uc 1 TMR1GIE 1 0 :1:7 
 ]
-"1353
-[u S327 . 1 `S318 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES327  1 e 1 @145 ]
-[s S210 . 1 `uc 1 PS0 1 0 :1:0 
+"1309
+[u S185 . 1 `S176 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES185  1 e 1 @145 ]
+[s S90 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 `uc 1 PSA 1 0 :1:3 
@@ -255,28 +252,28 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 `uc 1 INTEDG 1 0 :1:6 
 `uc 1 nWPUEN 1 0 :1:7 
 ]
-"1538
-[s S219 . 1 `uc 1 PS 1 0 :3:0 
+"1417
+[s S99 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 . 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
 ]
-[u S224 . 1 `S210 1 . 1 0 `S219 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES224  1 e 1 @149 ]
-[s S1426 . 1 `uc 1 SWDTEN 1 0 :1:0 
+[u S104 . 1 `S90 1 . 1 0 `S99 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES104  1 e 1 @149 ]
+[s S1225 . 1 `uc 1 SWDTEN 1 0 :1:0 
 `uc 1 WDTPS0 1 0 :1:1 
 `uc 1 WDTPS1 1 0 :1:2 
 `uc 1 WDTPS2 1 0 :1:3 
 `uc 1 WDTPS3 1 0 :1:4 
 `uc 1 WDTPS4 1 0 :1:5 
 ]
-"1668
-[s S1433 . 1 `uc 1 . 1 0 :1:0 
+"1547
+[s S1232 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 WDTPS 1 0 :5:1 
 ]
-[u S1436 . 1 `S1426 1 . 1 0 `S1433 1 . 1 0 ]
-[v _WDTCONbits WDTCONbits `VES1436  1 e 1 @151 ]
-[s S89 . 1 `uc 1 SCS0 1 0 :1:0 
+[u S1235 . 1 `S1225 1 . 1 0 `S1232 1 . 1 0 ]
+[v _WDTCONbits WDTCONbits `VES1235  1 e 1 @151 ]
+[s S23 . 1 `uc 1 SCS0 1 0 :1:0 
 `uc 1 SCS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 IRCF0 1 0 :1:3 
@@ -285,18 +282,18 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 `uc 1 IRCF3 1 0 :1:6 
 `uc 1 SPLLEN 1 0 :1:7 
 ]
-"1788
-[s S98 . 1 `uc 1 SCS 1 0 :2:0 
+"1667
+[s S32 . 1 `uc 1 SCS 1 0 :2:0 
 `uc 1 . 1 0 :1:2 
 `uc 1 IRCF 1 0 :4:3 
 ]
-[u S102 . 1 `S89 1 . 1 0 `S98 1 . 1 0 ]
-[v _OSCCONbits OSCCONbits `VES102  1 e 1 @153 ]
-"1907
+[u S36 . 1 `S23 1 . 1 0 `S32 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES36  1 e 1 @153 ]
+"1786
 [v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
-"1927
+"1806
 [v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
-[s S818 . 1 `uc 1 ADON 1 0 :1:0 
+[s S706 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
@@ -304,55 +301,45 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 `uc 1 CHS3 1 0 :1:5 
 `uc 1 CHS4 1 0 :1:6 
 ]
-"1972
-[s S826 . 1 `uc 1 . 1 0 :1:0 
+"1855
+[s S714 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 ADGO 1 0 :1:1 
 `uc 1 CHS 1 0 :5:2 
 ]
-[s S830 . 1 `uc 1 . 1 0 :1:0 
+[s S718 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 ]
-[u S833 . 1 `S818 1 . 1 0 `S826 1 . 1 0 `S830 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES833  1 e 1 @157 ]
-[s S760 . 1 `uc 1 ADPREF0 1 0 :1:0 
+[s S721 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[u S724 . 1 `S706 1 . 1 0 `S714 1 . 1 0 `S718 1 . 1 0 `S721 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES724  1 e 1 @157 ]
+[s S678 . 1 `uc 1 ADPREF0 1 0 :1:0 
 `uc 1 ADPREF1 1 0 :1:1 
-`uc 1 ADNREF 1 0 :1:2 
-`uc 1 . 1 0 :1:3 
+`uc 1 . 1 0 :2:2 
 `uc 1 ADCS0 1 0 :1:4 
 `uc 1 ADCS1 1 0 :1:5 
 `uc 1 ADCS2 1 0 :1:6 
 `uc 1 ADFM 1 0 :1:7 
 ]
-"2049
-[s S769 . 1 `uc 1 ADPREF 1 0 :2:0 
+"1936
+[s S686 . 1 `uc 1 ADPREF 1 0 :2:0 
 `uc 1 . 1 0 :2:2 
 `uc 1 ADCS 1 0 :3:4 
 ]
-[u S773 . 1 `S760 1 . 1 0 `S769 1 . 1 0 ]
-[v _ADCON1bits ADCON1bits `VES773  1 e 1 @158 ]
-[s S29 . 1 `uc 1 LATA0 1 0 :1:0 
+[u S690 . 1 `S678 1 . 1 0 `S686 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES690  1 e 1 @158 ]
+[s S590 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 LATA4 1 0 :1:4 
 `uc 1 LATA5 1 0 :1:5 
 ]
-"2114
-[u S36 . 1 `S29 1 . 1 0 ]
-[v _LATAbits LATAbits `VES36  1 e 1 @268 ]
-[s S46 . 1 `uc 1 LATC0 1 0 :1:0 
-`uc 1 LATC1 1 0 :1:1 
-`uc 1 LATC2 1 0 :1:2 
-`uc 1 LATC3 1 0 :1:3 
-`uc 1 LATC4 1 0 :1:4 
-`uc 1 LATC5 1 0 :1:5 
-`uc 1 LATC6 1 0 :1:6 
-`uc 1 LATC7 1 0 :1:7 
-]
-"2200
-[u S55 . 1 `S46 1 . 1 0 ]
-[v _LATCbits LATCbits `VES55  1 e 1 @270 ]
-[s S486 . 1 `uc 1 C1SYNC 1 0 :1:0 
+"1996
+[u S597 . 1 `S590 1 . 1 0 ]
+[v _LATAbits LATAbits `VES597  1 e 1 @268 ]
+[s S341 . 1 `uc 1 C1SYNC 1 0 :1:0 
 `uc 1 C1HYS 1 0 :1:1 
 `uc 1 C1SP 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -361,24 +348,12 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 `uc 1 C1OUT 1 0 :1:6 
 `uc 1 C1ON 1 0 :1:7 
 ]
-"2262
-[u S495 . 1 `S486 1 . 1 0 ]
-[v _CM1CON0bits CM1CON0bits `VES495  1 e 1 @273 ]
-[s S507 . 1 `uc 1 C2SYNC 1 0 :1:0 
-`uc 1 C2HYS 1 0 :1:1 
-`uc 1 C2SP 1 0 :1:2 
-`uc 1 . 1 0 :1:3 
-`uc 1 C2POL 1 0 :1:4 
-`uc 1 C2OE 1 0 :1:5 
-`uc 1 C2OUT 1 0 :1:6 
-`uc 1 C2ON 1 0 :1:7 
-]
-"2385
-[u S516 . 1 `S507 1 . 1 0 ]
-[v _CM2CON0bits CM2CON0bits `VES516  1 e 1 @275 ]
-"2544
+"2043
+[u S350 . 1 `S341 1 . 1 0 ]
+[v _CM1CON0bits CM1CON0bits `VES350  1 e 1 @273 ]
+"2184
 [v _FVRCON FVRCON `VEuc  1 e 1 @279 ]
-[s S790 . 1 `uc 1 ADFVR0 1 0 :1:0 
+[s S650 . 1 `uc 1 ADFVR0 1 0 :1:0 
 `uc 1 ADFVR1 1 0 :1:1 
 `uc 1 CDAFVR0 1 0 :1:2 
 `uc 1 CDAFVR1 1 0 :1:3 
@@ -387,13 +362,13 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 `uc 1 FVRRDY 1 0 :1:6 
 `uc 1 FVREN 1 0 :1:7 
 ]
-"2565
-[s S799 . 1 `uc 1 ADFVR 1 0 :2:0 
+"2205
+[s S659 . 1 `uc 1 ADFVR 1 0 :2:0 
 `uc 1 CDAFVR 1 0 :2:2 
 ]
-[u S802 . 1 `S790 1 . 1 0 `S799 1 . 1 0 ]
-[v _FVRCONbits FVRCONbits `VES802  1 e 1 @279 ]
-[s S528 . 1 `uc 1 SRPR 1 0 :1:0 
+[u S662 . 1 `S650 1 . 1 0 `S659 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES662  1 e 1 @279 ]
+[s S362 . 1 `uc 1 SRPR 1 0 :1:0 
 `uc 1 SRPS 1 0 :1:1 
 `uc 1 SRNQEN 1 0 :1:2 
 `uc 1 SRQEN 1 0 :1:3 
@@ -402,51 +377,46 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 `uc 1 SRCLK2 1 0 :1:6 
 `uc 1 SRLEN 1 0 :1:7 
 ]
-"2754
-[s S537 . 1 `uc 1 . 1 0 :4:0 
+"2388
+[s S371 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 SRCLK 1 0 :3:4 
 ]
-[u S540 . 1 `S528 1 . 1 0 `S537 1 . 1 0 ]
-[v _SRCON0bits SRCON0bits `VES540  1 e 1 @282 ]
-[s S1376 . 1 `uc 1 . 1 0 :2:0 
+[u S374 . 1 `S362 1 . 1 0 `S371 1 . 1 0 ]
+[v _SRCON0bits SRCON0bits `VES374  1 e 1 @282 ]
+[s S1157 . 1 `uc 1 CCP1SEL 1 0 :1:0 
+`uc 1 P1BSEL 1 0 :1:1 
 `uc 1 TXCKSEL 1 0 :1:2 
 `uc 1 T1GSEL 1 0 :1:3 
-`uc 1 . 1 0 :3:4 
+`uc 1 . 1 0 :1:4 
+`uc 1 SSSEL 1 0 :1:5 
+`uc 1 SDOSEL 1 0 :1:6 
 `uc 1 RXDTSEL 1 0 :1:7 
 ]
-"2880
-[u S1382 . 1 `S1376 1 . 1 0 ]
-[v _APFCON0bits APFCON0bits `VES1382  1 e 1 @285 ]
-"2950
+"2582
+[s S1166 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SS1SEL 1 0 :1:5 
+`uc 1 SDO1SEL 1 0 :1:6 
+]
+[u S1170 . 1 `S1157 1 . 1 0 `S1166 1 . 1 0 ]
+[v _APFCON0bits APFCON0bits `VES1170  1 e 1 @285 ]
+"2632
 [v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
-[s S172 . 1 `uc 1 ANSA0 1 0 :1:0 
+[s S70 . 1 `uc 1 ANSA0 1 0 :1:0 
 `uc 1 ANSA1 1 0 :1:1 
 `uc 1 ANSA2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 ANSA4 1 0 :1:4 
 ]
-"2967
-[s S178 . 1 `uc 1 ANSELA 1 0 :5:0 
+"2649
+[s S76 . 1 `uc 1 ANSELA 1 0 :5:0 
 ]
-[u S180 . 1 `S172 1 . 1 0 `S178 1 . 1 0 ]
-[v _ANSELAbits ANSELAbits `VES180  1 e 1 @396 ]
-[s S192 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 ANSB4 1 0 :1:4 
-`uc 1 ANSB5 1 0 :1:5 
-]
-"3013
-[s S196 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 ANSELB 1 0 :2:4 
-]
-[u S199 . 1 `S192 1 . 1 0 `S196 1 . 1 0 ]
-[v _ANSELBbits ANSELBbits `VES199  1 e 1 @397 ]
-"3033
-[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
-"3306
+[u S78 . 1 `S70 1 . 1 0 `S76 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES78  1 e 1 @396 ]
+"2893
 [v _TXREG TXREG `VEuc  1 e 1 @410 ]
-"3338
+"2925
 [v _SPBRG SPBRG `VEuc  1 e 1 @411 ]
-[s S465 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S320 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -455,10 +425,10 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 `uc 1 RX9 1 0 :1:6 
 `uc 1 SPEN 1 0 :1:7 
 ]
-"3442
-[u S474 . 1 `S465 1 . 1 0 ]
-[v _RCSTAbits RCSTAbits `VES474  1 e 1 @413 ]
-[s S556 . 1 `uc 1 TX9D 1 0 :1:0 
+"3029
+[u S329 . 1 `S320 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES329  1 e 1 @413 ]
+[s S390 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -467,38 +437,22 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 `uc 1 TX9 1 0 :1:6 
 `uc 1 CSRC 1 0 :1:7 
 ]
-"3504
-[u S565 . 1 `S556 1 . 1 0 ]
-[v _TXSTAbits TXSTAbits `VES565  1 e 1 @414 ]
-[s S242 . 1 `uc 1 WPUA0 1 0 :1:0 
+"3091
+[u S399 . 1 `S390 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES399  1 e 1 @414 ]
+[s S122 . 1 `uc 1 WPUA0 1 0 :1:0 
 `uc 1 WPUA1 1 0 :1:1 
 `uc 1 WPUA2 1 0 :1:2 
 `uc 1 WPUA3 1 0 :1:3 
 `uc 1 WPUA4 1 0 :1:4 
 `uc 1 WPUA5 1 0 :1:5 
 ]
-"3619
-[s S249 . 1 `uc 1 WPUA 1 0 :6:0 
+"3206
+[s S129 . 1 `uc 1 WPUA 1 0 :6:0 
 ]
-[u S251 . 1 `S242 1 . 1 0 `S249 1 . 1 0 ]
-[v _WPUAbits WPUAbits `VES251  1 e 1 @524 ]
-"3777
-[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
-[s S1264 . 1 `uc 1 BF 1 0 :1:0 
-`uc 1 UA 1 0 :1:1 
-`uc 1 R_nW 1 0 :1:2 
-`uc 1 S 1 0 :1:3 
-`uc 1 P 1 0 :1:4 
-`uc 1 D_nA 1 0 :1:5 
-`uc 1 CKE 1 0 :1:6 
-`uc 1 SMP 1 0 :1:7 
-]
-"3913
-[u S1273 . 1 `S1264 1 . 1 0 ]
-[v _SSP1STATbits SSP1STATbits `VES1273  1 e 1 @532 ]
-"4013
-[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
-[s S439 . 1 `uc 1 SSPM0 1 0 :1:0 
+[u S131 . 1 `S122 1 . 1 0 `S129 1 . 1 0 ]
+[v _WPUAbits WPUAbits `VES131  1 e 1 @524 ]
+[s S294 . 1 `uc 1 SSPM0 1 0 :1:0 
 `uc 1 SSPM1 1 0 :1:1 
 `uc 1 SSPM2 1 0 :1:2 
 `uc 1 SSPM3 1 0 :1:3 
@@ -507,69 +461,23 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 `uc 1 SSPOV 1 0 :1:6 
 `uc 1 WCOL 1 0 :1:7 
 ]
-"4042
-[s S448 . 1 `uc 1 SSPM 1 0 :4:0 
+"3511
+[s S303 . 1 `uc 1 SSPM 1 0 :4:0 
 ]
-[u S450 . 1 `S439 1 . 1 0 `S448 1 . 1 0 ]
-[v _SSP1CON1bits SSP1CON1bits `VES450  1 e 1 @533 ]
-"4784
-[v _CCPR1L CCPR1L `VEuc  1 e 1 @657 ]
-[s S700 . 1 `uc 1 CCP1M0 1 0 :1:0 
-`uc 1 CCP1M1 1 0 :1:1 
-`uc 1 CCP1M2 1 0 :1:2 
-`uc 1 CCP1M3 1 0 :1:3 
-`uc 1 DC1B0 1 0 :1:4 
-`uc 1 DC1B1 1 0 :1:5 
-`uc 1 P1M0 1 0 :1:6 
-`uc 1 P1M1 1 0 :1:7 
-]
-"4846
-[s S709 . 1 `uc 1 CCP1M 1 0 :4:0 
-`uc 1 DC1B 1 0 :2:4 
-`uc 1 P1M 1 0 :2:6 
-]
-[u S713 . 1 `S700 1 . 1 0 `S709 1 . 1 0 ]
-[v _CCP1CONbits CCP1CONbits `VES713  1 e 1 @659 ]
-[s S1313 . 1 `uc 1 P1DC0 1 0 :1:0 
-`uc 1 P1DC1 1 0 :1:1 
-`uc 1 P1DC2 1 0 :1:2 
-`uc 1 P1DC3 1 0 :1:3 
-`uc 1 P1DC4 1 0 :1:4 
-`uc 1 P1DC5 1 0 :1:5 
-`uc 1 P1DC6 1 0 :1:6 
-`uc 1 P1RSEN 1 0 :1:7 
-]
-"4926
-[s S1322 . 1 `uc 1 P1DC 1 0 :7:0 
-]
-[u S1324 . 1 `S1313 1 . 1 0 `S1322 1 . 1 0 ]
-[v _PWM1CONbits PWM1CONbits `VES1324  1 e 1 @660 ]
-[s S685 . 1 `uc 1 STR1A 1 0 :1:0 
+[u S305 . 1 `S294 1 . 1 0 `S303 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES305  1 e 1 @533 ]
+[s S1117 . 1 `uc 1 STR1A 1 0 :1:0 
 `uc 1 STR1B 1 0 :1:1 
 `uc 1 STR1C 1 0 :1:2 
 `uc 1 STR1D 1 0 :1:3 
 `uc 1 STR1SYNC 1 0 :1:4 
 ]
-"5152
-[u S691 . 1 `S685 1 . 1 0 ]
-[v _PSTR1CONbits PSTR1CONbits `VES691  1 e 1 @662 ]
-[s S264 . 1 `uc 1 INLVLA0 1 0 :1:0 
-`uc 1 INLVLA1 1 0 :1:1 
-`uc 1 INLVLA2 1 0 :1:2 
-`uc 1 INLVLA3 1 0 :1:3 
-`uc 1 INLVLA4 1 0 :1:4 
-`uc 1 INLVLA5 1 0 :1:5 
-]
-"5835
-[s S271 . 1 `uc 1 INLVLA 1 0 :6:0 
-]
-[u S273 . 1 `S264 1 . 1 0 `S271 1 . 1 0 ]
-[v _INLVLAbits INLVLAbits `VES273  1 e 1 @908 ]
-"6109
+"4305
+[u S1123 . 1 `S1117 1 . 1 0 ]
+[v _PSTR1CONbits PSTR1CONbits `VES1123  1 e 1 @662 ]
+"4451
 [v _IOCAF IOCAF `VEuc  1 e 1 @915 ]
-"6263
-[v _IOCBF IOCBF `VEuc  1 e 1 @918 ]
-[s S365 . 1 `uc 1 MDBIT 1 0 :1:0 
+[s S223 . 1 `uc 1 MDBIT 1 0 :1:0 
 `uc 1 . 1 0 :2:1 
 `uc 1 MDOUT 1 0 :1:3 
 `uc 1 MDOPOL 1 0 :1:4 
@@ -577,22 +485,22 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 `uc 1 MDOE 1 0 :1:6 
 `uc 1 MDEN 1 0 :1:7 
 ]
-"6403
-[u S373 . 1 `S365 1 . 1 0 ]
-[v _MDCONbits MDCONbits `VES373  1 e 1 @924 ]
-[s S384 . 1 `uc 1 MDMS0 1 0 :1:0 
+"4601
+[u S231 . 1 `S223 1 . 1 0 ]
+[v _MDCONbits MDCONbits `VES231  1 e 1 @924 ]
+[s S242 . 1 `uc 1 MDMS0 1 0 :1:0 
 `uc 1 MDMS1 1 0 :1:1 
 `uc 1 MDMS2 1 0 :1:2 
 `uc 1 MDMS3 1 0 :1:3 
 `uc 1 . 1 0 :3:4 
 `uc 1 MDMSODIS 1 0 :1:7 
 ]
-"6456
-[s S391 . 1 `uc 1 MDMS 1 0 :4:0 
+"4654
+[s S249 . 1 `uc 1 MDMS 1 0 :4:0 
 ]
-[u S393 . 1 `S384 1 . 1 0 `S391 1 . 1 0 ]
-[v _MDSRCbits MDSRCbits `VES393  1 e 1 @925 ]
-[s S413 . 1 `uc 1 MDCL0 1 0 :1:0 
+[u S251 . 1 `S242 1 . 1 0 `S249 1 . 1 0 ]
+[v _MDSRCbits MDSRCbits `VES251  1 e 1 @925 ]
+[s S268 . 1 `uc 1 MDCL0 1 0 :1:0 
 `uc 1 MDCL1 1 0 :1:1 
 `uc 1 MDCL2 1 0 :1:2 
 `uc 1 MDCL3 1 0 :1:3 
@@ -601,12 +509,12 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 `uc 1 MDCLPOL 1 0 :1:6 
 `uc 1 MDCLODIS 1 0 :1:7 
 ]
-"6511
-[s S422 . 1 `uc 1 MDCL 1 0 :4:0 
+"4709
+[s S277 . 1 `uc 1 MDCL 1 0 :4:0 
 ]
-[u S424 . 1 `S413 1 . 1 0 `S422 1 . 1 0 ]
-[v _MDCARLbits MDCARLbits `VES424  1 e 1 @926 ]
-[s S339 . 1 `uc 1 MDCH0 1 0 :1:0 
+[u S279 . 1 `S268 1 . 1 0 `S277 1 . 1 0 ]
+[v _MDCARLbits MDCARLbits `VES279  1 e 1 @926 ]
+[s S197 . 1 `uc 1 MDCH0 1 0 :1:0 
 `uc 1 MDCH1 1 0 :1:1 
 `uc 1 MDCH2 1 0 :1:2 
 `uc 1 MDCH3 1 0 :1:3 
@@ -615,124 +523,88 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 `uc 1 MDCHPOL 1 0 :1:6 
 `uc 1 MDCHODIS 1 0 :1:7 
 ]
-"6576
-[s S348 . 1 `uc 1 MDCH 1 0 :4:0 
+"4774
+[s S206 . 1 `uc 1 MDCH 1 0 :4:0 
 ]
-[u S350 . 1 `S339 1 . 1 0 `S348 1 . 1 0 ]
-[v _MDCARHbits MDCARHbits `VES350  1 e 1 @927 ]
-"7180
+[u S208 . 1 `S197 1 . 1 0 `S206 1 . 1 0 ]
+[v _MDCARHbits MDCARHbits `VES208  1 e 1 @927 ]
+"5156
 [v _BRG16 BRG16 `VEb  1 e 0 @3323 ]
-"7183
+"5159
 [v _BRGH BRGH `VEb  1 e 0 @3314 ]
-"7657
+"5462
 [v _INTE INTE `VEb  1 e 0 @92 ]
-"7663
+"5468
 [v _INTF INTF `VEb  1 e 0 @89 ]
-"8116
+"5798
 [v _SCKP SCKP `VEb  1 e 0 @3324 ]
-"8131
+"5834
 [v _SPEN SPEN `VEb  1 e 0 @3311 ]
-"8242
+"5948
 [v _SYNC SYNC `VEb  1 e 0 @3316 ]
-"8503
+"6134
 [v _TXEN TXEN `VEb  1 e 0 @3317 ]
-"8509
+"6140
 [v _TXIF TXIF `VEb  1 e 0 @140 ]
-"55 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-[v _flags flags `i  1 s 2 flags ]
-[v _prec prec `i  1 s 2 prec ]
-[v _width width `i  1 s 2 width ]
-"69
-[v _nout nout `i  1 s 2 nout ]
-"26 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
-[v __ccovbit2_1 _ccovbit2_1 `VEb  1 e 0 0 ]
-"28
-[v __ccovbit4_2 _ccovbit4_2 `VEb  1 e 0 0 ]
-"30
-[v __ccovbit7_3 _ccovbit7_3 `VEb  1 e 0 0 ]
-"31
-[v __ccovbit9_4 _ccovbit9_4 `VEb  1 e 0 0 ]
-"39
-[v __ccovbit1_5 _ccovbit1_5 `VEb  1 e 0 0 ]
-"47
-[v __ccovbit1_6 _ccovbit1_6 `VEb  1 e 0 0 ]
-"49
-[v _C7SEG_CHAR_TABLE C7SEG_CHAR_TABLE `DC[51]uc  1 e 51 0 ]
-"99 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+"96 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
 [v _sleep_128ms_counter sleep_128ms_counter `VEi  1 e 2 0 ]
-"100
+"97
 [v _sleep_256ms_counter sleep_256ms_counter `VEi  1 e 2 0 ]
-"101
+"98
 [v _sleep_1s_counter sleep_1s_counter `VEi  1 e 2 0 ]
-"102
+"99
 [v _sleep_4s_counter sleep_4s_counter `VEi  1 e 2 0 ]
-"103
+"100
 [v _sleep_256s_counter sleep_256s_counter `VEi  1 e 2 0 ]
-"262
-[v __ccovbit79_7 _ccovbit79_7 `VEb  1 e 0 0 ]
+"257
+[v __ccovbit50_1 _ccovbit50_1 `VEb  1 e 0 0 ]
+"275
+[v __ccovbit62_2 _ccovbit62_2 `VEb  1 e 0 0 ]
 "284
-[v __ccovbit92_8 _ccovbit92_8 `VEb  1 e 0 0 ]
-"293
-[v __ccovbit96_9 _ccovbit96_9 `VEb  1 e 0 0 ]
-"301
-[v __ccovbit102_10 _ccovbit102_10 `VEb  1 e 0 0 ]
+[v __ccovbit66_3 _ccovbit66_3 `VEb  1 e 0 0 ]
+"294
+[v __ccovbit74_4 _ccovbit74_4 `VEb  1 e 0 0 ]
 "307
-[v __ccovbit105_11 _ccovbit105_11 `VEb  1 e 0 0 ]
-"310
-[v __ccovbit107_12 _ccovbit107_12 `VEb  1 e 0 0 ]
-"314
-[v __ccovbit110_13 _ccovbit110_13 `VEb  1 e 0 0 ]
-"393
-[v __ccovbit2_14 _ccovbit2_14 `VEb  1 e 0 0 ]
-"399
-[v __ccovbit6_15 _ccovbit6_15 `VEb  1 e 0 0 ]
-"403
-[v __ccovbit10_16 _ccovbit10_16 `VEb  1 e 0 0 ]
-"406
-[v __ccovbit14_17 _ccovbit14_17 `VEb  1 e 0 0 ]
-"417
-[v __ccovbit3_18 _ccovbit3_18 `VEb  1 e 0 0 ]
-"452
-[v __ccovbit19_19 _ccovbit19_19 `VEb  1 e 0 0 ]
+[v __ccovbit76_5 _ccovbit76_5 `VEb  1 e 0 0 ]
+"413
+[v __ccovbit3_6 _ccovbit3_6 `VEb  1 e 0 0 ]
+"448
+[v __ccovbit18_7 _ccovbit18_7 `VEb  1 e 0 0 ]
+"454
+[v __ccovbit2_8 _ccovbit2_8 `VEb  1 e 0 0 ]
 "458
-[v __ccovbit2_20 _ccovbit2_20 `VEb  1 e 0 0 ]
+[v __ccovbit6_9 _ccovbit6_9 `VEb  1 e 0 0 ]
 "462
-[v __ccovbit6_21 _ccovbit6_21 `VEb  1 e 0 0 ]
+[v __ccovbit10_10 _ccovbit10_10 `VEb  1 e 0 0 ]
 "466
-[v __ccovbit10_22 _ccovbit10_22 `VEb  1 e 0 0 ]
+[v __ccovbit14_11 _ccovbit14_11 `VEb  1 e 0 0 ]
+"469
+[v __ccovbit18_12 _ccovbit18_12 `VEb  1 e 0 0 ]
+[v __ccovbit22_13 _ccovbit22_13 `VEb  1 e 0 0 ]
 "470
-[v __ccovbit14_23 _ccovbit14_23 `VEb  1 e 0 0 ]
+[v __ccovbit24_14 _ccovbit24_14 `VEb  1 e 0 0 ]
 "473
-[v __ccovbit18_24 _ccovbit18_24 `VEb  1 e 0 0 ]
-[v __ccovbit22_25 _ccovbit22_25 `VEb  1 e 0 0 ]
-"474
-[v __ccovbit24_26 _ccovbit24_26 `VEb  1 e 0 0 ]
-"477
-[v __ccovbit1_27 _ccovbit1_27 `VEb  1 e 0 0 ]
-"480
-[v __ccovbit1_28 _ccovbit1_28 `VEb  1 e 0 0 ]
-"487
-[v __ccovbit1_29 _ccovbit1_29 `VEb  1 e 0 0 ]
-"490
-[v __ccovbit3_30 _ccovbit3_30 `VEb  1 e 0 0 ]
-"499
-[v __ccovbit7_31 _ccovbit7_31 `VEb  1 e 0 0 ]
-"502
-[v __ccovbit11_32 _ccovbit11_32 `VEb  1 e 0 0 ]
-"509
-[v __ccovbit13_33 _ccovbit13_33 `VEb  1 e 0 0 ]
+[v __ccovbit1_15 _ccovbit1_15 `VEb  1 e 0 0 ]
+"476
+[v __ccovbit1_16 _ccovbit1_16 `VEb  1 e 0 0 ]
+"483
+[v __ccovbit1_17 _ccovbit1_17 `VEb  1 e 0 0 ]
+"486
+[v __ccovbit3_18 _ccovbit3_18 `VEb  1 e 0 0 ]
+"495
+[v __ccovbit7_19 _ccovbit7_19 `VEb  1 e 0 0 ]
+"498
+[v __ccovbit11_20 _ccovbit11_20 `VEb  1 e 0 0 ]
+"505
+[v __ccovbit13_21 _ccovbit13_21 `VEb  1 e 0 0 ]
+"507
+[v __ccovbit15_22 _ccovbit15_22 `VEb  1 e 0 0 ]
+"510
+[v __ccovbit17_23 _ccovbit17_23 `VEb  1 e 0 0 ]
 "511
-[v __ccovbit15_34 _ccovbit15_34 `VEb  1 e 0 0 ]
-"514
-[v __ccovbit17_35 _ccovbit17_35 `VEb  1 e 0 0 ]
-"515
-[v __ccovbit19_36 _ccovbit19_36 `VEb  1 e 0 0 ]
-"521
-[v __ccovbit22_37 _ccovbit22_37 `VEb  1 e 0 0 ]
-"64 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
-[v __ccovbit7_64 _ccovbit7_64 `VEb  1 e 0 0 ]
-"93
-[v __ccovbit10_65 _ccovbit10_65 `VEb  1 e 0 0 ]
+[v __ccovbit19_24 _ccovbit19_24 `VEb  1 e 0 0 ]
+"517
+[v __ccovbit22_25 _ccovbit22_25 `VEb  1 e 0 0 ]
 "20 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
 [v _prelCounter prelCounter `VEi  1 e 2 0 ]
 "21
@@ -751,145 +623,87 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 [v _NewStateChangeDetected NewStateChangeDetected `b  1 e 0 0 ]
 "31
 [v _NewDoorPolarity NewDoorPolarity `b  1 e 0 0 ]
-"33
-[v _PWMtoggle PWMtoggle `b  1 e 0 0 ]
 "36
-[v _state_door state_door `E2926  1 e 1 0 ]
+[v _state_door state_door `E1937  1 e 1 0 ]
 "37
-[v _state_machine state_machine `E2930  1 e 1 0 ]
-"48
-[v __ccovbit4_38 _ccovbit4_38 `VEb  1 e 0 0 ]
+[v _state_machine state_machine `E1941  1 e 1 0 ]
+"46
+[v __ccovbit3_26 _ccovbit3_26 `VEb  1 e 0 0 ]
 "50
-[v __ccovbit5_39 _ccovbit5_39 `VEb  1 e 0 0 ]
-"64
-[v __ccovbit11_40 _ccovbit11_40 `VEb  1 e 0 0 ]
-"86
-[v __ccovbit16_41 _ccovbit16_41 `VEb  1 e 0 0 ]
-"97
-[v __ccovbit22_42 _ccovbit22_42 `VEb  1 e 0 0 ]
-"103
-[v __ccovbit26_43 _ccovbit26_43 `VEb  1 e 0 0 ]
+[v __ccovbit4_27 _ccovbit4_27 `VEb  1 e 0 0 ]
+"59
+[v __ccovbit7_28 _ccovbit7_28 `VEb  1 e 0 0 ]
+"61
+[v __ccovbit8_29 _ccovbit8_29 `VEb  1 e 0 0 ]
+"62
+[v __ccovbit9_30 _ccovbit9_30 `VEb  1 e 0 0 ]
+"81
+[v __ccovbit11_31 _ccovbit11_31 `VEb  1 e 0 0 ]
+"84
+[v __ccovbit12_32 _ccovbit12_32 `VEb  1 e 0 0 ]
+"93
+[v __ccovbit15_33 _ccovbit15_33 `VEb  1 e 0 0 ]
+"102
+[v __ccovbit20_34 _ccovbit20_34 `VEb  1 e 0 0 ]
 "106
-[v __ccovbit28_44 _ccovbit28_44 `VEb  1 e 0 0 ]
-"109
-[v __ccovbit30_45 _ccovbit30_45 `VEb  1 e 0 0 ]
-"131
-[v __ccovbit37_46 _ccovbit37_46 `VEb  1 e 0 0 ]
-"137
-[v __ccovbit39_47 _ccovbit39_47 `VEb  1 e 0 0 ]
+[v __ccovbit23_35 _ccovbit23_35 `VEb  1 e 0 0 ]
+"128
+[v __ccovbit29_36 _ccovbit29_36 `VEb  1 e 0 0 ]
+"134
+[v __ccovbit30_37 _ccovbit30_37 `VEb  1 e 0 0 ]
 "148
-[v __ccovbit48_48 _ccovbit48_48 `VEb  1 e 0 0 ]
-"164
-[v __ccovbit52_49 _ccovbit52_49 `VEb  1 e 0 0 ]
+[v __ccovbit37_38 _ccovbit37_38 `VEb  1 e 0 0 ]
+"163
+[v __ccovbit40_39 _ccovbit40_39 `VEb  1 e 0 0 ]
 "169
-[v __ccovbit56_50 _ccovbit56_50 `VEb  1 e 0 0 ]
+[v __ccovbit45_40 _ccovbit45_40 `VEb  1 e 0 0 ]
 "171
-[v __ccovbit58_51 _ccovbit58_51 `VEb  1 e 0 0 ]
-"193
-[v __ccovbit64_52 _ccovbit64_52 `VEb  1 e 0 0 ]
-"204
-[v __ccovbit68_53 _ccovbit68_53 `VEb  1 e 0 0 ]
-"205
-[v __ccovbit69_54 _ccovbit69_54 `VEb  1 e 0 0 ]
-"246
-[v __ccovbit82_55 _ccovbit82_55 `VEb  1 e 0 0 ]
-"269
-[v __ccovbit90_56 _ccovbit90_56 `VEb  1 e 0 0 ]
-"271
-[v __ccovbit91_57 _ccovbit91_57 `VEb  1 e 0 0 ]
-"274
-[v __ccovbit93_58 _ccovbit93_58 `VEb  1 e 0 0 ]
-"280
-[v __ccovbit97_59 _ccovbit97_59 `VEb  1 e 0 0 ]
-"285
-[v __ccovbit99_60 _ccovbit99_60 `VEb  1 e 0 0 ]
-"290
-[v __ccovbit101_61 _ccovbit101_61 `VEb  1 e 0 0 ]
-"295
-[v __ccovbit103_62 _ccovbit103_62 `VEb  1 e 0 0 ]
-"299
-[v __ccovbit108_63 _ccovbit108_63 `VEb  1 e 0 0 ]
-"37 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
-[v __ccovbit8_66 _ccovbit8_66 `VEb  1 e 0 0 ]
-"43
-[v __ccovbit5_67 _ccovbit5_67 `VEb  1 e 0 0 ]
+[v __ccovbit47_41 _ccovbit47_41 `VEb  1 e 0 0 ]
+"190
+[v __ccovbit51_42 _ccovbit51_42 `VEb  1 e 0 0 ]
+"247
+[v __ccovbit63_43 _ccovbit63_43 `VEb  1 e 0 0 ]
+"270
+[v __ccovbit68_44 _ccovbit68_44 `VEb  1 e 0 0 ]
+"272
+[v __ccovbit69_45 _ccovbit69_45 `VEb  1 e 0 0 ]
+"275
+[v __ccovbit71_46 _ccovbit71_46 `VEb  1 e 0 0 ]
+"300
+[v __ccovbit82_47 _ccovbit82_47 `VEb  1 e 0 0 ]
 "22 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
-[v __ccovbit1_68 _ccovbit1_68 `VEb  1 e 0 0 ]
+[v __ccovbit1_48 _ccovbit1_48 `VEb  1 e 0 0 ]
 "25
-[v __ccovbit1_69 _ccovbit1_69 `VEb  1 e 0 0 ]
+[v __ccovbit1_49 _ccovbit1_49 `VEb  1 e 0 0 ]
 "31
-[v __ccovbit2_70 _ccovbit2_70 `VEb  1 e 0 0 ]
+[v __ccovbit1_50 _ccovbit1_50 `VEb  1 e 0 0 ]
 "38
-[v __ccovbit2_71 _ccovbit2_71 `VEb  1 e 0 0 ]
+[v __ccovbit1_51 _ccovbit1_51 `VEb  1 e 0 0 ]
 "44
-[v __ccovbit2_72 _ccovbit2_72 `VEb  1 e 0 0 ]
+[v __ccovbit1_52 _ccovbit1_52 `VEb  1 e 0 0 ]
 "47
-[v __ccovbit1_73 _ccovbit1_73 `VEb  1 e 0 0 ]
+[v __ccovbit1_53 _ccovbit1_53 `VEb  1 e 0 0 ]
 "50
-[v __ccovbit1_74 _ccovbit1_74 `VEb  1 e 0 0 ]
-"110 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+[v __ccovbit1_54 _ccovbit1_54 `VEb  1 e 0 0 ]
+"107 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"117
-[v main@write2display_copy write2display_copy `uc  1 a 1 26 ]
-"111
-[v main@output_polarity output_polarity `b  1 s 0 output_polarity ]
-"114
-[v main@pwm_direction pwm_direction `b  1 s 0 pwm_direction ]
-"350
+"343
 } 0
-"409
+"405
 [v _timer2_init timer2_init `(v  1 e 1 0 ]
 {
-"417
-} 0
-"26 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
-[v _spi1_init spi1_init `(v  1 e 1 0 ]
-{
-"64
-} 0
-"19 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
-[v _int2bcd int2bcd `(v  1 e 1 0 ]
-{
-[v int2bcd@number number `i  1 p 2 5 ]
-[v int2bcd@comma comma `uc  1 p 1 7 ]
-"31
-} 0
-"66 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\spi.c
-[v _spi1_send spi1_send `(v  1 e 1 0 ]
-{
-[v spi1_send@data1 data1 `uc  1 a 1 wreg ]
-[v spi1_send@data1 data1 `uc  1 a 1 wreg ]
-[v spi1_send@data2 data2 `uc  1 p 1 9 ]
-"74
-[v spi1_send@data1 data1 `uc  1 a 1 4 ]
-"93
-} 0
-"41 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
-[v _Click_latch_data Click_latch_data `(v  1 e 1 0 ]
-{
-"47
-} 0
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
-[v ___awmod __awmod `(i  1 e 2 0 ]
-{
-"10
-[v ___awmod@sign sign `uc  1 a 1 8 ]
-[v ___awmod@counter counter `uc  1 a 1 7 ]
-"5
-[v ___awmod@divisor divisor `i  1 p 2 2 ]
-[v ___awmod@dividend dividend `i  1 p 2 4 ]
-"34
+"413
 } 0
 "41 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\statemachine.c
 [v _checkState1 checkState1 `(v  1 e 1 0 ]
 {
-"299
+"300
 } 0
-"453 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+"449 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
 [v _watch_dog_incrementing_timer watch_dog_incrementing_timer `(v  1 e 1 0 ]
 {
-"474
+"470
 } 0
 "32 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
 [v _set_watchdog_timer_4s set_watchdog_timer_4s `(v  1 e 1 0 ]
@@ -911,91 +725,37 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 {
 "31
 } 0
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
-[v _printf printf `(i  1 e 2 0 ]
-{
-"8
-[v printf@ap ap `[1]*.4v  1 a 1 20 ]
-"5
-[v printf@fmt fmt `*.25DCuc  1 p 2 18 ]
-"13
-} 0
-"1390 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-[v _vfprintf vfprintf `(i  1 e 2 0 ]
-{
-[s S1935 _IO_FILE 0 ]
-[v vfprintf@fp fp `*.1S1935  1 a 1 wreg ]
-"1393
-[v vfprintf@cfmt cfmt `*.25uc  1 a 2 16 ]
-"1390
-[v vfprintf@fp fp `*.1S1935  1 a 1 wreg ]
-[v vfprintf@fmt fmt `*.25DCuc  1 p 2 12 ]
-[v vfprintf@ap ap `*.4*.4v  1 p 1 14 ]
-"1395
-"1390
-[v vfprintf@fp fp `*.1S1935  1 a 1 15 ]
-"1404
-} 0
-"692
-[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
-{
-[s S1935 _IO_FILE 0 ]
-[v vfpfcnvrt@fp fp `*.1S1935  1 a 1 wreg ]
-[v vfpfcnvrt@fp fp `*.1S1935  1 a 1 wreg ]
-[v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 5 ]
-[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 6 ]
-"702
-"692
-[v vfpfcnvrt@fp fp `*.1S1935  1 a 1 6 ]
-"1387
-} 0
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
-[v _fputc fputc `(i  1 e 2 0 ]
-{
-[v fputc@c c `i  1 p 2 3 ]
-[s S1918 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
-[v fputc@fp fp `*.1S1918  1 p 1 5 ]
-"24
-} 0
-"39 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
-[v _putch putch `(v  1 e 1 0 ]
-{
-[v putch@data data `uc  1 a 1 wreg ]
-[v putch@data data `uc  1 a 1 wreg ]
-[v putch@data data `uc  1 a 1 2 ]
-"43
-} 0
-"20 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
+"20
 [v _set_watchdog_timer_128ms set_watchdog_timer_128ms `(v  1 e 1 0 ]
 {
 "22
 } 0
-"418 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+"414 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
 [v _getBatteryVoltage getBatteryVoltage `(i  1 e 2 0 ]
 {
-"441
+"437
 [v getBatteryVoltage@adc_val adc_val `i  1 a 2 7 ]
-"452
+"448
 } 0
 "45 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
 [v _enable_watchdog_timer enable_watchdog_timer `(v  1 e 1 0 ]
 {
 "47
 } 0
-"475 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+"471 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
 [v _enable_external_interrupt enable_external_interrupt `(v  1 e 1 0 ]
 {
-"477
+"473
 } 0
 "48 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\watchdog.c
 [v _disable_watchdog_timer disable_watchdog_timer `(v  1 e 1 0 ]
 {
 "50
 } 0
-"478 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+"474 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
 [v _disable_external_interrupt disable_external_interrupt `(v  1 e 1 0 ]
 {
-"480
+"476
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
@@ -1010,40 +770,8 @@ STATE_SELFTEST_OUTPUT_PULSE_BATTERY_LOW 2
 [v ___awdiv@dividend dividend `i  1 p 2 4 ]
 "41
 } 0
-"13 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\usart.c
-[v _UART_init UART_init `(v  1 e 1 0 ]
-{
-"37
-} 0
-"380 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
-[v _PWM_set PWM_set `(v  1 e 1 0 ]
-{
-[v PWM_set@duty_cycle duty_cycle `uc  1 a 1 wreg ]
-"382
-[v PWM_set@scaled_duty_cycle scaled_duty_cycle `ui  1 a 2 0 ]
-"380
-[v PWM_set@duty_cycle duty_cycle `uc  1 a 1 wreg ]
-"391
-[v PWM_set@duty_cycle duty_cycle `uc  1 a 1 2 ]
-"406
-} 0
-"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
-[v ___wmul __wmul `(ui  1 e 2 0 ]
-{
-"17
-[v ___wmul@product product `ui  1 a 2 6 ]
-"15
-[v ___wmul@multiplier multiplier `ui  1 p 2 2 ]
-[v ___wmul@multiplicand multiplicand `ui  1 p 2 4 ]
-"53
-} 0
-"33 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\Click_7Seg.c
-[v _Click_reset Click_reset `(v  1 e 1 0 ]
-{
-"39
-} 0
-"484 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
+"480 C:\Users\henrik\MPLABXProjects\Gardengate_v4_LED.X\main.c
 [v _my_isr my_isr `II(v  1 e 1 0 ]
 {
-"521
+"517
 } 0
