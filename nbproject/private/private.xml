@@ -5,12 +5,13 @@
         <group name="GardenGate">
             <file>file:/C:/Users/henrik/MPLABXProjects/Gardengate_v4_LED.X/main.c</file>
             <file>file:/C:/Users/henrik/MPLABXProjects/Gardengate_v4_LED.X/statemachine.h</file>
+            <file>file:/C:/Users/henrik/MPLABXProjects/Gardengate_v4_LED.X/usart.h</file>
             <file>file:/C:/Users/henrik/MPLABXProjects/Gardengate_v4_LED.X/statemachine.c</file>
             <file>file:/C:/Users/henrik/MPLABXProjects/Gardengate_v4_LED.X/Click_7Seg.h</file>
             <file>file:/C:/Users/henrik/MPLABXProjects/Gardengate_v4_LED.X/watchdog.c</file>
             <file>file:/C:/Users/henrik/MPLABXProjects/Gardengate_v4_LED.X/watchdog.h</file>
             <file>file:/C:/Users/henrik/MPLABXProjects/Gardengate_v4_LED.X/spi.c</file>
-            <file>file:/C:/Users/henrik/MPLABXProjects/Gardengate_v4_LED.X/ihc/KOCH_210513.vis</file>
+            <file>file:/C:/Users/henrik/MPLABXProjects/Gardengate_v4_LED.X/usart.c</file>
             <file>file:/C:/Users/henrik/MPLABXProjects/Gardengate_v4_LED.X/Click_7Seg.c</file>
             <file>file:/C:/Users/henrik/MPLABXProjects/Gardengate_v4_LED.X/GardenGate_v4_config.h</file>
         </group>
