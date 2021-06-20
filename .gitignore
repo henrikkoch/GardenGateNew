@@ -21,7 +21,7 @@ funclist
 
 /build
 /dist
-Makefile*
+#Makefile*
 
 
 
