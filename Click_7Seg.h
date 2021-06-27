@@ -63,7 +63,6 @@
 // TODO Insert declarations or function prototypes (right here) to leverage 
 // live documentation
 
-
 extern const unsigned char C7SEG_CHAR_TABLE[51];
 
 extern void int2bcd(int number, char comma);
@@ -82,12 +81,4 @@ extern "C" {
 }
 #endif /* __cplusplus */
 
-
-
-
-
-
-#endif	/* XC_HEADER_TEMPLATE_H */
-
-
-
+#endif	/* XC_CLICK_7SEG_H */

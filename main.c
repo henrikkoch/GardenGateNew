@@ -18,9 +18,9 @@
  *                                    PIC12(L)F1822  (@ Tiny iCP07A modified PCB to fit correct on PCB modified pins)
  *                                  +-------_-------+
  *                           VDD -> : 1 VDD   VSS 8 : <- VSS
- *                           RA5 <> : 2       PGD 7 : <> RA0     DOOR OPEN OUTPUT       (reserved for ICSP data)         
- *     BATTERY LOW OUTPUT    RA4 <> : 3       PGC 6 : <> RA1     DOOR CLOSED OUTPUT     (reserved for ICSP clock)
- *                           RA3->  : 4 *MRCL INT 5 : <> RA2     DOOR INPUT 
+ *                           RA5 <> : 2       PGD 7 : <> RA0  DOOR OPEN OUTPUT       (reserved for ICSP data)         
+ *     BATTERY LOW OUTPUT    RA4 <> : 3       PGC 6 : <> RA1  DOOR CLOSED OUTPUT     (reserved for ICSP clock)
+ *                           RA3->  : 4 *MRCL INT 5 : <> RA2  DOOR INPUT 
  *                                  +---------------+
  *                                        DIP-8
  *  
@@ -219,8 +219,8 @@ void main(void) {
     timer2_init();
 
 #if defined(_16LF1829)
-    //PWM_init();                 // Init of PWM to dim display
-    //PWM_set(50);
+    PWM_init();                 // Init of PWM to dim display
+    PWM_set(50);
     output_polarity = 0; // used to toogle port pins on every while round
     pwm_direction = 1; // set direction of PWM count
     Click_latch_data(); // Set Click 7Seg module latch signal correct
@@ -234,7 +234,7 @@ void main(void) {
     disable_watchdog_timer();
 
 #if defined(_16LF1829)    
-    int2bcd(11, 1); // will write 1.1 in 7-seg display
+    int2bcd(11, 1); // will write 1.1 in 7-seg display  [number, comma[YES|NO]]
     printf("Welcome to KOCH Engineering GardenGate\r\n");
     printf("Microchip 16LF1829 starting up...\r\n");
 #endif    
@@ -243,19 +243,7 @@ void main(void) {
 
     // initiate state machine
     state_door = DOOR_INPUT; // read door state
-    state_machine = STATE_JUST_AWAKED;
-
-    
-    // check battery voltage at power up by measuring a fixed 1.024volt reference and back calculation the VDD from that 
-    BatteryVoltage = getBatteryVoltage();
-    millivolts = (8192 / BatteryVoltage) * 1024;
-    millivolts = millivolts / 8;
-    if (BatteryVoltage <= VOLTAGE_LOW) { // this if voltage measured is lower than 2.4 volt
-        // turn on IHC pulse to indicate low voltage
-        OUTPUT_BATTERY_LOW = PULSE_ON; // turn on battery voltage signal
-        __delay_ms(IHC_PULSE_WIDTH * 8); // Timer2 takes 8ms therefore 5 * 8ms = ~40 ms for IHC pulse width
-        OUTPUT_BATTERY_LOW = !PULSE_ON; // turn on battery voltage signal
-    }
+    state_machine = STATE_JUST_AWAKED;  
         
     DoorStateBeforePrel = DOOR_INPUT;
     DoorStateAfterPrel = DOOR_INPUT;
@@ -298,7 +286,7 @@ void main(void) {
 #if defined(_16LF1829)     
         if (state_machine != write2display_copy) {
             if (state_machine != 12) {
-                int2bcd('0', state_machine); // show current state number in Click 7Seg display
+                int2bcd(state_machine, 0);
                 // __delay_ms(10);                       // by adding a delay here it helps seing what sequence of state the statemachine is in
                 write2display_copy = state_machine; // update to prevent running update to 7Seg display if not different data to show
             }
@@ -403,7 +391,7 @@ void main(void) {
 #endif
 
 void timer2_init(void) {
-    // Timer2 setup
+    // Timer2 setup  
     T2CONbits.T2OUTPS = 0b1111;
     T2CONbits.TMR2ON = 1;
     //while (PIR1bits.TMR2IF==0); // 6) Enable PWM output pin        
@@ -414,25 +402,30 @@ void timer2_init(void) {
 int getBatteryVoltage(void) { // <editor-fold defaultstate="collapsed" desc="getBatteryVoltage function">
     // https://edeca.net/pages/measuring-pic-vdd-with-no-external-components-using-the-fvr/
     // returns raw maasurement on 1.024V ref with full scale on Vdd.
-    // this can be used to back calculate the VDD voltage when we know how much 1.024Volt takes on a 10 bit ADC
+    // this can be used to calculate back the VDD voltage when we know how much 1.024Volt takes on a 10 bit ADC 
 
-#if defined(_16LF1829)     
+    FVRCONbits.FVREN = 1; // Fixed Voltage Reference is enabled
+    while (!FVRCONbits.FVRRDY); // Wait for FVR to be stable (bit is always 1 when using 12xF1823)
+        
+    ADCON1bits.ADPREF = 0b00; // VREF+ is connected to VDD   (works for both 16xL1829 and 12xF1822)
+    __delay_us(50); // wait minimum 5 usec to stabilize 
+    
+#if defined(_16LF1829)
+    // set negative reference. Only possible on 16xF1829
     ADCON1bits.ADNREF = 0; // 0 = VREF- is connected to VSS
 #endif
 
-    FVRCONbits.ADFVR = 0b01; // ADC Fixed Voltage Reference Peripheral output is 1x (1.024V)       
-
-    FVRCONbits.FVREN = 1; // Fixed Voltage Reference is enabled
-    while (!FVRCONbits.FVRRDY); // Wait for FVR to be stable
-
-    ADCON1bits.ADFM = 1; // Right justify result
+    //FVRCONbits.ADFVR = 0b01; // ADC Fixed Voltage Reference Peripheral output is 1x (1.024V)
+    FVRCONbits.ADFVR = 0b10; // ADC Fixed Voltage Reference Peripheral output is 2x (2.048V)
+   __delay_us(50); // wait minimum 5 usec to stabilize 
+    
+    ADCON1bits.ADFM = 1; // Right justify result. Six Most Significant bits of ADRESH are set to ?0? when the conversion result is loaded.
     ADCON0bits.CHS = 0b11111; // FVR (Fixed Voltage Reference) Buffer 1 Output
-    __delay_us(200); // wait minimum 200 usec
-
-    ADCON1bits.ADPREF = 0b00; // VREF+ is connected to VDD
+    __delay_us(50); // wait minimum 5 usec to stabilize 
 
     ADCON0bits.ADON = 1; // Turn on ADC module    
-
+    __delay_us(50); // wait minimum 5 usec to stabilize 
+    
     // now make measurement  ------------
     int adc_val = 0;
 

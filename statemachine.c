@@ -9,6 +9,8 @@
 #include "statemachine.h"
 #include "GardenGate_v4_config.h"
 #include "watchdog.h"
+//#include <math.h>
+//#include <stdlib.h>
         
 #if defined(_16LF1829)
     #include "spi.h"
@@ -23,6 +25,8 @@ volatile int WakeUpCounter;             // timer how  many times it needs to wak
 // voltages
 volatile int BatteryVoltage;            // keeps til battery voltage measured
 volatile int millivolts;
+volatile int SevenSegVoltage;
+//volatile float vdd_voltage;
 
 char DoorStateBeforePrel;     // check before and after prel timer
 char DoorStateAfterPrel;      // -||-
@@ -47,8 +51,12 @@ void checkState1(void) {    // <editor-fold defaultstate="collapsed" desc="check
         #if defined(_16LF1829)
             printf("STATE_JUST_AWAKED\r\n");
         #endif
-            state_machine = STATE_CHECK_DOOR;   // check what has happened due to the µP has woken up
+
+        state_machine = STATE_MEASURE_BATTERY;    
+//      state_machine = STATE_CHECK_DOOR;   // check what has happened due to the µP has woken up
             break;
+            
+            
         case STATE_NEW_DOOR_STATE: // "01"      // if interrupt routine detects an interrupt on the INT pin
             // state_door has the last state from the interrupt routine
             // DoorStateBeforePrel has the last read from the interrupt
@@ -70,13 +78,6 @@ void checkState1(void) {    // <editor-fold defaultstate="collapsed" desc="check
           #if defined(_16LF1829)
             printf("STATE_CHECK_DOOR: ");
           #endif
-
-            // NEED TO DO SOMETHING HERE IF INITAL DOOR STATE  UNKNOWN!!!! 
-            // like
-            //  if (state_door == STATE_UNKNOWN)  {
-            //  ...  state_door = DOOR_INPUT   // read new door status
-            //  ...
-            // else if
             
             if (state_door == DOOR_INPUT) {
                 // check if door state is the same as before sent to sleep
@@ -149,11 +150,11 @@ void checkState1(void) {    // <editor-fold defaultstate="collapsed" desc="check
                 state_machine = STATE_SEND_IHC_PULSE;
             }
             else {
-                // we have a mismatch before and after prel delay
-                // disqualify the pulse. Read new status and go sleep
+                // we have a mismatch before and after prel delay. Disqualify the pulse. Read new status and go sleep
  
                 // no pulse have qualified for a correct door signal --> go back to sleep
-//                sleep_64ms_counter = 0; // start again with short sleep intervals
+                
+                //sleep_64ms_counter = 0; // start again with short sleep intervals
                 sleep_128ms_counter = 0; // start again with short sleep intervals
                 sleep_256ms_counter = 0;
                 sleep_1s_counter = 0;
@@ -169,9 +170,11 @@ void checkState1(void) {    // <editor-fold defaultstate="collapsed" desc="check
                 state_machine = STATE_SEND_IHC_PULSE; // continue until ihcPulseTimer counts to zero in timer interrupt routine
             else
                 state_machine = STATE_STOP_SENDING_IHC_PULSE; // now IHC pulse goes in-active
-          #if defined(_16LF1829)
-          //  printf("STATE_SEND_IHC_PULSE\r\n");       // will repeat several times for each timer 2 interrupt to give the IHC pulse width
-          #endif
+          
+            #if defined(_16LF1829)
+                //  printf("STATE_SEND_IHC_PULSE\r\n");       // will repeat several times for each timer 2 interrupt to give the IHC pulse width
+            #endif
+            
             break;
         case STATE_STOP_SENDING_IHC_PULSE: // "07"
             // de-activate all IHC pulse outputs
@@ -189,9 +192,10 @@ void checkState1(void) {    // <editor-fold defaultstate="collapsed" desc="check
             
             set_watchdog_timer_128ms();
             state_machine = STATE_GO_SLEEP;
-          #if defined(_16LF1829)
+            
+        #if defined(_16LF1829)
             printf("STATE_STOP_SENDING_IHC_PULSE\r\n");
-          #endif
+        #endif
             
             break;
         case STATE_GO_SLEEP: // "09"
@@ -204,10 +208,11 @@ void checkState1(void) {    // <editor-fold defaultstate="collapsed" desc="check
                 if (PWMtoggle==1) { LATAbits.LATA5 = 1; }
                 else              { LATAbits.LATA5 = 0; }
             #endif
-            //PSTR1CONbits.STR1A = 0; 
+            
+            PSTR1CONbits.STR1A = 0; 
             // Important to be able to see 7Seg after sleep
-            // PSTR1CONbits.STR1A = 1; 
-            // CCP1CONbits.CCP1M = 0b0000;
+            //PSTR1CONbits.STR1A = 1; 
+            //CCP1CONbits.CCP1M = 0b0000;
 
             enable_external_interrupt();    
             enable_watchdog_timer();
@@ -244,37 +249,12 @@ void checkState1(void) {    // <editor-fold defaultstate="collapsed" desc="check
             // nothing will be visible in the 7Seg Click module
             PSTR1CONbits.STR1A = 1;     // !!!! HUSK DENNE FOR PWM out!!  PxA pin has the PWM waveform with polarity control from CCPxM<1:0>
                         
-            if (sleep_256s_counter >= 337) {    // 337 times per day of 256 seconds equals 24 hours
-            
-                #if defined(_16LF1829)
-                    printf("measure battery\r\n");
-                #endif
-                // time to check voltage on battery (~one time per day)
-                BatteryVoltage = getBatteryVoltage();
-                // BatteryVoltage is the raw voltage measurement of the 1.024 voltage ref. measurement
-                // now we calculate back what the VDD is in milivolts
-                millivolts = (8192 / BatteryVoltage) * 1024;
-                millivolts = millivolts /8;
-                
-                #if defined(_16LF1829) // only write to 7Seg display if we are using the 16LF1829 microcontroller 
-                    // to show the voltage in the 7-Seg display 3300 milivolt is divided by 100 --> which gives 33 and the comman in the display is enable to show 3.3 (volt)
-                    //millivolts = millivolts /100;
-                    //PWM_set(10);
-                    //int2bcd(millivolts,1);
-                    //__delay_ms(800);           // wait to be able to see bars in the 7Seg display
-                #endif
-                
-                if (millivolts <= VOLTAGE_LOW) {   // this if voltage measured is lower than 2.4 volt
-                    OUTPUT_BATTERY_LOW = PULSE_ON;  // turn on battery voltage signal
-                    __delay_ms(IHC_PULSE_WIDTH*8);     // Timer2 takes 8ms therefore 5 * 8ms = ~40 ms
-                    OUTPUT_BATTERY_LOW = !PULSE_ON;  // turn on battery voltage signal
-                }
-                else {
-                    OUTPUT_BATTERY_LOW = !PULSE_ON;  // turn pulse off)
-                } 
+            if (sleep_256s_counter >= 294) {    // 337 times per day of 256 seconds equals 24 hours
+                state_machine = STATE_MEASURE_BATTERY;
                 sleep_256s_counter = 0;   // reset counter to make another voltage measurement in another 337 x 256 sec.
             }
-            state_machine = STATE_CHECK_DOOR;       // 
+            else {
+                state_machine = STATE_CHECK_DOOR; }
             break;
         case STATE_DOOR_CHANGED:    // "03"
             #if defined(_16LF1829)
@@ -285,7 +265,55 @@ void checkState1(void) {    // <editor-fold defaultstate="collapsed" desc="check
             #if defined(_16LF1829)
                 printf("STATE_MEASURE_BATTERY\r\n");
             #endif
-            break;            
+
+            #if defined(_16LF1829)
+                printf("measuring battery voltage\r\n");
+            #endif
+            
+            BatteryVoltage = getBatteryVoltage();   // get raw DAC value
+            // BatteryVoltage is the raw voltage measurement of the 2.048 voltage ref. measurement. Now we calculate back what the VDD is in millivolts 
+            
+            #if defined(_16LF1829)
+                printf("BatteryVoltage (DAC value): %dd (%d out of 1024 DAC steps measured on 2.048V ref. (battery powered ADC))\r\n", BatteryVoltage, BatteryVoltage);
+            #endif
+                
+            // do not have space enough for the floating point calculation
+            //float vdd_voltage = (float)(1024.0 / BatteryVoltage) * 2.048f;
+            //printf("float vdd_voltage measured: %8.6f\r\n", vdd_voltage);
+                        
+            millivolts = (8192 / BatteryVoltage) * 2048;    // 2^10
+            millivolts /= 8;                                // divide by 8 as the number is already 4 times bitter
+
+            #if defined(_16LF1829)
+                printf("voltage measured: %d mV\r\n", millivolts);
+            #endif            
+               
+            // Show voltage in Click 7Seg display  
+            #if defined(_16LF1829) // only write to 7Seg display if we are using the 16LF1829 microcontroller 
+                // to show the voltage in the 7-Seg display 3300 milivolt is divided by 100 --> which gives 33 and the comman in the display is enable to show 3.3 (volt)
+                SevenSegVoltage = millivolts /100;
+                PWM_set(10);
+                int2bcd(SevenSegVoltage, 1); // volt with comma
+                __delay_ms(2000);        // wait 2 secs. to be able to see bars in the 7Seg display
+            #endif
+            
+            if (millivolts <= VOLTAGE_LOW) {
+                ihcPulseTimer = IHC_PULSE_WIDTH;                  
+                OUTPUT_BATTERY_LOW = PULSE_ON;  // turn on battery voltage signal
+                #if defined(_16LF1829)
+                    printf("voltage is LOW (below threshold). Sending pulse\r\n");
+                #endif     
+                state_machine = STATE_SEND_IHC_PULSE;
+            } 
+            else {
+                #if defined(_16LF1829)
+                    printf("voltage is HIGH (above threshold). No pulse being sent\r\n", millivolts);
+                #endif
+                state_machine = STATE_CHECK_DOOR;
+            }
+               
+            sleep_256s_counter = 0;   // reset counter to make another voltage measurement in another 337 x 256 sec.
+            break;
         case  STATE_SLEEPING:        // "10"
             #if defined(_16LF1829)
                 printf("STATE_SLEEPING\r\n");

@@ -7,11 +7,8 @@
 
 #if defined(_16LF1829) 
     #include <xc.h>
-
-//#include <pic16lf1823.h>
-
     #include <pic16lf1829.h>
-    //#include "spi.h"
+    #include "spi.h"
     #include "Click_7Seg.h"         // using Click_latch_data function
 
 /* Pin connections from PIC to 74HC595

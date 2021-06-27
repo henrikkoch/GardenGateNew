@@ -28,8 +28,8 @@
 
 // This is a guard condition so that contents of this file are not included
 // more than once.  
-#ifndef XC_CLICK_7SEG_H
-#define	XC_CLICK_7SEG_H
+#ifndef XC_WATCHDOG_H
+#define	XC_WATCHDOG_H
 
 #include <xc.h> // include processor files - each processor file is guarded.  
 
@@ -64,15 +64,14 @@
 // live documentation
 
 
-void set_watchdog_timer_64ms(void);
-void set_watchdog_timer_128ms(void);
-void set_watchdog_timer_256ms(void);
-void set_watchdog_timer_1s(void);
-void set_watchdog_timer_4s(void);
-void set_watchdog_timer_256s(void);
-void enable_watchdog_timer(void);
-void disable_watchdog_timer(void);
-
+extern void set_watchdog_timer_64ms(void);
+extern void set_watchdog_timer_128ms(void);
+extern void set_watchdog_timer_256ms(void);
+extern void set_watchdog_timer_1s(void);
+extern void set_watchdog_timer_4s(void);
+extern void set_watchdog_timer_256s(void);
+extern void enable_watchdog_timer(void);
+extern void disable_watchdog_timer(void);
 
 
 
@@ -88,11 +87,4 @@ extern "C" {
 #endif /* __cplusplus */
 
 
-
-
-
-
-#endif	/* XC_HEADER_TEMPLATE_H */
-
-
-
+#endif	/* XC_WATCHDOG_H */

@@ -20,7 +20,6 @@ void int2bcd(int number, char comma) {
     // display a number between 0-99 in the two 7-segment diplays on Click module "7SegClick"
     // if comma == 1 then the first number has a comma turned on
     
-    
     if (number < 100)
         if (comma == 1)
             spi1_send((C7SEG_CHAR_TABLE[(number/10)+3] | C7SEG_CHAR_TABLE[1]) ,C7SEG_CHAR_TABLE[(number%10)+3]);
