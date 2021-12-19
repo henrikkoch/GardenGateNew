@@ -48,7 +48,7 @@
 #pragma config BORV = HI        // Brown-out Reset Voltage Selection (Brown-out Reset Voltage (Vbor), high trip point selected.)
 #pragma config LVP = ON         // Low-Voltage Programming Enable (Low-voltage programming enabled)
 
-#elif defined(_12LF1822)
+#elif defined(_12LF1822) || defined(_12F1822) 
 // CONFIG1
 #pragma config FOSC = INTOSC    // Oscillator Selection (INTOSC oscillator: I/O function on CLKIN pin)
 #pragma config WDTE = SWDTEN    // Watchdog Timer Enable (WDT disabled)
@@ -147,8 +147,11 @@ void main(void) {
     TRISBbits.TRISB6 = 0; // OUTPUT     SPI CLK
     TRISBbits.TRISB5 = 1; // INPUT      UART RX
     TRISBbits.TRISB4 = 1; // INPUT      SPI SDI
-#elif defined(_12LF1822)
-    TRISAbits.TRISA5 = 0; // RA5 = output     (pin2)
+
+//#elif defined(_12LF1822)
+#elif defined(_12LF1822) || defined(_12F1822)
+
+    TRISAbits.TRISA5 = 0; // RA5 = output     SPARE (pin2)
     TRISAbits.TRISA4 = 0; // RA4 = output     BATTERY LOW PULSE           (pin3)
     TRISAbits.TRISA3 = 1; // RA3 = input      DEBUG OUTPUT #MCLR          (pin4)
     TRISAbits.TRISA2 = 1; // RA2 = input      DOOR input - low when open  (pin5)
@@ -327,6 +330,7 @@ void main(void) {
          */
 
         // </editor-fold>
+        
     } // while forever
 }
 
@@ -389,7 +393,7 @@ void main(void) {
     return;
 } // PWM_set  </editor-fold>
 #endif
-
+ 
 void timer2_init(void) {
     // Timer2 setup  
     T2CONbits.T2OUTPS = 0b1111;
@@ -501,9 +505,9 @@ void __interrupt() my_isr(void) { // <editor-fold defaultstate="collapsed" desc=
 
         if (ihcPulseTimer > 0)
             ihcPulseTimer--;
+        
         PIR1bits.TMR2IF = 0; // clear timer 2 interrupt flag 
-        //DEBUG_OUTPUT = 1;   // only used during test of Timer2 was running
-        //DEBUG_OUTPUT = 0;
+
     } // Timer2 Interrupt </editor-fold>
     return;
 

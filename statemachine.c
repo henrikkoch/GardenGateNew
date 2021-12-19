@@ -225,13 +225,13 @@ void checkState1(void) {    // <editor-fold defaultstate="collapsed" desc="check
             SLEEP();                // go sleep until WDT times out or INT input wakes it up
             NOP();                  // wakes from watch-dog timer on this line (the next line after a sleep)
             // ------------------ WAKE UP --------------------------------
-
+            
             disable_watchdog_timer();
             
             #if defined(_16LF1829)
                 printf("...now awake due to watchdog timer\r\n");
             #endif
-            
+
             // check if we came here after af time out 
             if ((__timeout == 0) && (__powerdown == 1)) {   // nTO: if 0, a WDT time-out occurred
                 // we are here as planned after a wake up
@@ -240,6 +240,13 @@ void checkState1(void) {    // <editor-fold defaultstate="collapsed" desc="check
                 // if here and timeout flag is not "0", something must be wrong. Therefore a reset of the microcontroller to begin from start
                // RESET(); 
             }
+
+            if (DEBUG == 1) {
+                SPARE_OUTPUT = 1;      // turn on debug pin  (LED3 in Target HW)
+                __delay_us(400);                    
+                SPARE_OUTPUT = 0;
+            }
+            
             watch_dog_incrementing_timer();   // make sleep periods bigger and bigger
             
             // Important to be able to see 7Seg after sleep

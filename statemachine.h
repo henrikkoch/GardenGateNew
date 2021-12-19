@@ -98,7 +98,6 @@ extern __bit NewDoorPolarity;           //
 extern __bit PWMtoggle;
 #endif
 
-
 #ifdef	__cplusplus
 extern "C" {
 #endif /* __cplusplus */

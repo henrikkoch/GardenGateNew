@@ -41,9 +41,11 @@
     #define LED4                    LATCbits.LATC5  // Rightmost LED on curiocity board
     // UART RX pin 12  (UART receive)  needs external wiring on curioucity board from VCOM TX pin to pin 10
     // UART TX pin 10  (UART transmit) needs external wiring on curioucity board from VCOM RX pin to pin 12
-#elif defined(_12LF1822)  // 8-pin PDIP
-    #define DEBUG_OUTPUT            LATAbits.LATA5  // (pin2)
-    #define OUTPUT_BATTERY_LOW      LATAbits.LATA4  // (pin3)
+
+#elif defined(_12LF1822) || defined(_12F1822)   
+//#elif defined(_12LF1822)  // 8-pin PDIP
+    #define SPARE_OUTPUT            LATAbits.LATA5  // (pin2) (target LED3)
+    #define OUTPUT_BATTERY_LOW      LATAbits.LATA4  // (pin3) 
     #define DOOR_INPUT              PORTAbits.RA2   // (pin5) external INT interrupt input
     #define OUTPUT_DOOR_CLOSED      LATAbits.LATA1  // (pin6)(ICSPCLK) 
     #define OUTPUT_DOOR_OPEN        LATAbits.LATA0  // (pin7)(ICSPCLK) 
@@ -59,6 +61,8 @@
 #define TRUE 1
 #define FALSE 0
 
+#define DEBUG       1
+
 #define _XTAL_FREQ 16000000          // 16 MHz
 
 //extern volatile int sleep_64ms_counter;
@@ -70,6 +74,7 @@ extern volatile int sleep_256s_counter;
 extern volatile int sleep_256s_counter;
 
 extern void timer2_init(void);
+extern void debugPulseOutput(void);
 extern int getBatteryVoltage(void);         // return RAW ADC measurement on a 1.024V reference
 
 #if defined(_16LF1829) 
