@@ -61,7 +61,7 @@
 #define TRUE 1
 #define FALSE 0
 
-#define DEBUG       1
+#define DEBUG       0               // set to 1 if you want to see wake pulses on LED3 in Target HW
 
 #define _XTAL_FREQ 16000000          // 16 MHz
 
