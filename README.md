@@ -134,8 +134,11 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Henrik J. Koch - [https://twitter.com/henrikjkoch](https://twitter.com/henrikjkoch) henrik@koch-engineering.com
-Project Link: [https://github.com/henrikkoch/GardenGate](https://github.com/henrikkoch/GardenGate)
+Henrik J. Koch
+ - [Twitter](https://twitter.com/henrikjkoch) 
+ - [e-mail] (henrik@koch-engineering.com)
+
+Project Link: [github](https://github.com/henrikkoch/GardenGate)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
