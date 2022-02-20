@@ -143,6 +143,7 @@ Project Link: [https://github.com/henrikkoch/GardenGate](https://github.com/henr
 * [MikroElektronika MIKROE Click boards](https://www.mikroe.com/7seg-click)
 * [Microchip Curiosity Development Board](https://www.microchip.com/en-us/development-tool/dm164137)
 * [MPLAB® ICD 4 In-Circuit Debugger](https://www.microchip.com/en-us/development-tool/DV164045)
+* [MPLAB® XC8 Compiler](https://ww1.microchip.com/downloads/en/DeviceDoc/MPLAB-XC8-C-Compiler-Legacy-Users-Guide-DS50002053J.pdf)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
