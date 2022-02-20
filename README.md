@@ -141,7 +141,7 @@ Project Link: [https://github.com/henrikkoch/GardenGate](https://github.com/henr
 ## Acknowledgements
 
 * [MikroElektronika MIKROE Click boards](https://www.mikroe.com/7seg-click)
-* []()
+* [Microchip Curiosity Development Board](https://www.microchip.com/en-us/development-tool/dm164137)
 * []()
 
 
