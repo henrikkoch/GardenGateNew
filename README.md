@@ -33,7 +33,7 @@
 <br />
 <p align="center">
   <a href="https://https://github.com/henrikkoch/GardenGate">
-    <img src="images/GardenGate_simplified.jpg" alt="Logo" width="400" height="150">
+    <img src="images/GardenGate_simplified.jpg" alt="Logo" width="400">
   </a>
 
   <h3 align="center">GardenGate</h3>
@@ -85,7 +85,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://kochshop.dk/GardenGateDK)
 
  <img src="images/GardenGate_PCB.png" alt="Logo" width="400" height="150">
 
