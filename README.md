@@ -63,7 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]] (https://kochshop.dk/GardenGateDK)
+[Product Link](https://kochshop.dk/GardenGateDK)
 
  <img src="images/GardenGate_PCB.png" alt="PCB" width="400">
 
