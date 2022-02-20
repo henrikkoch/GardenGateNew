@@ -140,7 +140,7 @@ Project Link: [https://github.com/henrikkoch/GardenGate](https://github.com/henr
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
+* [MikroElektronika MIKROE Click boards](https://www.mikroe.com/7seg-click)
 * []()
 * []()
 
