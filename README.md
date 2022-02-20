@@ -137,7 +137,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Henrik J. Koch
  - [Linkedin](https://www.linkedin.com/in/henrikjkoch) 
  - [Twitter](https://twitter.com/henrikjkoch) 
- - [instagram](https://www.instagram.com/henrikkoch)
+ - [Instagram](https://www.instagram.com/henrikkoch)
  - [e-mail](mailto:henrik@koch-engineering.com)
 
 Project Link: [github](https://github.com/henrikkoch/GardenGate)
