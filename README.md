@@ -85,9 +85,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://kochshop.dk/GardenGateDK)
+[![Product Name Screen Shot][product-screenshot]] (https://kochshop.dk/GardenGateDK)
 
- <img src="images/GardenGate_PCB.png" alt="Logo" width="400" height="150">
+ <img src="images/GardenGate_PCB.png" alt="PCB" width="400">
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
