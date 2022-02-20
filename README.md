@@ -148,7 +148,7 @@ Project Link: [github](https://github.com/henrikkoch/GardenGate)
 * [MPLAB® ICD 4 In-Circuit Debugger](https://www.microchip.com/en-us/development-tool/DV164045)
 * [MPLAB® XC8 Compiler](https://ww1.microchip.com/downloads/en/DeviceDoc/MPLAB-XC8-C-Compiler-Legacy-Users-Guide-DS50002053J.pdf)
 * [IHC Captain](https://jemi.dk/ihc/)
-* [Lauriktz Knudsen - Intelligent House Control - IHC](https://www.lk.dk/professionel/produktoversigt/intelligente-systemer/ihc/)
+* [Lauritz Knudsen - Intelligent House Control - IHC](https://www.lk.dk/professionel/produktoversigt/intelligente-systemer/ihc/)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
