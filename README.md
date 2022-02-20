@@ -1,18 +1,11 @@
 <!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 
 <!-- PROJECT LOGO -->
@@ -67,17 +60,12 @@
 </details>
 
 
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]] (https://kochshop.dk/GardenGateDK)
 
  <img src="images/GardenGate_PCB.png" alt="PCB" width="400">
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
 
 
 ### Built With
@@ -109,7 +97,6 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
-
 
 
 <!-- USAGE EXAMPLES -->
@@ -144,15 +131,11 @@ Contributions are what make the open source community such an amazing place to b
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
-
 <!-- CONTACT -->
 ## Contact
 
 Henrik J. Koch - [https://twitter.com/henrikjkoch](https://twitter.com/henrikjkoch) henrik@koch-engineering.com
-
 Project Link: [https://github.com/henrikkoch/GardenGate](https://github.com/henrikkoch/GardenGate)
-
-
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
@@ -160,9 +143,6 @@ Project Link: [https://github.com/henrikkoch/GardenGate](https://github.com/henr
 * []()
 * []()
 * []()
-
-
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
