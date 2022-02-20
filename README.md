@@ -147,6 +147,7 @@ Project Link: [github](https://github.com/henrikkoch/GardenGate)
 * [Microchip Curiosity Development Board](https://www.microchip.com/en-us/development-tool/dm164137)
 * [MPLAB® ICD 4 In-Circuit Debugger](https://www.microchip.com/en-us/development-tool/DV164045)
 * [MPLAB® XC8 Compiler](https://ww1.microchip.com/downloads/en/DeviceDoc/MPLAB-XC8-C-Compiler-Legacy-Users-Guide-DS50002053J.pdf)
+* [IHC Captain](https://jemi.dk/ihc/)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
