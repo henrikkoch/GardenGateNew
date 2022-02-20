@@ -156,14 +156,14 @@ Project Link: [github](https://github.com/henrikkoch/GardenGate)
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/henrikkoch/GardenGate.svg?style=for-the-badge
-[contributors-url]: https://github.com/henrikkoch/GardenGate/graphs/contributors
+[contributors-url]: https://github.com/henrikkoch/GardenGateNew/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/henrikkoch/GardenGate.svg?style=for-the-badge
-[forks-url]: https://github.com/henrikkoch/GardenGate/network/members
+[forks-url]: https://github.com/henrikkoch/GardenGateNew/network/members
 [stars-shield]: https://img.shields.io/github/stars/henrikkoch/GardenGate.svg?style=for-the-badge
 [stars-url]: https://github.com/henrikkoch/GardenGate/stargazers
 [issues-shield]: https://img.shields.io/github/issues/henrikkoch/GardenGate.svg?style=for-the-badge
-[issues-url]: https://github.com/henrikkoch/GardenGate/issues
+[issues-url]: https://github.com/henrikkoch/GardenGateNew/issues
 [license-shield]: https://img.shields.io/github/license/henrikkoch/GardenGate.svg?style=for-the-badge
-[license-url]: https://github.com/henrikkoch/GardenGate/blob/master/LICENSE.txt
+[license-url]: https://github.com/henrikkoch/GardenGateNew/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/henrikjkoch/
