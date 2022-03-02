@@ -20,14 +20,14 @@
   <p align="center">
     This project is about to monitor garden gates and signal that back to my IHC house control system. This is done by interfacing a nanoWatt power Microchip microcontroller who checks door state by a a sensor. The most of the time the microcontroller is sleeping. On door change or sleep timeout the door state is being checked. This is being interfaced to a IHC wireless 4 ch. transmitter. 3 channels are being used. A signal to indicate DOOR CLOSED and another signal (channel) DOOR OPENED and also another channel to take care for signaling if the microcontroler battery is on critical voltage (being measured by the microcontroller once a day)
     <br />
-    <a href="https://https://github.com/henrikkoch/GardenGate"><strong>Explore the docs »</strong></a>
+    <a href="https://https://github.com/henrikkoch/GardenGateNew"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://https://github.com/henrikkoch/GardenGate">View Demo</a>
+    <a href="https://https://github.com/henrikkoch/GardenGateNew">View Demo</a>
     ·
-    <a href="https://https://github.com/henrikkoch/GardenGate/issues">Report Bug</a>
+    <a href="https://https://github.com/henrikkoch/GardenGateNew/issues">Report Bug</a>
     ·
-    <a href="https://https://github.com/henrikkoch/GardenGate">Request Feature</a>
+    <a href="https://https://github.com/henrikkoch/GardenGateNew">Request Feature</a>
   </p>
 </p>
 
