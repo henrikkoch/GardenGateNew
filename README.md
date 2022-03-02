@@ -25,7 +25,7 @@
     <br />
     <a href="https://https://github.com/henrikkoch/GardenGateNew">View Demo</a>
     ·
-    <a href="https://https://github.com/henrikkoch/GardenGateNew/issues">Report Bug</a>
+    <a href="https://github.com/henrikkoch/GardenGateNew/issues">Report Bug</a>
     ·
     <a href="https://https://github.com/henrikkoch/GardenGateNew">Request Feature</a>
   </p>
