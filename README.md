@@ -27,7 +27,7 @@
     ·
     <a href="https://github.com/henrikkoch/GardenGateNew/issues">Report Bug</a>
     ·
-    <a href="https://github.com/henrikkoch/GardenGateNew/requests">Request Feature</a>
+    <a href="https://github.com/henrikkoch/GardenGateNew">Request Feature</a>
   </p>
 </p>
 
