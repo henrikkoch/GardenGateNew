@@ -164,7 +164,7 @@ Project Link: [github](https://github.com/henrikkoch/GardenGate)
 [stars-url]: https://github.com/henrikkoch/GardenGate/stargazers
 [issues-shield]: https://img.shields.io/github/issues/henrikkoch/GardenGateNew?style=for-the-badge
 [issues-url]: https://github.com/henrikkoch/GardenGateNew/issues
-[license-shield]: https://img.shields.io/github/license/henrikkoch/GardenGate.svg?style=for-the-badge
+[license-shield]: <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
 [license-url]: https://github.com/henrikkoch/GardenGateNew/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/henrikjkoch/
