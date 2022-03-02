@@ -158,7 +158,7 @@ Project Link: [github](https://github.com/henrikkoch/GardenGate)
 <!-- https://img.shields.io/github/release-date/henrikkoch/GardenGateNew?style=for-the-badge -->
 [contributors-shield]: https://img.shields.io/github/contributors/henrikkoch/GardenGateNew?style=for-the-badge
 [contributors-url]: https://github.com/henrikkoch/GardenGateNew/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/henrikkoch/GardenGate.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/henrikkoch/GardenGateNew?style=social
 [forks-url]: https://github.com/henrikkoch/GardenGateNew/network/members
 [stars-shield]: https://img.shields.io/github/stars/henrikkoch/GardenGate.svg?style=for-the-badge
 [stars-url]: https://github.com/henrikkoch/GardenGate/stargazers
