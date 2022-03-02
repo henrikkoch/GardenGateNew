@@ -23,11 +23,11 @@
     <a href="https://https://github.com/henrikkoch/GardenGateNew"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://https://github.com/henrikkoch/GardenGateNew">View Demo</a>
+    <a href="https://github.com/henrikkoch/GardenGateNew">View Demo</a>
     ·
     <a href="https://github.com/henrikkoch/GardenGateNew/issues">Report Bug</a>
     ·
-    <a href="https://https://github.com/henrikkoch/GardenGateNew">Request Feature</a>
+    <a href="https://github.com/henrikkoch/GardenGateNew/requests">Request Feature</a>
   </p>
 </p>
 
