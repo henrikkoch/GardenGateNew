@@ -13,6 +13,8 @@
 <p align="center">
   <a href="https://https://github.com/henrikkoch/GardenGate">
     <img src="images/KOCH_Engineering_Logo_2.png" alt="Logo">
+    <br>
+    <br>
     <img src="images/GardenGate_simplified.jpg" alt="Logo" width="400">
   </a>
 
