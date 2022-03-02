@@ -15,7 +15,7 @@
     <img src="images/KOCH_Engineering_Logo_2.png" alt="Logo">
     <br>
     <br>
-    <img src="images/GardenGate_simplified.jpg" alt="Logo" width="400">
+    <img src="images/GardenGate_simplified.jpg" alt="Logo" width="600">
   </a>
 
   <h3 align="center">GardenGate</h3>
