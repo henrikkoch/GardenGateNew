@@ -36,6 +36,7 @@
 #define IHC_PULSE_WIDTH         5      // corresponds to ~40ms. (Measured) That means we have 8ms. per ihcPulseTimer value  (5*8ms = 40ms)
 #define PREL_DELAY              1      // corresponds to ~8ms (1*8ms)
 #define PULSE_ON                1      // "1" when pulse out is going high, "0" if pulse out is going low
+#define PULSE_OFF               0
 #define VOLTAGE_LOW             2400   // 2.4 is the low voltage is use as low voltage alarm (2.3 + 0,1 safety margin )  (https://lygte-info.dk/info/BatteryLowVoltage%20UK.html) 
 
 enum door_input_change {

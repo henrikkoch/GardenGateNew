@@ -409,9 +409,18 @@ int getBatteryVoltage(void) { // <editor-fold defaultstate="collapsed" desc="get
     // this can be used to calculate back the VDD voltage when we know how much 1.024Volt takes on a 10 bit ADC 
 
     FVRCONbits.FVREN = 1; // Fixed Voltage Reference is enabled
+    
+
+#if defined(_16LF1829)    
     while (!FVRCONbits.FVRRDY); // Wait for FVR to be stable (bit is always 1 when using 12xF1823)
-        
+                                // FVRRDY is always ?1? on PIC12F1822/16F1823 only.
+#else
+    // as the 1822/23 only have this flag always '1' then we need a delay here
+    __delay_us(50);
+#endif
+    
     ADCON1bits.ADPREF = 0b00; // VREF+ is connected to VDD   (works for both 16xL1829 and 12xF1822)
+    
     __delay_us(50); // wait minimum 5 usec to stabilize 
     
 #if defined(_16LF1829)
@@ -420,15 +429,18 @@ int getBatteryVoltage(void) { // <editor-fold defaultstate="collapsed" desc="get
 #endif
 
     //FVRCONbits.ADFVR = 0b01; // ADC Fixed Voltage Reference Peripheral output is 1x (1.024V)
-    FVRCONbits.ADFVR = 0b10; // ADC Fixed Voltage Reference Peripheral output is 2x (2.048V)
-   __delay_us(50); // wait minimum 5 usec to stabilize 
+    // When the FVR is selected as the reference input, the FVR Buffer 1 output selection must be 2.048V or 4.096V (ADFVR<1:0> = 1x). !!!!!
+    
+    FVRCONbits.ADFVR = 0b10; // ADC Fixed Voltage Reference Peripheral output is 2x (= 2.048V)
+    // When the FVR is selected as the reference input, the FVR Buffer 1 output selection must be 2.048V or 4.096V (ADFVR<1:0> = 1x). !!!!!
+    __delay_us(50); // wait minimum 5 usec to stabilize 
     
     ADCON1bits.ADFM = 1; // Right justify result. Six Most Significant bits of ADRESH are set to ?0? when the conversion result is loaded.
     ADCON0bits.CHS = 0b11111; // FVR (Fixed Voltage Reference) Buffer 1 Output
     __delay_us(50); // wait minimum 5 usec to stabilize 
 
     ADCON0bits.ADON = 1; // Turn on ADC module    
-    __delay_us(50); // wait minimum 5 usec to stabilize 
+    __delay_us(200); // wait minimum 5 usec to stabilize 
     
     // now make measurement  ------------
     int adc_val = 0;
