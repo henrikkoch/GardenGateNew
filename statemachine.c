@@ -285,11 +285,11 @@ void checkState1(void) {    // <editor-fold defaultstate="collapsed" desc="check
             #endif
                 
             // do not have space enough for the floating point calculation
-            //float vdd_voltage = (float)(1024.0 / BatteryVoltage) * 2.048f;
+            //float vdd_voltage = (float)(1024.0 / BatteryVoltage) * 2.048f;     (1024 comes from 10 bit ~2^10 )
             //printf("float vdd_voltage measured: %8.6f\r\n", vdd_voltage);
                         
-            millivolts = (8192 / BatteryVoltage) * 2048;    // 2^10
-            millivolts /= 8;                                // divide by 8 as the number is already 4 times bitter
+            millivolts = (8192 / BatteryVoltage) * 2048;    //   
+            millivolts /= 8;                                // divide by 8 as the number is already 8 times (8182/1024) bigger
 
             #if defined(_16LF1829)
                 printf("voltage measured: %d mV\r\n", millivolts);
@@ -313,12 +313,12 @@ void checkState1(void) {    // <editor-fold defaultstate="collapsed" desc="check
                 state_machine = STATE_SEND_IHC_PULSE;
             } 
             else {
+                OUTPUT_BATTERY_LOW = PULSE_OFF;  // turn on battery voltage signal   (really not necessary to turn off here)                
                 #if defined(_16LF1829)
                     printf("voltage is HIGH (above threshold). No pulse being sent\r\n", millivolts);
                 #endif
                 state_machine = STATE_CHECK_DOOR;
             }
-               
             sleep_256s_counter = 0;   // reset counter to make another voltage measurement in another 337 x 256 sec.
             break;
         case  STATE_SLEEPING:        // "10"
