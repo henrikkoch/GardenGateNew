@@ -285,10 +285,11 @@ void checkState1(void) {    // <editor-fold defaultstate="collapsed" desc="check
             #endif
                 
             // do not have space enough for the floating point calculation
-            //float vdd_voltage = (float)(1024.0 / BatteryVoltage) * 2.048f;     (1024 comes from 10 bit ~2^10 )
+            //float vdd_voltage = (float)(1024.0 / BatteryVoltage) * 1.024f;     (1024 comes from 10 bit ~2^10 )
+                
             //printf("float vdd_voltage measured: %8.6f\r\n", vdd_voltage);
                         
-            millivolts = (8192 / BatteryVoltage) * 2048;    //   
+            millivolts = (8192 / BatteryVoltage) * 1024;    //   
             millivolts /= 8;                                // divide by 8 as the number is already 8 times (8182/1024) bigger
 
             #if defined(_16LF1829)
