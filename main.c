@@ -15,7 +15,7 @@
  *                                        DIP-20
  *
  *
- *                                    PIC12(L)F1822  (@ Tiny iCP07A modified PCB to fit correct on PCB modified pins)
+ *                                    PIC12(L)F1822
  *                                  +-------_-------+
  *                           VDD -> : 1 VDD   VSS 8 : <- VSS
  *                           RA5 <> : 2       PGD 7 : <> RA0  DOOR OPEN OUTPUT       (reserved for ICSP data)         
@@ -148,7 +148,6 @@ void main(void) {
     TRISBbits.TRISB5 = 1; // INPUT      UART RX
     TRISBbits.TRISB4 = 1; // INPUT      SPI SDI
 
-//#elif defined(_12LF1822)
 #elif defined(_12LF1822) || defined(_12F1822)
 
     TRISAbits.TRISA5 = 0; // RA5 = output     SPARE (pin2)
@@ -408,31 +407,35 @@ int getBatteryVoltage(void) { // <editor-fold defaultstate="collapsed" desc="get
     // returns raw maasurement on 1.024V ref with full scale on Vdd.
     // this can be used to calculate back the VDD voltage when we know how much 1.024Volt takes on a 10 bit ADC 
 
-    FVRCONbits.FVREN = 1; // Fixed Voltage Reference is enabled
+    // HKOCH 27/6/-22
+    // Some confusions here. In the method shown above the reference is the VDD!! 
+    // This means that the sentence: "When the FVR is selected as the reference input, the FVR Buffer 1 output selection must be 2.048V or 4.096V (ADFVR<1:0> = 1x)"
+    // THE REFERENCE OS NOT THE FVR but is instead the ADC input so it is not nessesary to usse the 2.048 here!!
+   
     
+    // set the ADC clock
+    //ADCON1bits.ADCS = 0b110;    // ADC CLOCK PERIOD (TAD) setup:  Fosc/64  (slowest possible time to have the slowest sample time)
+    // at Fosc = 16MHz this gives an TAD of 4us. Datasheet says 11,5 clocks cycles is needed. This gives a total conversion time of 4us x 11,5 = 184us 
+    // Data sheet Table 16-1
+        
+    FVRCONbits.FVREN = 1; // Fixed Voltage Reference is enabled
 
 #if defined(_16LF1829)    
-    while (!FVRCONbits.FVRRDY); // Wait for FVR to be stable (bit is always 1 when using 12xF1823)
-                                // FVRRDY is always ?1? on PIC12F1822/16F1823 only.
+    while (!FVRCONbits.FVRRDY); // Wait for FVR to be stable (bit is always 1 when using 12xF1823), FVRRDY is always ?1? on PIC12F1822/16F1823 only.
 #else
-    // as the 1822/23 only have this flag always '1' then we need a delay here
-    __delay_us(50);
+    __delay_us(50); // as the 1822/23 only have this flag always '1' then we need a delay here
 #endif
     
     ADCON1bits.ADPREF = 0b00; // VREF+ is connected to VDD   (works for both 16xL1829 and 12xF1822)
-    
-    __delay_us(50); // wait minimum 5 usec to stabilize 
+    __delay_us(50); // wait 50 usec to stabilize 
     
 #if defined(_16LF1829)
-    // set negative reference. Only possible on 16xF1829
-    ADCON1bits.ADNREF = 0; // 0 = VREF- is connected to VSS
+    ADCON1bits.ADNREF = 0; // 0 = VREF- is connected to VSS   // set negative reference. Only possible on 16xF1829
 #endif
 
-    //FVRCONbits.ADFVR = 0b01; // ADC Fixed Voltage Reference Peripheral output is 1x (1.024V)
-    // When the FVR is selected as the reference input, the FVR Buffer 1 output selection must be 2.048V or 4.096V (ADFVR<1:0> = 1x). !!!!!
-    
-    FVRCONbits.ADFVR = 0b10; // ADC Fixed Voltage Reference Peripheral output is 2x (= 2.048V)
-    // When the FVR is selected as the reference input, the FVR Buffer 1 output selection must be 2.048V or 4.096V (ADFVR<1:0> = 1x). !!!!!
+    FVRCONbits.ADFVR = 0b01; // ADC Fixed Voltage Reference Peripheral output is 1x (1.024V)
+    //FVRCONbits.ADFVR = 0b10; // ADC Fixed Voltage Reference Peripheral output is 2x (= 2.048V)
+
     __delay_us(50); // wait minimum 5 usec to stabilize 
     
     ADCON1bits.ADFM = 1; // Right justify result. Six Most Significant bits of ADRESH are set to ?0? when the conversion result is loaded.
@@ -440,7 +443,8 @@ int getBatteryVoltage(void) { // <editor-fold defaultstate="collapsed" desc="get
     __delay_us(50); // wait minimum 5 usec to stabilize 
 
     ADCON0bits.ADON = 1; // Turn on ADC module    
-    __delay_us(200); // wait minimum 5 usec to stabilize 
+    //__delay_us(200); // wait minimum 5 usec to stabilize 
+    __delay_ms(10);     // sample time 10 ms before the sample is performed
     
     // now make measurement  ------------
     int adc_val = 0;

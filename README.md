@@ -1,5 +1,25 @@
-<!-- PROJECT SHIELDS -->
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Thanks again! Now go create something AMAZING! :D
+***
+***
+***
+*** To avoid retyping too much info. Do a search and replace for the following:
+*** github_username, repo_name, twitter_handle, email, project_title, project_description
+-->
 
+
+
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -8,14 +28,12 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://https://github.com/henrikkoch/GardenGate">
-    <img src="images/KOCH_Engineering_Logo_2.png" alt="Logo">
-    <br>
-    <br>
-    <img src="images/GardenGate_simplified.jpg" alt="Logo" width="600">
+    <img src="images/GardenGate_simplified.jpg" alt="Logo" width="400" height="150">
   </a>
 
   <h3 align="center">GardenGate</h3>
@@ -23,14 +41,14 @@
   <p align="center">
     This project is about to monitor garden gates and signal that back to my IHC house control system. This is done by interfacing a nanoWatt power Microchip microcontroller who checks door state by a a sensor. The most of the time the microcontroller is sleeping. On door change or sleep timeout the door state is being checked. This is being interfaced to a IHC wireless 4 ch. transmitter. 3 channels are being used. A signal to indicate DOOR CLOSED and another signal (channel) DOOR OPENED and also another channel to take care for signaling if the microcontroler battery is on critical voltage (being measured by the microcontroller once a day)
     <br />
-    <a href="https://github.com/henrikkoch/GardenGateNew"><strong>Explore the docs »</strong></a>
+    <a href="https://https://github.com/henrikkoch/GardenGate"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/henrikkoch/GardenGateNew">View Demo</a>
+    <a href="https://https://github.com/henrikkoch/GardenGate">View Demo</a>
     ·
-    <a href="https://github.com/henrikkoch/GardenGateNew/issues">Report Bug</a>
+    <a href="https://https://github.com/henrikkoch/GardenGate/issues">Report Bug</a>
     ·
-    <a href="https://github.com/henrikkoch/GardenGateNew">Request Feature</a>
+    <a href="https://https://github.com/henrikkoch/GardenGate">Request Feature</a>
   </p>
 </p>
 
@@ -63,12 +81,15 @@
 </details>
 
 
+
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[Product Link](https://kochshop.dk/GardenGateDK)
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
- <img src="images/GardenGate_PCB.png" alt="PCB" width="400">
+Here's a blank template to get started:
+**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
+`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
 
 
 ### Built With
@@ -100,6 +121,7 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
+
 
 
 <!-- USAGE EXAMPLES -->
@@ -134,40 +156,38 @@ Contributions are what make the open source community such an amazing place to b
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
+
 <!-- CONTACT -->
 ## Contact
 
-Henrik J. Koch
- - [Linkedin](https://www.linkedin.com/in/henrikjkoch) 
- - [Twitter](https://twitter.com/henrikjkoch) 
- - [Instagram](https://www.instagram.com/henrikkoch)
- - [e-mail](mailto:henrik@koch-engineering.com)
+Henrik J. Koch - [https://twitter.com/henrikjkoch](https://twitter.com/henrikjkoch) henrik@koch-engineering.com
 
-Project Link: [github](https://github.com/henrikkoch/GardenGate)
+Project Link: [https://github.com/henrikkoch/GardenGate](https://github.com/henrikkoch/GardenGate)
+
+
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* [MikroElektronika MIKROE Click boards](https://www.mikroe.com/7seg-click)
-* [Microchip Curiosity Development Board](https://www.microchip.com/en-us/development-tool/dm164137)
-* [MPLAB® ICD 4 In-Circuit Debugger](https://www.microchip.com/en-us/development-tool/DV164045)
-* [MPLAB® XC8 Compiler](https://ww1.microchip.com/downloads/en/DeviceDoc/MPLAB-XC8-C-Compiler-Legacy-Users-Guide-DS50002053J.pdf)
-* [IHC Captain](https://jemi.dk/ihc/)
-* [Lauritz Knudsen - Intelligent House Control - IHC](https://www.lk.dk/professionel/produktoversigt/intelligente-systemer/ihc/)
+* []()
+* []()
+* []()
+
+
+
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-<!-- https://img.shields.io/github/release-date/henrikkoch/GardenGateNew?style=for-the-badge -->
-[contributors-shield]: https://img.shields.io/github/contributors/henrikkoch/GardenGateNew?style=for-the-badge
-[contributors-url]: https://github.com/henrikkoch/GardenGateNew/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/henrikkoch/GardenGateNew?style=for-the-badge
-[forks-url]: https://github.com/henrikkoch/GardenGateNew/network/members
-[stars-shield]: https://img.shields.io/github/stars/henrikkoch/GardenGateNew?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/henrikkoch/GardenGate.svg?style=for-the-badge
+[contributors-url]: https://github.com/henrikkoch/GardenGate/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/henrikkoch/GardenGate.svg?style=for-the-badge
+[forks-url]: https://github.com/henrikkoch/GardenGate/network/members
+[stars-shield]: https://img.shields.io/github/stars/henrikkoch/GardenGate.svg?style=for-the-badge
 [stars-url]: https://github.com/henrikkoch/GardenGate/stargazers
-[issues-shield]: https://img.shields.io/github/issues/henrikkoch/GardenGateNew?style=for-the-badge
-[issues-url]: https://github.com/henrikkoch/GardenGateNew/issues
-[License-shield]: https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg?style=for-the-badge
-[license-url]: https://creativecommons.org/licenses/by-nc-nd/4.0/
+[issues-shield]: https://img.shields.io/github/issues/henrikkoch/GardenGate.svg?style=for-the-badge
+[issues-url]: https://github.com/henrikkoch/GardenGate/issues
+[license-shield]: https://img.shields.io/github/license/henrikkoch/GardenGate.svg?style=for-the-badge
+[license-url]: https://github.com/henrikkoch/GardenGate/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/henrikjkoch/
