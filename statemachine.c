@@ -24,9 +24,14 @@ volatile int ihcPulseTimer;             // timer for IHC output pulse
 volatile int WakeUpCounter;             // timer how  many times it needs to wake up before a voltage measurement is done
 // voltages
 volatile int BatteryVoltage;            // keeps til battery voltage measured
-volatile int millivolts;
+volatile unsigned int millivolts;
 volatile int SevenSegVoltage;
 //volatile float vdd_voltage;
+
+int digit[4]; // used to signal voltage in milivotls per digit
+int digit_no;
+int digit_pulses;   
+
 
 char DoorStateBeforePrel;     // check before and after prel timer
 char DoorStateAfterPrel;      // -||-
@@ -289,7 +294,7 @@ void checkState1(void) {    // <editor-fold defaultstate="collapsed" desc="check
                 
             //printf("float vdd_voltage measured: %8.6f\r\n", vdd_voltage);
                         
-            millivolts = (8192 / BatteryVoltage) * 1024;    //   
+            millivolts = (unsigned int) (8192 / BatteryVoltage) * 1024;    //   
             millivolts /= 8;                                // divide by 8 as the number is already 8 times (8182/1024) bigger
 
             #if defined(_16LF1829)
@@ -322,10 +327,54 @@ void checkState1(void) {    // <editor-fold defaultstate="collapsed" desc="check
             }
             sleep_256s_counter = 0;   // reset counter to make another voltage measurement in another 337 x 256 sec.
             break;
-        case  STATE_SLEEPING:        // "10"
+        case STATE_SLEEPING:        // "10"
             #if defined(_16LF1829)
                 printf("STATE_SLEEPING\r\n");
             #endif
+            break;
+            
+        case STATE_INITIAL_TEST:    //
+            // makes several tests during power up
+            
+            // check if battery is ok to proceed with. If not then signal that to the debug LED connected to pin SPARE_OUTPUT (LATAbits.LATA5)
+            BatteryVoltage = getBatteryVoltage();   // get raw DAC value
+           
+            // calculate voltage in millivolt by using the internal 1.024 FVR volgtage
+            millivolts = (unsigned int)(8192 / BatteryVoltage) * 1024;    //   
+            millivolts /= 8;                                // divide by 8 as the number is already 8 times (8182/1024) bigger
+                      
+            // pulse voltage in millivolts
+            // if we have 5V - that is 5000 millivolts  (zero is signaled as 10 pulses)
+            // then we should pulse 5,10,10.10 with a small delay between pauses and pulses
+            
+            // first find the first number to signal 
+            digit[3] = millivolts / 1000 % 10;      // get right most digit
+            digit[2] = millivolts / 100 % 10;                                 
+            digit[1] = millivolts / 10 % 10;
+            digit[0] = millivolts % 10;             // get left most digit
+                                    
+            // now blink with the led for each digit
+            
+            //#define LED_BLINK_PULSE         80    // 80 ms
+            //#define LED_BLINK_PAUSE         120   // 120 ms
+            //#define LED_BLINK_DIGIT_DELAY   400   // 400 ms
+                        
+            for (digit_no=3; digit_no >= 0; digit_no--) {
+                // loop through each digit
+                
+                for (digit_pulses=0; digit_pulses < digit[digit_no]; digit_pulses++) {
+                    SPARE_OUTPUT = 1;
+                    __delay_ms(LED_BLINK_PULSE);
+                    SPARE_OUTPUT = 0;                        
+                    __delay_ms(LED_BLINK_PAUSE);
+                }
+                __delay_ms(LED_BLINK_DIGIT_DELAY);
+            }
+                        
+            
+            // set state to have normal start up
+            state_machine = STATE_JUST_AWAKED;  
+            
             break;
         default:
             #if defined(_16LF1829)
