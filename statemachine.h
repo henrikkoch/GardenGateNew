@@ -37,7 +37,11 @@
 #define PREL_DELAY              1      // corresponds to ~8ms (1*8ms)
 #define PULSE_ON                1      // "1" when pulse out is going high, "0" if pulse out is going low
 #define PULSE_OFF               0
-#define VOLTAGE_LOW             2400   // 2.4 is the low voltage is use as low voltage alarm (2.3 + 0,1 safety margin )  (https://lygte-info.dk/info/BatteryLowVoltage%20UK.html) 
+#define VOLTAGE_LOW             3000   // 1.0 V per AA battery cell 
+
+#define LED_BLINK_PULSE         80    // 80 ms
+#define LED_BLINK_PAUSE         320   // 120 ms
+#define LED_BLINK_DIGIT_DELAY   800   // 400 ms
 
 enum door_input_change {
                            change_door_opended = 0,
@@ -62,7 +66,8 @@ enum STATE_MACHINE1_STATES {
                            STATE_GO_SLEEP = 9,
                            STATE_SLEEPING = 10,
                            STATE_INITIALIZE = 11,
-                           STATE_SELFTEST = 12
+                           STATE_SELFTEST = 12,
+                           STATE_INITIAL_TEST = 13
 };
 enum STATE_OUTPUT_PULSE_STATES {
                            STATE_OUTPUT_PULSE_DOOR_OPEN = 0,
@@ -88,7 +93,7 @@ extern volatile int prelCounter;                // timer for prel time
 extern volatile int ihcPulseTimer;              // timer for IHC output pulse
 extern volatile int WakeUpCounter;              // timer how  many times it needs to wake up before a voltage measurement is done
 extern volatile int BatteryVoltage;             // keeps til battery voltage measured
-extern volatile int millivolts;                 // keeps batteryvoltage in milivolts
+extern volatile unsigned int millivolts;                 // keeps batteryvoltage in milivolts
 
 extern char DoorStateBeforePrel;     // check before and after prel timer
 extern char DoorStateAfterPrel;      // -||-
