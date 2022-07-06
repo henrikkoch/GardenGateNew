@@ -1,5 +1,5 @@
 /*
- *                                    PIC16(L)F1829   
+ *                                    PIC16F1829   
  *                                  +-------_-------+
  *                           VDD -> : 1 VDD   VSS 20: <> VSS
  *              DEBUG1       RA5 <> : 2       PGD 19: <- RA0  (reserved for ICSP data)                (SPI SDO)
@@ -15,7 +15,8 @@
  *                                        DIP-20
  *
  *
- *                                    PIC12(L)F1822
+ *                                PIC12F1822/PIC12F1840
+ *                                    (2K)      (7K)  
  *                                  +-------_-------+
  *                           VDD -> : 1 VDD   VSS 8 : <- VSS
  *                           RA5 <> : 2       PGD 7 : <> RA0  DOOR OPEN OUTPUT       (reserved for ICSP data)         
@@ -48,7 +49,7 @@
 #pragma config BORV = HI        // Brown-out Reset Voltage Selection (Brown-out Reset Voltage (Vbor), high trip point selected.)
 #pragma config LVP = ON         // Low-Voltage Programming Enable (Low-voltage programming enabled)
 
-#elif defined(_12LF1822) || defined(_12F1822) 
+#elif defined(_12LF1822) || defined(_12F1822) || defined(_12F1840)
 // CONFIG1
 #pragma config FOSC = INTOSC    // Oscillator Selection (INTOSC oscillator: I/O function on CLKIN pin)
 #pragma config WDTE = SWDTEN    // Watchdog Timer Enable (WDT disabled)
@@ -148,8 +149,7 @@ void main(void) {
     TRISBbits.TRISB5 = 1; // INPUT      UART RX
     TRISBbits.TRISB4 = 1; // INPUT      SPI SDI
 
-#elif defined(_12LF1822) || defined(_12F1822)
-
+#elif defined(_12LF1822) || defined(_12F1822) || defined(_12F1840)
     TRISAbits.TRISA5 = 0; // RA5 = output     SPARE (pin2)
     TRISAbits.TRISA4 = 0; // RA4 = output     BATTERY LOW PULSE           (pin3)
     TRISAbits.TRISA3 = 1; // RA3 = input      DEBUG OUTPUT #MCLR          (pin4)
@@ -245,8 +245,9 @@ void main(void) {
 
     // initiate state machine
     state_door = DOOR_INPUT; // read door state
-    state_machine = STATE_JUST_AWAKED;  
-        
+    //state_machine = STATE_JUST_AWAKED;  
+    state_machine = STATE_INITIAL_TEST; // to run power up test and signal it by blinking LED
+    
     DoorStateBeforePrel = DOOR_INPUT;
     DoorStateAfterPrel = DOOR_INPUT;
 
@@ -434,8 +435,7 @@ int getBatteryVoltage(void) { // <editor-fold defaultstate="collapsed" desc="get
 #endif
 
     FVRCONbits.ADFVR = 0b01; // ADC Fixed Voltage Reference Peripheral output is 1x (1.024V)
-    //FVRCONbits.ADFVR = 0b10; // ADC Fixed Voltage Reference Peripheral output is 2x (= 2.048V)
-
+    
     __delay_us(50); // wait minimum 5 usec to stabilize 
     
     ADCON1bits.ADFM = 1; // Right justify result. Six Most Significant bits of ADRESH are set to ?0? when the conversion result is loaded.
@@ -443,9 +443,8 @@ int getBatteryVoltage(void) { // <editor-fold defaultstate="collapsed" desc="get
     __delay_us(50); // wait minimum 5 usec to stabilize 
 
     ADCON0bits.ADON = 1; // Turn on ADC module    
-    //__delay_us(200); // wait minimum 5 usec to stabilize 
-    __delay_ms(10);     // sample time 10 ms before the sample is performed
-    
+    __delay_us(50); // wait minimum 5 usec to stabilize. Now 50us
+            
     // now make measurement  ------------
     int adc_val = 0;
 
